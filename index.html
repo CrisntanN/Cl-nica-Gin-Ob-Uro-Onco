@@ -17,11 +17,14 @@ body{background:var(--bg);color:var(--text);font-family:'IBM Plex Sans',sans-ser
 .chip{background:#1f2937;border:1px solid var(--border);border-radius:3px;padding:2px 7px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--muted);}
 /* WEEK NAV */
 .wnav{position:sticky;top:0;z-index:200;background:rgba(13,17,23,0.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);}
-.wnav-inner{display:flex;overflow-x:auto;scrollbar-width:none;padding:0 12px;max-width:900px;margin:0 auto;}
-.wnav-inner::-webkit-scrollbar{display:none;}
+.wnav-inner{display:flex;overflow-x:auto;scrollbar-width:thin;scrollbar-color:var(--border) transparent;padding:0 12px;max-width:100%;margin:0 auto;}
+.wnav-inner::-webkit-scrollbar{height:3px;display:block;}
+.wnav-inner::-webkit-scrollbar-track{background:transparent;}
+.wnav-inner::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px;}
 .wbtn{background:none;border:none;color:var(--muted);font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;padding:10px 11px;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:.15s;flex-shrink:0;}
 .wbtn:hover{color:var(--text);}
 .wbtn.active{color:var(--a);border-bottom-color:var(--a);}
+#cli-btn.active{color:var(--a5)!important;border-color:rgba(255,166,87,.7)!important;background:rgba(255,166,87,.2)!important;border-bottom-color:rgba(255,166,87,.7)!important;}
 /* TOPIC SUBNAV */
 .tnav-wrap{max-width:900px;margin:0 auto;}
 .tnav{background:var(--surface);border-bottom:1px solid var(--border);padding:0 12px;display:flex;overflow-x:auto;scrollbar-width:none;}
@@ -138,7 +141,7 @@ hr{border:none;border-top:1px solid var(--border);margin:14px 0;}
 </div>
 <div class="wnav">
 <div class="wnav-inner">
-<button class="wbtn" style="background:rgba(255,166,87,.15);border-bottom-color:var(--a5);color:var(--a5)" onclick="showWeek('cli',this)" title="Material de Apoyo Clínico">&#9670; Cl&#237;nicas</button>
+<button class="wbtn" id="cli-btn" style="background:rgba(255,166,87,.12);color:var(--a5);border:1px solid rgba(255,166,87,.35);border-radius:4px;margin:6px 8px 6px 0;padding:5px 10px;font-size:9px;letter-spacing:.5px;" onclick="showWeek('cli',this)" title="Material de Apoyo Clínico">&#9670; Cl&#237;nicas</button>
 <button class="wbtn active" onclick="showWeek('s1',this)" title="Obstetricia Operatoria | Mié 8 Jul · Dr. J. Rodríguez">S1</button>
 <button class="wbtn" onclick="showWeek('s2',this)" title="APP / RPM / Corioamnionitis | Jue 9 Jul · Dra. F. García">S2</button>
 <button class="wbtn" onclick="showWeek('s3',this)" title="Control Prenatal / Puerperio | Sáb 11 Jul · Dra. E. Suárez">S3</button>
