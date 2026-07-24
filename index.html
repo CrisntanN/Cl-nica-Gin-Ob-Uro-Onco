@@ -336,6 +336,24 @@ hr{border:none;border-top:1px solid var(--border);margin:14px 0;}
 .study-hero .wtitle{font-size:19px;color:var(--a3)}
 .topic-strip{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 15px}
 
+
+/* S15 embarazo multifetal */
+.study-accordion{
+  background:var(--surface);border:1px solid var(--border);border-radius:7px;
+  margin:10px 0 14px;overflow:hidden
+}
+.study-accordion summary{
+  list-style:none;display:flex;align-items:center;gap:10px;cursor:pointer;
+  padding:12px 14px;background:var(--surface2);border-left:4px solid var(--a3)
+}
+.study-accordion summary::-webkit-details-marker{display:none}
+.study-accordion summary::after{content:'＋';margin-left:auto;color:var(--a3);font-family:var(--font-mono);font-weight:700}
+.study-accordion[open] summary::after{content:'−'}
+.study-accordion summary strong{display:block;font-size:14px}
+.study-accordion summary small{display:block;margin-top:2px;color:var(--muted);font-size:11px;font-weight:400}
+.acc-index{width:27px;height:27px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;background:var(--a3);color:#fff;font-family:var(--font-mono);font-size:10px;font-weight:700}
+.acc-body{padding:4px 13px 14px}
+
 </style>
 </head>
 <body>
@@ -6652,39 +6670,335 @@ Realizar hemocultivo, urocultivo e imagen según sospecha para descartar otros f
 <!-- ══════ S15: EMBARAZO MÚLTIPLE ══════ -->
 <div class="wsec" id="s15">
 <div class="tpane" id="s15-t0">
-<h2>// Embarazo Múltiple</h2>
+
+<div class="study-hero">
+  <div class="wlabel">S15 · Embarazo multifetal</div>
+  <div class="wtitle">Gestación múltiple</div>
+  <p>Mecanismos, corionicidad, diagnóstico, adaptación materna, complicaciones, vigilancia prenatal y atención del parto.</p>
+</div>
+
+<div class="topic-strip">
+  <span class="b bb">Cigosidad y corionicidad</span>
+  <span class="b bo">Diagnóstico ecográfico</span>
+  <span class="b bp">Complicaciones monocoriónicas</span>
+  <span class="b br">Crecimiento y muerte fetal</span>
+  <span class="b bg">Atención prenatal y parto</span>
+</div>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">01</span><span><strong>Conceptos generales y epidemiología</strong><small>Impacto materno, fetal y neonatal</small></span></summary>
+<div class="acc-body">
+<h2>// Introducción</h2>
+<p>Las gestaciones multifetales se originan por <strong>dos o más fecundaciones</strong>, por una fecundación seguida de <strong>división del cigoto</strong> o por una combinación de ambos mecanismos. En Estados Unidos, la tasa de nacimientos gemelares fue aproximadamente 3.2% en 2019. Los nacimientos de trillizos o de orden superior alcanzaron un máximo de 0.2% en 1998 y disminuyeron 55% hasta 2019 después de limitar el número de embriones transferidos.</p>
 <div class="tw"><table>
-<tr><th>Tipo</th><th>División</th><th>Corionicidad</th><th>Signo eco 1T</th><th>Riesgo principal</th></tr>
-<tr><td>DC-DA</td><td>Días 1–3</td><td>2 placentas, 2 sacos</td><td>Lambda / twin peak</td><td>Bajo</td></tr>
-<tr><td>MC-DA</td><td>Días 4–8</td><td>1 placenta, 2 sacos</td><td>Signo T</td><td>STFF 20%</td></tr>
-<tr><td>MC-MA</td><td>Días 8–13</td><td>1 placenta, 1 saco</td><td>Sin membrana</td><td>Muy alto (entrelazamiento cordón)</td></tr>
-<tr><td>Siameses</td><td>&gt;Día 13</td><td>1 placenta, 1 saco, unidos</td><td>Masa continua</td><td>Extremo</td></tr>
+<tr><th>Resultado en Parkland</th><th>Producto único</th><th>Gemelos</th></tr>
+<tr><td>Embarazos</td><td>456,120</td><td>5,366</td></tr>
+<tr><td>Nacimientos</td><td>456,120</td><td>10,732</td></tr>
+<tr><td>Óbitos por 1,000</td><td>5.6</td><td>24.0</td></tr>
+<tr><td>Muertes neonatales por 1,000 nacidos vivos</td><td>2.1</td><td>18.2</td></tr>
+<tr><td>Muertes perinatales por 1,000</td><td>7.6</td><td>41.4</td></tr>
+<tr><td>Muy bajo peso &lt;1,500 g por 1,000 nacidos vivos</td><td>10.0</td><td>108.8</td></tr>
 </table></div>
-<h3>Síndrome de Transfusión Feto-Fetal (STFF) — Quintero</h3>
+<div class="g2">
+<div class="card"><div class="ct">Riesgo fetal</div><p>Los embarazos multifetales representaron cerca de 3% de nacidos vivos, pero 15% de muertes infantiles. La mortalidad infantil es más de cuatro veces mayor en gemelos y alrededor de 12 veces mayor en trillizos.</p></div>
+<div class="card"><div class="ct">Riesgo materno</div><p>Se duplican aproximadamente preeclampsia, hemorragia puerperal y muerte materna. También aumentan placenta previa, PAS e histerectomía periparto; esta última fue 3 veces mayor en gemelos y 24 veces mayor en trillizos o cuádruples.</p></div>
+</div>
+</div>
+</details>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">02</span><span><strong>Mecanismos de la gemelación</strong><small>Cigosidad, corionicidad, amnionicidad y momento de división</small></span></summary>
+<div class="acc-body">
+<h2>// Gemelos dicigotos y monocigotos</h2>
 <div class="tw"><table>
-<tr><th>Estadio</th><th>Descripción</th></tr>
-<tr><td>I</td><td>Donante oligohidramnios (&lt;2 cm), receptor polihidramnios (&gt;8 cm)</td></tr>
-<tr><td>II</td><td>Vejiga donante no visible</td></tr>
-<tr><td>III</td><td>Doppler crítico (AEDV/REDV, onda a reversa DV)</td></tr>
-<tr><td>IV</td><td>Hidrops de cualquiera</td></tr>
-<tr><td>V</td><td>Muerte de uno o ambos</td></tr>
+<tr><th>Característica</th><th>Dicigotos</th><th>Monocigotos</th></tr>
+<tr><td>Origen</td><td>Fecundación de dos ovocitos en el mismo ciclo.</td><td>División de un solo cigoto fecundado.</td></tr>
+<tr><td>Relación genética</td><td>Equivalente a hermanos comunes.</td><td>Comparten el mismo origen genético, aunque pueden diferir por mutaciones postcigóticas, reparto citoplasmático o lionización.</td></tr>
+<tr><td>Sexo</td><td>Puede ser igual o diferente.</td><td>Casi siempre igual; raras excepciones por pérdida postcigótica del Y o mosaicismo.</td></tr>
+<tr><td>Corionicidad</td><td>Casi siempre dicoriónicos-diamnióticos.</td><td>Depende del momento de división.</td></tr>
+<tr><td>Frecuencia</td><td>Variable con edad, raza, herencia, talla y tratamientos de infertilidad.</td><td>Aproximadamente 1 por 250 nacimientos; relativamente constante salvo ART.</td></tr>
 </table></div>
-<p><strong>Tratamiento:</strong> Fotocoagulación laser selectiva de anastomosis (SLPCV) en estadios II–IV &lt;26 sem.</p>
-<h2>// Embarazo Postérmino (≥42+0 semanas)</h2>
+
+<h3>Momento de división del cigoto monocigoto</h3>
 <div class="tw"><table>
-<tr><th>Consecuencia</th><th>Mecanismo</th><th>Clínica</th></tr>
-<tr><td>Postmadurez (S. Clifford)</td><td>Insuficiencia placentaria crónica</td><td>Piel seca pergaminada, uñas largas, meconio, delgadez</td></tr>
-<tr><td>Macrosomía</td><td>Crecimiento continuo si placenta funcional</td><td>↑ riesgo DCP, distocia de hombros</td></tr>
-<tr><td>Oligohidramnios</td><td>↓ diuresis fetal</td><td>Compresión cordón, DIP III, sufrimiento fetal</td></tr>
-<tr><td>SAM</td><td>Hipoxia → relajación esfínter → meconio</td><td>Síndrome de aspiración de meconio neonatal</td></tr>
+<tr><th>Momento de división</th><th>Resultado</th><th>Membranas</th></tr>
+<tr><td>0–4 días</td><td>Dos embriones antes de la diferenciación coriónica.</td><td><strong>Dicoriónicos-diamnióticos</strong>; placentas separadas o fusionadas.</td></tr>
+<tr><td>4–8 días</td><td>Dos embrioblastos dentro de un blastocisto.</td><td><strong>Monocoriónicos-diamnióticos</strong>.</td></tr>
+<tr><td>8–12 días</td><td>División después de formarse el amnios.</td><td><strong>Monocoriónicos-monoamnióticos</strong>.</td></tr>
+<tr><td>División tardía o incompleta</td><td>Separación incompleta.</td><td><strong>Gemelos unidos o siameses</strong>.</td></tr>
 </table></div>
-<p><strong>Manejo (ACOG):</strong> Inducción a las <strong>41+0–41+6 sem</strong>. Si se retrasa: NST diario + ILA (bienestar fetal intensivo). ARRIVE trial: inducción a 39 sem no inferior a manejo expectante.</p>
-<div class="gl"><div class="gl-t">► Glosario</div><div class="gl-g">
-<div class="gl-i"><span class="gl-k">STFF</span><span class="gl-v">Síndrome de Transfusión Feto-Fetal (TTTS)</span></div>
-<div class="gl-i"><span class="gl-k">SLPCV</span><span class="gl-v">Selective Laser Photocoagulation of Communicating Vessels</span></div>
-<div class="gl-i"><span class="gl-k">SAM</span><span class="gl-v">Síndrome de Aspiración de Meconio</span></div>
-<div class="gl-i"><span class="gl-k">S. Clifford</span><span class="gl-v">Síndrome de postmadurez fetal</span></div>
-</div></div>
+<div class="kp"><div class="kp-t">Regla clínica</div><p>La <strong>corionicidad</strong>, más que la cigosidad, determina gran parte del riesgo obstétrico. Los gemelos monocoriónicos comparten circulación placentaria y presentan complicaciones vasculares específicas.</p></div>
+
+<h3>Factores que favorecen gemelación</h3>
+<ul class="dl">
+<li><strong>ART e inducción de ovulación:</strong> clomifeno, FSH, hCG y transferencia de múltiples embriones aumentan gemelación dicigota; transferencia de blastocisto aumenta gemelación monocigota.</li>
+<li><strong>Edad materna:</strong> mayor FSH y mayor uso de ART.</li>
+<li><strong>Raza:</strong> mayor frecuencia descrita en mujeres afroamericanas, intermedia en caucásicas y menor en hispanas.</li>
+<li><strong>Herencia:</strong> predominio materno, relacionado con tendencia a ovulación múltiple.</li>
+<li><strong>Talla, peso y nutrición:</strong> mayor frecuencia en mujeres más grandes y mejor nutridas.</li>
+</ul>
+
+<div class="g2">
+<div class="card"><div class="ct">Superfecundación</div><p>Fecundación de dos ovocitos del mismo ciclo por coitos diferentes; puede existir heteropaternidad.</p></div>
+<div class="card"><div class="ct">Superfetación</div><p>Fecundaciones separadas por un ciclo o más. No está demostrada de forma espontánea y suele relacionarse con ART. La seudosuperfetación corresponde a crecimiento marcadamente desigual de fetos de la misma edad.</p></div>
+</div>
+</div>
+</details>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">03</span><span><strong>Diagnóstico y determinación de corionicidad</strong><small>Clínica, ultrasonido, signo lambda y signo T</small></span></summary>
+<div class="acc-body">
+<h2>// Diagnóstico clínico y ecográfico</h2>
+<p>La altura uterina suele superar en promedio <strong>5 cm</strong> a la esperada entre las 20 y 30 semanas. Pueden palparse dos cabezas o auscultarse dos frecuencias cardiacas diferentes, pero los criterios clínicos aislados son poco confiables. Sin ecografía sistemática, hasta 37% de los gemelos puede no diagnosticarse antes de 26 semanas y 13% hasta el ingreso para parto.</p>
+<div class="card"><div class="ct">Objetivos de la ecografía inicial</div><ul class="dl">
+<li>Confirmar número de fetos.</li>
+<li>Establecer edad gestacional.</li>
+<li>Determinar corionicidad y amnionicidad.</li>
+<li>Identificar posición y anatomía de cada feto.</li>
+<li>Etiquetar consistentemente a cada gemelo para el seguimiento.</li>
+</ul></div>
+<p>La determinación de corionicidad tiene alrededor de 98% de precisión en el primer trimestre, puede fallar hasta en 10% durante el segundo y alcanza aproximadamente 95% si se establece antes de 24 semanas.</p>
+
+<h3>Signos ecográficos</h3>
+<div class="tw"><table>
+<tr><th>Hallazgo</th><th>Dicoriónico-diamniótico</th><th>Monocoriónico-diamniótico</th><th>Monocoriónico-monoamniótico</th></tr>
+<tr><td>Número de sacos gestacionales tempranos</td><td>Dos</td><td>Uno</td><td>Uno</td></tr>
+<tr><td>Membrana intergemelar</td><td>Gruesa, generalmente ≥2 mm; cuatro capas.</td><td>Delgada, &lt;2 mm; dos amnios.</td><td>Ausente.</td></tr>
+<tr><td>Inserción placentaria</td><td><strong>Signo lambda, delta o pico gemelar</strong>.</td><td><strong>Signo T</strong>.</td><td>Sin membrana; puede observarse entrelazamiento de cordones.</td></tr>
+<tr><td>Sexo discordante</td><td>Confirma dicigosidad y dicorionicidad.</td><td>No esperado salvo excepciones raras.</td><td>No esperado.</td></tr>
+</table></div>
+<div class="al aw"><strong>Perla de examen</strong>Dos masas placentarias apoyan dicorionicidad, pero una sola masa no confirma monocorionicidad porque dos placentas pueden fusionarse.</div>
+
+<h3>Frecuencia de complicaciones según tipo</h3>
+<div class="tw"><table>
+<tr><th>Tipo</th><th>Frecuencia aproximada</th><th>RCF</th><th>Parto pretérmino</th><th>Anastomosis vasculares</th><th>Mortalidad perinatal</th></tr>
+<tr><td>Dicigotos</td><td>80%</td><td>25%</td><td>40%</td><td>0%</td><td>10–12%</td></tr>
+<tr><td>Monocigotos</td><td>20%</td><td>40%</td><td>50%</td><td>Variable</td><td>15–18%</td></tr>
+<tr><td>Dicoriónicos-diamnióticos</td><td>6–7 por 1,000</td><td>30%</td><td>40%</td><td>0%</td><td>18–20%</td></tr>
+<tr><td>Monocoriónicos-diamnióticos</td><td>13–14 por 1,000</td><td>50%</td><td>60%</td><td>100%</td><td>30–40%</td></tr>
+<tr><td>Monocoriónicos-monoamnióticos</td><td>&lt;1%</td><td>40%</td><td>60–70%</td><td>80–90%</td><td>58–60%</td></tr>
+<tr><td>Siameses</td><td>0.002–0.008%</td><td>—</td><td>70–80%</td><td>100%</td><td>70–90%</td></tr>
+</table></div>
+<p>La resonancia ayuda a delinear gemelos unidos y complicaciones monocoriónicas. β-hCG y AFP materna suelen estar elevadas, pero no son diagnósticas por el amplio traslape con embarazos únicos.</p>
+</div>
+</details>
+
+<details class="study-accordion">
+<summary><span class="acc-index">04</span><span><strong>Adaptaciones fisiológicas maternas</strong><small>Volemia, cardiovascular, anemia y efectos mecánicos</small></span></summary>
+<div class="acc-body">
+<h2>// Cambios maternos</h2>
+<div class="tw"><table>
+<tr><th>Sistema</th><th>Adaptación en embarazo multifetal</th></tr>
+<tr><td>Gastrointestinal</td><td>Mayor β-hCG y mayor frecuencia de náusea y vómito en el primer trimestre.</td></tr>
+<tr><td>Hematológico</td><td>Expansión plasmática 50–60% frente a 40–50% en producto único. La masa eritrocitaria aumenta en menor proporción, con mayor demanda de hierro y folato y predisposición a anemia.</td></tr>
+<tr><td>Hemodinámico</td><td>Presión diastólica inicialmente menor y ascenso mayor al término. El gasto cardiaco aumenta aproximadamente 20% adicional, principalmente por mayor volumen sistólico.</td></tr>
+<tr><td>Cardiaco</td><td>Menor resistencia vascular y posible disfunción diastólica progresiva reversible después del parto.</td></tr>
+<tr><td>Mecánico</td><td>Útero y contenido no fetal pueden superar 10 L y 9 kg; compresión pulmonar y abdominal, menor movilidad y mayor disnea.</td></tr>
+<tr><td>Renal</td><td>Rara uropatía obstructiva por compresión, frecuentemente asociada con polihidramnios; la amniorreducción puede aliviar síntomas.</td></tr>
+</table></div>
+</div>
+</details>
+
+<details class="study-accordion">
+<summary><span class="acc-index">05</span><span><strong>Complicaciones generales del embarazo</strong><small>Feto evanescente, anomalías, crecimiento, hipertensión y neurodesarrollo</small></span></summary>
+<div class="acc-body">
+<h2>// Aborto y feto evanescente</h2>
+<p>Los monocoriónicos presentan mayor riesgo de aborto que los dicoriónicos. En ecografía del primer trimestre, uno de los gemelos muere y desaparece antes del segundo trimestre en 10–40% de las gestaciones gemelares, con mayor frecuencia después de ART.</p>
+<div class="tw"><table>
+<tr><th>Gestación inicial</th><th>Reducción espontánea antes de 12 semanas</th></tr>
+<tr><td>Gemelar</td><td>36%</td></tr>
+<tr><td>Trillizos</td><td>53%</td></tr>
+<tr><td>Cuádruples</td><td>65%</td></tr>
+</table></div>
+<p>El gemelo evanescente puede elevar PAPP-A, AFP e inhibina A y alterar cfDNA; alrededor de 15% de falsos positivos en un estudio se atribuyó a este fenómeno. Debe documentarse para interpretar correctamente el tamiz prenatal.</p>
+
+<h3>Malformaciones congénitas</h3>
+<p>La frecuencia es mayor que en productos únicos: 406 frente a 238 por 10,000 en un estudio. El riesgo es casi el doble en monocoriónicos y los gemelos presentan alrededor de 73% más cardiopatías congénitas. Parte del incremento en dicigotos se relaciona con ART y factores de infertilidad.</p>
+
+<h3>Bajo peso y restricción del crecimiento</h3>
+<p>El peso de gemelos es similar al de productos únicos hasta 28–30 semanas; después se retrasa progresivamente y se separa claramente desde 35–36 semanas. Deben utilizarse curvas específicas para embarazos multifetales y considerar corionicidad.</p>
+<ul class="dl">
+<li>Dicoriónicos: ecografía de crecimiento aproximadamente cada 4 semanas desde 16–20 semanas.</li>
+<li>Monocoriónicos: ecografía cada 2 semanas para detectar TTTS y alteraciones de crecimiento.</li>
+<li>La discordancia debe interpretarse junto con percentiles individuales y Doppler.</li>
+</ul>
+
+<h3>Hipertensión</h3>
+<p>Los trastornos hipertensivos aumentan con el número de fetos; alrededor de 14% de las gestantes con gemelos presentó hipertensión en un análisis. Los embarazos gemelares muestran sFlt-1 y endoglina soluble más altos y PlGF más bajo, lo que apoya una mayor carga antiangiógena. Se recomienda ácido acetilsalicílico profiláctico.</p>
+
+<h3>Desarrollo infantil</h3>
+<p>El desempeño académico y el neurodesarrollo a los dos años son similares entre gemelos y productos únicos cuando se ajusta por prematuridad. Sin embargo, la parálisis cerebral es más frecuente: aproximadamente 7 por 1,000 nacidos vivos multifetales frente a 1.6 por 1,000 únicos, en gran medida por prematuridad, RCF, anomalías, TTTS y muerte de un cogemelo.</p>
+</div>
+</details>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">06</span><span><strong>Complicaciones fetales especiales</strong><small>Monoamnióticos, siameses, TTTS, TAPS y TRAP</small></span></summary>
+<div class="acc-body">
+<h2>// Gemelos monoamnióticos</h2>
+<p>Representan menos de 1% de los embarazos gemelares y alrededor de 4% de los monocoriónicos. El principal riesgo es el <strong>entrelazamiento y compresión de cordones</strong>, además de anomalías congénitas, prematuridad y muerte fetal. La ausencia de membrana intergemelar confirma monoamnionicidad.</p>
+<div class="card"><div class="ct">Vigilancia y nacimiento</div><p>Requieren vigilancia intensiva, con frecuencia hospitalaria durante el tercer trimestre según protocolo institucional. El parto suele planearse por cesárea antes del término por riesgo impredecible de accidente del cordón.</p></div>
+
+<h2>// Gemelos unidos y formas aberrantes</h2>
+<p>Los gemelos siameses derivan de división tardía incompleta o fusión embrionaria. Se clasifican por sitio de unión: toracópagos, onfalópagos, isquiópagos, craneópagos y otras formas. La ecografía y la resonancia determinan órganos compartidos, posibilidad de separación y vía del parto. También existen gemelos parásitos externos y <em>fetus in fetu</em>, en los que un gemelo rudimentario depende del gemelo autosuficiente.</p>
+
+<h2>// Anastomosis vasculares monocoriónicas</h2>
+<p>Todas las placentas monocoriónicas poseen conexiones vasculares. Las anastomosis arterioarteriales y venovenosas son superficiales y bidireccionales; las arteriovenosas atraviesan un cotiledón y son unidireccionales. El desequilibrio neto produce síndromes transfusionales.</p>
+
+<h3>Síndrome de transfusión gemelo-gemelo — TTTS</h3>
+<p>Ocurre casi exclusivamente en gemelos monocoriónicos-diamnióticos por flujo neto crónico a través de anastomosis arteriovenosas. El donante desarrolla hipovolemia, oliguria, oligohidramnios y RCF; el receptor desarrolla hipervolemia, poliuria, polihidramnios, cardiomegalia e insuficiencia cardiaca.</p>
+<div class="flow">
+<div class="fs"><strong>Donante</strong><br/>Hipovolemia</div><div class="fa">→</div>
+<div class="fs">Oliguria + oligohidramnios</div><div class="fa">↔</div>
+<div class="fs">Anastomosis AV placentarias</div><div class="fa">→</div>
+<div class="fs"><strong>Receptor</strong><br/>Hipervolemia</div><div class="fa">→</div>
+<div class="fs">Poliuria + polihidramnios + cardiopatía</div>
+</div>
+<div class="tw"><table>
+<tr><th>Estadio de Quintero</th><th>Hallazgo</th></tr>
+<tr><td>I</td><td>Secuencia oligohidramnios-polihidramnios; vejiga del donante visible.</td></tr>
+<tr><td>II</td><td>Vejiga del donante no visible.</td></tr>
+<tr><td>III</td><td>Doppler críticamente anormal en cualquiera de los fetos.</td></tr>
+<tr><td>IV</td><td>Hidropesía fetal.</td></tr>
+<tr><td>V</td><td>Muerte de uno o ambos fetos.</td></tr>
+</table></div>
+<div class="card"><div class="ct">Diagnóstico</div><p>Monocorionicidad, polihidramnios en receptor y oligohidramnios en donante, discordancia vesical y evaluación Doppler. Puede existir discordancia de tamaño, pero no es requisito diagnóstico.</p></div>
+<div class="card"><div class="ct">Tratamiento</div><p>La <strong>fotocoagulación fetoscópica láser</strong> de las anastomosis es el tratamiento preferido en TTTS significativo antes de la viabilidad avanzada. La amniorreducción seriada alivia polihidramnios cuando el láser no está disponible o no es factible. El pronóstico depende de estadio y edad gestacional.</p></div>
+
+<h3>Secuencia anemia-policitemia gemelar — TAPS</h3>
+<p>Transfusión lenta por anastomosis muy pequeñas sin secuencia clásica de líquido amniótico. El donante desarrolla anemia y el receptor policitemia. Se detecta mediante Doppler de arteria cerebral media: velocidad sistólica máxima elevada en el donante y baja en el receptor.</p>
+
+<h3>Secuencia de perfusión arterial reversa — TRAP</h3>
+<p>Una anastomosis arterioarterial permite que el gemelo bomba perfunda en sentido retrógrado a un gemelo acárdico, malformado y no viable. El gemelo bomba corre riesgo de insuficiencia cardiaca, hidropesía y prematuridad.</p>
+<div class="card"><div class="ct">Manejo de TRAP</div><p>Vigilancia del tamaño del gemelo acárdico, función del gemelo bomba y signos de sobrecarga. En enfermedad progresiva puede interrumpirse la circulación del gemelo acárdico mediante radiofrecuencia, láser o técnicas de oclusión del cordón.</p></div>
+
+<h3>Mola hidatiforme con feto coexistente</h3>
+<p>Puede presentarse una mola completa junto con un feto aparentemente normal en una gestación dicigota. Existe riesgo materno importante por hemorragia, preeclampsia temprana, hipertiroidismo y neoplasia trofoblástica; el manejo debe individualizarse según estabilidad materna, anomalías y evolución fetal.</p>
+</div>
+</details>
+
+<details class="study-accordion">
+<summary><span class="acc-index">07</span><span><strong>Crecimiento discordante y muerte de un gemelo</strong><small>Definiciones, evaluación y pronóstico según corionicidad</small></span></summary>
+<div class="acc-body">
+<h2>// Crecimiento discordante</h2>
+<div class="fm">Discordancia (%) = [(peso mayor − peso menor) / peso mayor] × 100</div>
+<p>La discordancia puede reflejar constitución, anomalías, insuficiencia placentaria o distribución desigual de territorio placentario. Una discordancia ≥20–25% se asocia con mayor morbimortalidad, especialmente cuando el gemelo pequeño está por debajo del percentil 10.</p>
+<div class="tw"><table>
+<tr><th>Contexto</th><th>Interpretación</th></tr>
+<tr><td>Dicoriónico</td><td>Cada feto tiene placenta propia; el manejo se asemeja al de RCF en un producto único, considerando el estado del cogemelo.</td></tr>
+<tr><td>Monocoriónico</td><td>Puede corresponder a distribución placentaria desigual, anastomosis y restricción selectiva; requiere Doppler frecuente y vigilancia de ambos fetos.</td></tr>
+</table></div>
+<p>En la restricción selectiva monocoriónica, el patrón de flujo diastólico de la arteria umbilical del gemelo pequeño ayuda a clasificar riesgo: flujo positivo persistente, ausente/reverso persistente o ausente/reverso intermitente.</p>
+
+<h2>// Muerte fetal de un cogemelo</h2>
+<p>El efecto depende de edad gestacional y corionicidad. En dicoriónicos, el principal riesgo para el sobreviviente es prematuridad. En monocoriónicos, la caída brusca de presión del gemelo muerto puede desviar sangre desde el sobreviviente por anastomosis y causar anemia aguda, hipotensión, lesión cerebral o muerte.</p>
+<div class="card"><div class="ct">Conducta</div><ul class="dl">
+<li>Confirmar corionicidad y causa probable.</li>
+<li>Evaluar bienestar, Doppler de cerebral media y anatomía/neuroimagen del sobreviviente.</li>
+<li>No indicar parto inmediato solo por muerte de un gemelo si el sobreviviente está estable y es pretérmino.</li>
+<li>Planear vigilancia y momento del parto según corionicidad, edad gestacional y condición fetal.</li>
+</ul></div>
+</div>
+</details>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">08</span><span><strong>Atención prenatal</strong><small>Nutrición, tamizaje, vigilancia y prevención de prematuridad</small></span></summary>
+<div class="acc-body">
+<h2>// Principios de atención prenatal</h2>
+<ul class="dl">
+<li>Determinar corionicidad y amnionicidad en el primer trimestre.</li>
+<li>Realizar evaluación anatómica detallada; considerar ecocardiografía fetal en monocoriónicos o después de ART.</li>
+<li>Vigilar presión arterial y signos de preeclampsia; administrar ASA en dosis bajas cuando corresponda.</li>
+<li>Buscar anemia y asegurar suplementación adecuada con hierro y folato.</li>
+<li>Educar sobre síntomas de trabajo de parto pretérmino, rotura de membranas y disminución de movimientos.</li>
+</ul>
+
+<h3>Frecuencia ecográfica orientativa</h3>
+<div class="tw"><table>
+<tr><th>Tipo de gestación</th><th>Seguimiento</th></tr>
+<tr><td>Dicoriónica-diamniótica</td><td>Crecimiento cada 4 semanas desde aproximadamente 20 semanas.</td></tr>
+<tr><td>Monocoriónica-diamniótica</td><td>Ecografía cada 2 semanas desde 16 semanas para TTTS; crecimiento y Doppler según hallazgos.</td></tr>
+<tr><td>Monocoriónica-monoamniótica</td><td>Vigilancia intensiva individualizada por alto riesgo de cordón y muerte fetal.</td></tr>
+<tr><td>Orden superior</td><td>Mayor frecuencia según número de fetos, crecimiento y complicaciones.</td></tr>
+</table></div>
+
+<h3>Nutrición y ganancia de peso</h3>
+<p>La demanda energética, proteica, de hierro, folato y micronutrientes es mayor. La ganancia ponderal insuficiente se relaciona con menor peso neonatal y prematuridad. Debe individualizarse según IMC pregestacional y número de fetos.</p>
+
+<h2>// Parto pretérmino</h2>
+<p>Es la principal causa de morbimortalidad neonatal. La duración gestacional disminuye conforme aumenta el número de fetos. La sobredistensión uterina, inflamación, rotura de membranas y complicaciones placentarias contribuyen.</p>
+<div class="tw"><table>
+<tr><th>Intervención</th><th>Utilidad en gestación gemelar no seleccionada</th></tr>
+<tr><td>Reposo en cama u hospitalización profiláctica</td><td>No reduce prematuridad y puede causar daño materno.</td></tr>
+<tr><td>Actividad restringida rutinaria</td><td>No recomendada sin indicación específica.</td></tr>
+<tr><td>Progesterona</td><td>No ha demostrado beneficio rutinario en todos los gemelos; puede considerarse en subgrupos con cuello corto según guía local.</td></tr>
+<tr><td>Cerclaje profiláctico</td><td>No recomendado solo por gemelaridad; puede ser perjudicial sin indicación cervical clara.</td></tr>
+<tr><td>Pesario</td><td>Evidencia inconsistente.</td></tr>
+<tr><td>Corticosteroides antenatales</td><td>Indicados cuando existe riesgo de parto pretérmino dentro del intervalo gestacional recomendado.</td></tr>
+<tr><td>Sulfato de magnesio fetal</td><td>Neuroprotección cuando se anticipa parto muy pretérmino.</td></tr>
+</table></div>
+</div>
+</details>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">09</span><span><strong>Trabajo de parto y nacimiento</strong><small>Presentación, vía del parto, segundo gemelo y hemorragia puerperal</small></span></summary>
+<div class="acc-body">
+<h2>// Preparación</h2>
+<p>El parto debe planearse en una unidad con obstetricia, anestesia, neonatología, ultrasonido inmediato, capacidad de cesárea urgente y hemoderivados. Se confirma presentación, estimación de peso, discordancia y estado fetal de cada gemelo.</p>
+
+<h3>Presentaciones frecuentes</h3>
+<div class="tw"><table>
+<tr><th>Primer gemelo</th><th>Segundo gemelo</th><th>Enfoque general</th></tr>
+<tr><td>Cefálico</td><td>Cefálico</td><td>Parto vaginal apropiado si no existen contraindicaciones.</td></tr>
+<tr><td>Cefálico</td><td>No cefálico</td><td>Puede intentarse parto vaginal con versión interna y extracción podálica por operador experimentado y criterios adecuados.</td></tr>
+<tr><td>No cefálico</td><td>Cualquier presentación</td><td>Generalmente cesárea.</td></tr>
+<tr><td>Monoamnióticos o unidos</td><td>—</td><td>Cesárea planificada.</td></tr>
+</table></div>
+
+<div class="kp"><div class="kp-t">Vía del parto</div><p>La gemelaridad por sí sola no obliga a cesárea. Cuando el primer gemelo es cefálico, ambos tienen tamaño razonable y existe experiencia obstétrica, el parto vaginal es seguro. El ensayo Twin Birth no mostró ventaja neonatal de la cesárea planificada sobre el parto vaginal planificado en casos seleccionados.</p></div>
+
+<h3>Después del nacimiento del primer gemelo</h3>
+<div class="step-card"><span class="step-n">1</span><p>Pinzar el cordón y confirmar inmediatamente situación, presentación y frecuencia cardiaca del segundo gemelo.</p></div>
+<div class="step-card"><span class="step-n">2</span><p>Mantener monitorización continua y valorar ultrasonido.</p></div>
+<div class="step-card"><span class="step-n">3</span><p>Si longitudinal y estable, realizar amniotomía controlada y conducir el parto.</p></div>
+<div class="step-card"><span class="step-n">4</span><p>Si transverso o podálico, considerar versión externa, versión interna con extracción podálica o cesárea según experiencia, peso, edad gestacional y estado fetal.</p></div>
+<div class="step-card"><span class="step-n">5</span><p>Evitar un intervalo innecesariamente prolongado; intervenir si existe bradicardia, desprendimiento, prolapso de cordón o presentación no resoluble.</p></div>
+
+<h3>Complicaciones intraparto</h3>
+<ul class="dl">
+<li>Prolapso de cordón y cambios de presentación después del nacimiento del primer gemelo.</li>
+<li>Desprendimiento placentario por reducción súbita del volumen uterino.</li>
+<li>Parto combinado: vaginal del primero y cesárea del segundo.</li>
+<li>Interbloqueo o enganche de gemelos, excepcional y más probable con primero podálico y segundo cefálico.</li>
+<li>Atonía uterina y hemorragia posparto por sobredistensión.</li>
+</ul>
+
+<h3>Momento orientativo del parto sin complicaciones</h3>
+<div class="tw"><table>
+<tr><th>Tipo de embarazo</th><th>Momento habitual de nacimiento planificado</th></tr>
+<tr><td>Dicoriónico-diamniótico</td><td>Alrededor de 38 semanas.</td></tr>
+<tr><td>Monocoriónico-diamniótico</td><td>Alrededor de 36–37 semanas.</td></tr>
+<tr><td>Monocoriónico-monoamniótico</td><td>Antes, generalmente 32–34 semanas por cesárea, según protocolo.</td></tr>
+<tr><td>Trillizos o más</td><td>Individualizado; con frecuencia antes por prematuridad espontánea o indicación materno-fetal.</td></tr>
+</table></div>
+<p class="mu">El momento exacto debe ajustarse a corionicidad, crecimiento, líquido, Doppler, presentación, antecedentes y guía institucional.</p>
+</div>
+</details>
+
+<details class="study-accordion">
+<summary><span class="acc-index">10</span><span><strong>Reducción fetal y consideraciones éticas</strong><small>Reducción multifetal y terminación selectiva</small></span></summary>
+<div class="acc-body">
+<h2>// Reducción del número de fetos</h2>
+<p>En embarazos de orden superior, la reducción multifetal puede disminuir el riesgo de prematuridad extrema y pérdida global del embarazo. La decisión depende del número inicial, corionicidad, anomalías fetales, técnica disponible y valores de la paciente.</p>
+<div class="g2">
+<div class="card"><div class="ct">Dicoriónicos</div><p>La terminación selectiva suele realizarse mediante inyección intracardiaca de cloruro de potasio, evitando el paso a la circulación del cogemelo.</p></div>
+<div class="card"><div class="ct">Monocoriónicos</div><p>No debe utilizarse KCl por las anastomosis compartidas. Se requiere oclusión del cordón o ablación vascular mediante radiofrecuencia, láser o coagulación bipolar.</p></div>
+</div>
+<p>Debe ofrecerse consejería no directiva sobre riesgos de pérdida, prematuridad, secuelas, incertidumbre diagnóstica e implicaciones psicológicas y éticas.</p>
+</div>
+</details>
+
+<div class="kp"><div class="kp-t">Resumen de alto rendimiento</div><p>La primera pregunta en cualquier embarazo gemelar es: <strong>¿cuántos coriones y cuántos amnios?</strong> La monocorionicidad implica anastomosis vasculares y riesgo de TTTS, TAPS, TRAP y lesión del sobreviviente tras muerte de un cogemelo. La prematuridad es la principal causa de morbimortalidad; la vía de parto depende sobre todo de la presentación del primer gemelo y la experiencia del equipo.</p></div>
+
 </div><!-- s15-t0 -->
 </div><!-- s15 -->
 <!-- ══════ S16: ⚠ EXAMEN PARCIAL ══════ -->
@@ -7841,7 +8155,7 @@ const wt = {
   s12:["Hemorragia Obstétrica (Placenta previa, DPPNI, Atonía)","Muerte Fetal"],
   s13:["Enfermedad Trofoblástica Gestacional + Acretismo"],
   s14:["Preeclampsia / Eclampsia / HELLP","Hipertensión Crónica"],
-  s15:["Embarazo Múltiple + STFF + Postérmino"],
+  s15:["Embarazo Multifetal"],
   s16:["Examen Parcial"],
   s17:["Virus del Papiloma Humano + Vacunas VPH"],
   s18:["Enfermedades de Vulva y Vagina"],
