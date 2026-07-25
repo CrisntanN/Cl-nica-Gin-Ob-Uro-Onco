@@ -354,6 +354,42 @@ hr{border:none;border-top:1px solid var(--border);margin:14px 0;}
 .acc-index{width:27px;height:27px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;background:var(--a3);color:#fff;font-family:var(--font-mono);font-size:10px;font-weight:700}
 .acc-body{padding:4px 13px 14px}
 
+
+/* Uro-Onco S3 — TNM */
+.uro-hero{border-left-color:#3f6f8f;background:linear-gradient(135deg,rgba(63,111,143,.12),rgba(122,90,154,.07))}
+.tnm-table table{min-width:650px}
+.tnm-table th{background:linear-gradient(180deg,rgba(63,111,143,.18),rgba(63,111,143,.10));color:var(--a3)}
+.tnm-table tr:nth-child(even) td{background:rgba(63,111,143,.035)}
+.tnm-pill{display:inline-block;padding:2px 7px;border-radius:10px;font-family:var(--font-mono);font-size:10px;font-weight:700}
+.tnm-pill.c{background:rgba(52,104,145,.14);color:#346891}
+.tnm-pill.p{background:rgba(61,132,92,.14);color:#3d845c}
+.tnm-pill.y{background:rgba(145,102,42,.14);color:#91662a}
+.tnm-pill.r{background:rgba(160,64,48,.14);color:#a04030}
+.tnm-pill.a{background:rgba(122,90,154,.14);color:#7a5a9a}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.t-card{border-top:3px solid #3f6f8f}.n-card{border-top:3px solid #8b6a33}.m-card{border-top:3px solid #9a4f4f}
+.stage-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:10px 0}
+.stage{border:1px solid var(--border);border-radius:6px;padding:9px;text-align:center;background:var(--surface)}
+.stage strong{display:block;font-size:18px}.stage span{font-size:11px;color:var(--muted)}
+.s0{border-top:4px solid #78828c}.s1{border-top:4px solid #4d8b67}.s2{border-top:4px solid #b28a3f}.s3{border-top:4px solid #b0673f}.s4{border-top:4px solid #9a4242}
+.case-box{background:rgba(63,111,143,.06);border:1px solid rgba(63,111,143,.22);border-left:4px solid #3f6f8f;border-radius:6px;padding:10px 12px;margin:8px 0}
+.study-ol{padding-left:22px;font-size:14px;line-height:1.6}
+.error-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;margin:10px 0}
+.err{background:rgba(160,64,48,.06);border:1px solid rgba(160,64,48,.20);border-left:3px solid var(--a4);padding:9px;border-radius:5px;font-size:13px}
+@media(max-width:760px){.g3,.stage-grid,.error-grid{grid-template-columns:1fr}.tnm-table table{min-width:560px}}
+
+
+/* Uro-Onco S3 — IVU */
+.uti-hero{border-left-color:#477f78;background:linear-gradient(135deg,rgba(71,127,120,.12),rgba(63,111,143,.07))}
+.uti-table table{min-width:650px}
+.uti-table th{background:linear-gradient(180deg,rgba(71,127,120,.18),rgba(71,127,120,.09));color:#346c66}
+.uti-table tr:nth-child(even) td{background:rgba(71,127,120,.035)}
+.uti-local{border-top:3px solid #477f78}.uti-systemic{border-top:3px solid #a05245}
+.risk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:10px 0}
+.risk{background:var(--surface);border:1px solid var(--border);border-left:3px solid #477f78;border-radius:5px;padding:9px}
+.risk strong{display:block;font-size:12px;color:#346c66;margin-bottom:3px}.risk span{font-size:12px;line-height:1.4;color:var(--text)}
+@media(max-width:760px){.risk-grid{grid-template-columns:1fr}.uti-table table{min-width:560px}}
+
 </style>
 </head>
 <body>
@@ -8009,16 +8045,778 @@ El contenido será añadido próximamente.
 </div><!-- u2 -->
 <div class="wsec" id="u3">
 <div class="tpane active" id="u3-t0">
-<h2>// Diagnóstico, Clasificación y Estadificación</h2>
-<div class="card"><div class="ct">Pendiente</div>
-<p>Semana 3 Oncología — Diagnóstico, clasificación y estadificación. Aún sin contenido — pendiente de desarrollar en el mismo formato que Gineco-Obstetricia (definición, fisiopatología, clínica, diagnóstico, tratamiento).</p>
+
+<div class="study-hero uro-hero">
+  <div class="wlabel">Uro-Onco · S3</div>
+  <div class="wtitle">Diagnóstico, clasificación y estadificación</div>
+  <p>Sistema TNM, prefijos y sufijos, agrupación por estadios, aplicaciones clínicas, integración de biomarcadores y casos de razonamiento oncológico.</p>
 </div>
+
+<div class="topic-strip">
+  <span class="b bb">Biopsia obligatoria</span>
+  <span class="b bo">cTNM · pTNM · ypTNM</span>
+  <span class="b bp">T · N · M</span>
+  <span class="b br">Próstata: PSA + Gleason</span>
+  <span class="b bg">Biología molecular</span>
+</div>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">01</span><span><strong>Conceptos fundamentales</strong><small>Diagnóstico definitivo, utilidad e historia del TNM</small></span></summary>
+<div class="acc-body">
+<h2>// ¿Qué es la estadificación?</h2>
+<div class="card"><div class="ct">Definición</div>
+<p>Determinación de la <strong>extensión y gravedad</strong> de una enfermedad tumoral maligna. Permite clasificar pacientes en grupos comparables, estimar pronóstico y planear tratamiento.</p></div>
+
+<h3>Secuencia obligatoria para diagnosticar cáncer</h3>
+<div class="flow">
+<div class="fs">Historia clínica</div><div class="fa">→</div>
+<div class="fs">Exploración física</div><div class="fa">→</div>
+<div class="fs">Laboratorios + imagen</div><div class="fa">→</div>
+<div class="fs"><strong>Biopsia</strong><br/>histopatología</div><div class="fa">→</div>
+<div class="fs">Estadificación</div>
+</div>
+<div class="al ad"><strong>Principio rector</strong>Ninguna imagen ni marcador tumoral sustituye a la biopsia. El diagnóstico histopatológico es condición <em>sine qua non</em> antes de estadificar y tratar.</div>
+
+<h3>¿Por qué importa?</h3>
+<ul class="dl">
+<li>Ayuda a planear el tratamiento correcto.</li>
+<li>Orienta el pronóstico.</li>
+<li>Permite evaluar respuesta y resultados terapéuticos.</li>
+<li>Facilita comparación e intercambio de información entre centros.</li>
+<li>Apoya investigación oncológica.</li>
+<li>Contribuye a estrategias de detección oportuna y control del cáncer.</li>
+</ul>
+
+<h3>Historia del sistema TNM</h3>
+<div class="tw tnm-table"><table>
+<tr><th>Periodo</th><th>Hito</th></tr>
+<tr><td>1943–1952</td><td>Pierre Denoix propone el sistema TNM.</td></tr>
+<tr><td>1950–1954</td><td>Comité UICC de clasificación clínica por estadios.</td></tr>
+<tr><td>1958–1959</td><td>Propuestas TNM para mama y laringe.</td></tr>
+<tr><td>1960–1967</td><td>Comité TNM amplía la clasificación a 26 sitios anatómicos.</td></tr>
+<tr><td>1968</td><td>Primera edición del “Livre de Poche”.</td></tr>
+<tr><td>1977</td><td>AJCC publica su Manual of Staging.</td></tr>
+<tr><td>1987</td><td>Unificación UICC/AJCC.</td></tr>
+<tr><td>Posteriormente</td><td>Integración con FIGO para tumores ginecológicos y Ann Arbor para linfomas.</td></tr>
+</table></div>
+
+<div class="tw tnm-table"><table>
+<tr><th>Edición</th><th>Publicación</th><th>Vigencia</th></tr>
+<tr><td>1.ª</td><td>1977</td><td>1978–1983</td></tr>
+<tr><td>2.ª</td><td>1983</td><td>1984–1988</td></tr>
+<tr><td>3.ª</td><td>1988</td><td>1989–1992</td></tr>
+<tr><td>4.ª</td><td>1992</td><td>1993–1997</td></tr>
+<tr><td>5.ª</td><td>1997</td><td>1998–2002</td></tr>
+<tr><td>6.ª</td><td>2002</td><td>2003–2009</td></tr>
+<tr><td>7.ª</td><td>2009</td><td>2010–2017</td></tr>
+<tr><td>8.ª</td><td>2016</td><td><strong>2018–vigente</strong></td></tr>
+</table></div>
+</div>
+</details>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">02</span><span><strong>Glosario TNM</strong><small>Prefijos, sufijos, invasión microscópica, resección y ganglio centinela</small></span></summary>
+<div class="acc-body">
+<h2>// Prefijos temporales</h2>
+<div class="tw tnm-table"><table>
+<tr><th>Notación</th><th>Significado</th><th>Momento de evaluación</th></tr>
+<tr><td><span class="tnm-pill c">cTNM</span></td><td>Clínico</td><td>Historia, exploración, imagen y biopsia antes de cualquier tratamiento.</td></tr>
+<tr><td><span class="tnm-pill p">pTNM</span></td><td>Patológico</td><td>Espécimen quirúrgico resecado con estudio histopatológico.</td></tr>
+<tr><td><span class="tnm-pill y">ycTNM</span></td><td>Clínico posterior a tratamiento</td><td>Reevaluación clínica o por imagen después de terapia sistémica o radioterapia, sin cirugía definitiva todavía.</td></tr>
+<tr><td><span class="tnm-pill y">ypTNM</span></td><td>Patológico posterior a neoadyuvancia</td><td>Respuesta patológica después de quimioterapia o radioterapia previa a cirugía.</td></tr>
+<tr><td><span class="tnm-pill r">rTNM</span></td><td>Recurrencia</td><td>Reestadificación al momento de recaída.</td></tr>
+<tr><td><span class="tnm-pill a">aTNM</span></td><td>Autopsia</td><td>Hallazgo post mortem.</td></tr>
+</table></div>
+
+<div class="flow">
+<div class="fs">Diagnóstico</div><div class="fa">→</div>
+<div class="fs"><strong>cTNM</strong></div><div class="fa">→</div>
+<div class="fs">Cirugía</div><div class="fa">→</div>
+<div class="fs"><strong>pTNM</strong></div>
+</div>
+<div class="flow">
+<div class="fs">Diagnóstico</div><div class="fa">→</div>
+<div class="fs"><strong>cTNM</strong></div><div class="fa">→</div>
+<div class="fs">Neoadyuvancia</div><div class="fa">→</div>
+<div class="fs"><strong>ycTNM</strong></div><div class="fa">→</div>
+<div class="fs">Cirugía</div><div class="fa">→</div>
+<div class="fs"><strong>ypTNM</strong></div>
+</div>
+<p class="mu">Puede incluirse imagen posquirúrgica realizada dentro de los primeros 4 meses del diagnóstico, siempre que no exista progresión ni tratamiento sistémico o radioterapia intermedia.</p>
+
+<h3>Invasión microscópica</h3>
+<div class="tw tnm-table"><table>
+<tr><th>Símbolo</th><th>Significado</th><th>Codificación</th></tr>
+<tr><td>V</td><td>Invasión vascular</td><td>0 = no · 1 = sí · x = desconocido</td></tr>
+<tr><td>L</td><td>Invasión linfática</td><td>0 = no · 1 = sí · x = desconocido</td></tr>
+<tr><td>Pn</td><td>Invasión perineural</td><td>0 = no · 1 = sí · x = desconocido</td></tr>
+</table></div>
+
+<h3>Enfermedad residual — clasificación R</h3>
+<div class="tw tnm-table"><table>
+<tr><th>Categoría</th><th>Significado</th></tr>
+<tr><td>RX</td><td>No puede evaluarse.</td></tr>
+<tr><td>R0</td><td>Sin enfermedad residual.</td></tr>
+<tr><td>R1</td><td>Enfermedad residual microscópica.</td></tr>
+<tr><td>R2</td><td>Enfermedad residual macroscópica.</td></tr>
+</table></div>
+
+<h3>Ganglio centinela — sn</h3>
+<div class="tw tnm-table"><table>
+<tr><th>Notación</th><th>Significado</th></tr>
+<tr><td>NX(sn)</td><td>Ganglio centinela no evaluable.</td></tr>
+<tr><td>N0(sn)</td><td>Sin metástasis en ganglio centinela.</td></tr>
+<tr><td>N1(sn)</td><td>Metástasis en ganglio centinela.</td></tr>
+</table></div>
+<div class="al aw"><strong>Regla</strong>La biopsia excisional de ganglio centinela sin asignación de pT se clasifica como N clínica. El pN solo debe usarse junto con una categoría T patológica.</div>
+<div class="card"><div class="ct">Ejemplo</div><p>Carcinoma mamario de 2.2 cm tratado con lumpectomía y ganglio centinela; cúmulo tumoral de 0.1 mm en un ganglio: <strong>pT2 pN0(i+)(sn)</strong>.</p></div>
+</div>
+</details>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">03</span><span><strong>Categorías T, N, M</strong><small>Estructura general y agrupación por estadios</small></span></summary>
+<div class="acc-body">
+<h2>// Estructura del TNM</h2>
+<div class="g3">
+<div class="card t-card"><div class="ct">T — Tumor</div><p>Sitio primario, tamaño y extensión local.</p></div>
+<div class="card n-card"><div class="ct">N — Nódulos</div><p>Afectación de ganglios linfáticos regionales.</p></div>
+<div class="card m-card"><div class="ct">M — Metástasis</div><p>Enfermedad a distancia.</p></div>
+</div>
+
+<div class="tw tnm-table"><table>
+<tr><th>T</th><th>N</th><th>M</th></tr>
+<tr><td>TX: no evaluable</td><td>NX: no evaluable</td><td>M0: sin metástasis a distancia</td></tr>
+<tr><td>T0: sin evidencia de tumor primario</td><td>N0: sin metástasis ganglionar</td><td>M1: metástasis a distancia</td></tr>
+<tr><td>Tis: carcinoma in situ</td><td>N1–N3: extensión ganglionar creciente</td><td><strong>cMX no se recomienda</strong>; la evaluación clínica puede basarse solo en exploración.</td></tr>
+<tr><td>T1–T4: tamaño o invasión creciente</td><td>—</td><td>—</td></tr>
+</table></div>
+
+<h3>Agrupación general por estadios</h3>
+<div class="stage-grid">
+<div class="stage s0"><strong>0</strong><span>Carcinoma in situ</span></div>
+<div class="stage s1"><strong>I</strong><span>Tumor pequeño, N0</span></div>
+<div class="stage s2"><strong>II</strong><span>Mayor tamaño o extensión, ± N+</span></div>
+<div class="stage s3"><strong>III</strong><span>Enfermedad local o ganglionar avanzada</span></div>
+<div class="stage s4"><strong>IV</strong><span>Metástasis a distancia</span></div>
+</div>
+<div class="kp"><div class="kp-t">Pronóstico</div><p>A mayor estadio, menor supervivencia. Ejemplo clásico en mama a 10 años: estadio I ≈88%, II ≈65%, III ≈43% y IV ≈8%.</p></div>
+</div>
+</details>
+
+<details class="study-accordion">
+<summary><span class="acc-index">04</span><span><strong>TNM aplicado a tumores específicos</strong><small>Mama, colon, cérvix y ovario</small></span></summary>
+<div class="acc-body">
+<h2>// Cáncer de mama</h2>
+<h3>Categoría T</h3>
+<div class="tw tnm-table"><table>
+<tr><th>Categoría</th><th>Definición</th></tr>
+<tr><td>TX</td><td>Tumor primario no evaluable.</td></tr>
+<tr><td>T0</td><td>Sin evidencia de tumor primario.</td></tr>
+<tr><td>Tis</td><td>DCIS, LCIS o enfermedad de Paget sin tumor invasor asociado.</td></tr>
+<tr><td>T1mi</td><td>Microinvasión ≤1 mm.</td></tr>
+<tr><td>T1a</td><td>&gt;1–5 mm.</td></tr>
+<tr><td>T1b</td><td>&gt;5–10 mm.</td></tr>
+<tr><td>T1c</td><td>&gt;10–20 mm.</td></tr>
+<tr><td>T2</td><td>&gt;20–50 mm.</td></tr>
+<tr><td>T3</td><td>&gt;50 mm.</td></tr>
+<tr><td>T4a</td><td>Extensión a pared torácica.</td></tr>
+<tr><td>T4b</td><td>Ulceración, nódulos satélite o edema tipo piel de naranja.</td></tr>
+<tr><td>T4c</td><td>T4a + T4b.</td></tr>
+<tr><td>T4d</td><td>Carcinoma inflamatorio.</td></tr>
+</table></div>
+<div class="al aw"><strong>Nota</strong>La invasión aislada de la dermis no clasifica como T4.</div>
+
+<h3>Ganglios regionales</h3>
+<div class="tw tnm-table"><table>
+<tr><th>Clínico</th><th>Definición</th><th>Patológico</th><th>Definición</th></tr>
+<tr><td>N0</td><td>Sin metástasis ganglionar.</td><td>pN0</td><td>Sin metástasis histológica.</td></tr>
+<tr><td>N1</td><td>Axilares nivel I–II móviles.</td><td>pN1</td><td>Micrometástasis o 1–3 ganglios axilares y/o mamarios internos.</td></tr>
+<tr><td>N2</td><td>Axilares fijos o mamarios internos detectables sin axilares.</td><td>pN2</td><td>4–9 axilares o mamarios internos clínicamente detectables.</td></tr>
+<tr><td>N3</td><td>Infraclaviculares, mamarios internos + axilares o supraclaviculares.</td><td>pN3</td><td>≥10 axilares, infraclaviculares, combinaciones extensas o supraclaviculares.</td></tr>
+</table></div>
+
+<h3>Metástasis</h3>
+<div class="tw tnm-table"><table>
+<tr><th>Categoría</th><th>Definición</th></tr>
+<tr><td>M0</td><td>Sin evidencia clínica o radiográfica.</td></tr>
+<tr><td>cM0(i+)</td><td>Células tumorales ≤0.2 mm en sangre, médula u otro tejido no ganglionar regional, sin datos clínicos.</td></tr>
+<tr><td>M1</td><td>Metástasis demostrada clínicamente, por imagen o histología &gt;0.2 mm.</td></tr>
+</table></div>
+
+<h3>Agrupación anatómica simplificada</h3>
+<div class="tw tnm-table"><table>
+<tr><th>Estadio</th><th>T</th><th>N</th><th>M</th></tr>
+<tr><td>0</td><td>Tis</td><td>N0</td><td>M0</td></tr>
+<tr><td>IA</td><td>T1*</td><td>N0</td><td>M0</td></tr>
+<tr><td>IB</td><td>T0–T1*</td><td>N1mi</td><td>M0</td></tr>
+<tr><td>IIA</td><td>T0–T1*/T2</td><td>N1**/N0</td><td>M0</td></tr>
+<tr><td>IIB</td><td>T2/T3</td><td>N1/N0</td><td>M0</td></tr>
+<tr><td>IIIA</td><td>T0–T3</td><td>N2 o T3N1</td><td>M0</td></tr>
+<tr><td>IIIB</td><td>T4</td><td>N0–N2</td><td>M0</td></tr>
+<tr><td>IIIC</td><td>Cualquier T</td><td>N3</td><td>M0</td></tr>
+<tr><td>IV</td><td>Cualquier T</td><td>Cualquier N</td><td>M1</td></tr>
+</table></div>
+<p class="mu">*Incluye T1mi. **N1 excluye N1mi en ese renglón.</p>
+<div class="al ai"><strong>8.ª edición</strong>El TNM anatómico debe complementarse con grado histológico, HER2, ER, PR y Oncotype Dx cuando aplique para asignar el estadio pronóstico.</div>
+
+<h2>// Cáncer de colon</h2>
+<div class="tw tnm-table"><table>
+<tr><th>Categoría T</th><th>Definición</th></tr>
+<tr><td>TX / T0</td><td>No evaluable / sin evidencia.</td></tr>
+<tr><td>Tis</td><td>Intraepitelial o invasión de lámina propia.</td></tr>
+<tr><td>T1</td><td>Invade submucosa.</td></tr>
+<tr><td>T2</td><td>Invade muscular propia.</td></tr>
+<tr><td>T3</td><td>Atraviesa muscular propia hasta tejidos pericolorrectales.</td></tr>
+<tr><td>T4a</td><td>Penetra peritoneo visceral.</td></tr>
+<tr><td>T4b</td><td>Invade o se adhiere a órganos o estructuras vecinas.</td></tr>
+</table></div>
+<div class="tw tnm-table"><table>
+<tr><th>Categoría N</th><th>Definición</th></tr>
+<tr><td>N0</td><td>Sin metástasis regional.</td></tr>
+<tr><td>N1a–c</td><td>1–3 ganglios; N1c = depósito tumoral en subserosa o mesenterio sin ganglio positivo.</td></tr>
+<tr><td>N2a</td><td>4–6 ganglios.</td></tr>
+<tr><td>N2b</td><td>≥7 ganglios.</td></tr>
+</table></div>
+<div class="tw tnm-table"><table>
+<tr><th>Categoría M</th><th>Definición</th></tr>
+<tr><td>M0</td><td>Sin metástasis a distancia.</td></tr>
+<tr><td>M1a</td><td>Un órgano o sitio.</td></tr>
+<tr><td>M1b</td><td>Más de un órgano o sitio, o peritoneo.</td></tr>
+</table></div>
+
+<h3>Correlación TNM–Dukes–MAC</h3>
+<div class="tw tnm-table"><table>
+<tr><th>Estadio</th><th>T</th><th>N</th><th>M</th><th>Dukes</th><th>MAC</th></tr>
+<tr><td>0</td><td>Tis</td><td>N0</td><td>M0</td><td>—</td><td>—</td></tr>
+<tr><td>I</td><td>T1–T2</td><td>N0</td><td>M0</td><td>A</td><td>A/B1</td></tr>
+<tr><td>IIA</td><td>T3</td><td>N0</td><td>M0</td><td>B</td><td>B2</td></tr>
+<tr><td>IIB</td><td>T4a</td><td>N0</td><td>M0</td><td>B</td><td>B2</td></tr>
+<tr><td>IIC</td><td>T4b</td><td>N0</td><td>M0</td><td>B</td><td>B3</td></tr>
+<tr><td>IIIA–C</td><td>T1–T4</td><td>N1–N2</td><td>M0</td><td>C</td><td>C1–C3</td></tr>
+<tr><td>IVA</td><td>Cualquier T</td><td>Cualquier N</td><td>M1a</td><td>—</td><td>—</td></tr>
+<tr><td>IVB</td><td>Cualquier T</td><td>Cualquier N</td><td>M1b</td><td>—</td><td>—</td></tr>
+</table></div>
+
+<h2>// Cérvix uterino — TNM y FIGO</h2>
+<div class="tw tnm-table"><table>
+<tr><th>TNM</th><th>FIGO</th><th>Definición</th></tr>
+<tr><td>T1</td><td>I</td><td>Confinado al útero.</td></tr>
+<tr><td>T1a1 / T1a2</td><td>IA1 / IA2</td><td>Invasión estromal ≤3 mm / &gt;3–5 mm.</td></tr>
+<tr><td>T1b1 / T1b2</td><td>IB1 / IB2</td><td>Lesión visible ≤4 cm / &gt;4 cm.</td></tr>
+<tr><td>T2a / T2b</td><td>IIA / IIB</td><td>Más allá del útero sin / con invasión parametrial.</td></tr>
+<tr><td>T3a / T3b</td><td>IIIA / IIIB</td><td>Tercio inferior vaginal / pared pélvica, hidronefrosis o riñón no funcionante.</td></tr>
+<tr><td>T4</td><td>IVA</td><td>Invade mucosa vesical o rectal o sale de la pelvis.</td></tr>
+<tr><td>M1</td><td>IVB</td><td>Metástasis a distancia.</td></tr>
+</table></div>
+<div class="al ai"><strong>Relevancia uro-oncológica</strong>T3b/T4 puede causar hidronefrosis, uropatía obstructiva o invasión vesical; son causas frecuentes de nefrostomía, derivación urinaria o cistoscopia diagnóstica.</div>
+
+<div class="tw tnm-table"><table>
+<tr><th>FIGO</th><th>Extensión</th><th>Supervivencia 5 años</th><th>% al diagnóstico</th></tr>
+<tr><td>I</td><td>Confinado a cérvix</td><td>85%</td><td>47%</td></tr>
+<tr><td>II</td><td>Más allá de cérvix, no pared pélvica</td><td>65%</td><td>28%</td></tr>
+<tr><td>III</td><td>Pared pélvica o tercio inferior vaginal</td><td>35%</td><td>21%</td></tr>
+<tr><td>IV</td><td>Vejiga, recto o metástasis</td><td>7%</td><td>4%</td></tr>
+</table></div>
+
+<h2>// Cáncer de ovario — referencia rápida FIGO</h2>
+<div class="tw tnm-table"><table>
+<tr><th>Estadio</th><th>Extensión</th><th>Supervivencia 5 años</th></tr>
+<tr><td>I</td><td>Limitado a ovarios; subclasifica por uno/ambos, cápsula y citología.</td><td>75–90%</td></tr>
+<tr><td>II</td><td>Limitado a pelvis.</td><td>45–60%</td></tr>
+<tr><td>III</td><td>Enfermedad abdominal o ganglios regionales.</td><td>30–40%</td></tr>
+<tr><td>IV</td><td>Metástasis fuera de cavidad abdominal.</td><td>&lt;20%</td></tr>
+</table></div>
+</div>
+</details>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">05</span><span><strong>TNM en próstata</strong><small>Integración anatómica con PSA y Gleason</small></span></summary>
+<div class="acc-body">
+<h2>// Hacia una estadificación no exclusivamente anatómica</h2>
+<p>El cáncer de próstata fue pionero en integrar <strong>PSA</strong> y <strong>Gleason</strong> dentro de la agrupación por estadios. Un mismo T puede cambiar de estadio por variables biológicas sin modificar la extensión anatómica.</p>
+
+<div class="tw tnm-table"><table>
+<tr><th>Grupo</th><th>T</th><th>N</th><th>M</th><th>PSA</th><th>Gleason</th></tr>
+<tr><td rowspan="3">I</td><td>T1a–c</td><td>N0</td><td>M0</td><td>&lt;10</td><td>≤6</td></tr>
+<tr><td>T2a</td><td>N0</td><td>M0</td><td>&lt;10</td><td>≤6</td></tr>
+<tr><td>T1–2a</td><td>N0</td><td>M0</td><td>X</td><td>X</td></tr>
+<tr><td rowspan="5">IIA</td><td>T1a–c</td><td>N0</td><td>M0</td><td>&lt;20</td><td>7</td></tr>
+<tr><td>T1a–c</td><td>N0</td><td>M0</td><td>≥10 y &lt;20</td><td>≤6</td></tr>
+<tr><td>T2a</td><td>N0</td><td>M0</td><td>&lt;20</td><td>≤7</td></tr>
+<tr><td>T2b</td><td>N0</td><td>M0</td><td>&lt;20</td><td>≤7</td></tr>
+<tr><td>T2b</td><td>N0</td><td>M0</td><td>X</td><td>X</td></tr>
+<tr><td rowspan="3">IIB</td><td>T2c</td><td>N0</td><td>M0</td><td>Cualquiera</td><td>Cualquiera</td></tr>
+<tr><td>T1–2</td><td>N0</td><td>M0</td><td>≥20</td><td>Cualquiera</td></tr>
+<tr><td>T1–2</td><td>N0</td><td>M0</td><td>Cualquiera</td><td>≥8</td></tr>
+<tr><td>III</td><td>T3a–b</td><td>N0</td><td>M0</td><td>Cualquiera</td><td>Cualquiera</td></tr>
+<tr><td rowspan="3">IV</td><td>T4</td><td>N0</td><td>M0</td><td>Cualquiera</td><td>Cualquiera</td></tr>
+<tr><td>Cualquier T</td><td>N1</td><td>M0</td><td>Cualquiera</td><td>Cualquiera</td></tr>
+<tr><td>Cualquier T</td><td>Cualquier N</td><td>M1</td><td>Cualquiera</td><td>Cualquiera</td></tr>
+</table></div>
+<div class="kp"><div class="kp-t">Perla uro-onco</div><p>Un T1–T2 puede pasar de estadio I a IIB solo por PSA o Gleason. Por eso NCCN y D’Amico integran <strong>T + PSA + Gleason/ISUP</strong> desde el inicio.</p></div>
+</div>
+</details>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">06</span><span><strong>Casos clínicos de integración</strong><small>Colon y próstata metastásica</small></span></summary>
+<div class="acc-body">
+<h2>// Caso 1 — Cáncer de colon</h2>
+<div class="case-box">
+<p><strong>Varón de 49 años</strong> sometido a sigmoidocolectomía.</p>
+<ul class="dl">
+<li>Invade muscular propia → <strong>T2</strong>.</li>
+<li>0/9 ganglios positivos → <strong>N0</strong>.</li>
+<li>Estadificación final: <strong>pT2N0</strong>.</li>
+</ul>
+</div>
+<div class="al aw"><strong>Punto de enseñanza</strong>Aunque idealmente se evalúan ≥12 ganglios en colon, si se estudiaron ganglios y todos fueron negativos debe asignarse N0, no Nx.</div>
+
+<h2>// Caso 2 — Dolor óseo y próstata metastásica</h2>
+<div class="case-box">
+<p><strong>Varón de 65 años</strong>, fumador, con HAS y DM2. Dolor lumbar persistente, radiografía simple normal y RM con múltiples lesiones vertebrales.</p>
+</div>
+<h3>Conducta siguiente</h3>
+<ol class="study-ol">
+<li>Buscar tumor primario.</li>
+<li>Solicitar laboratorios orientados, incluidos marcadores tumorales.</li>
+<li>Completar estudio de extensión.</li>
+</ol>
+<div class="tw tnm-table"><table>
+<tr><th>Hallazgo</th><th>Interpretación</th></tr>
+<tr><td>PSA 129 ng/mL</td><td>Marcadamente elevado.</td></tr>
+<tr><td>Gammagrama óseo</td><td>Múltiples focos de hipercaptación vertebral y pélvica.</td></tr>
+<tr><td>Patrón</td><td>Metástasis óseas osteoblásticas.</td></tr>
+<tr><td>Diagnóstico</td><td>Adenocarcinoma de próstata metastásico.</td></tr>
+<tr><td>Estadio</td><td><strong>IV: cualquier T, cualquier N, M1</strong>.</td></tr>
+</table></div>
+<div class="kp"><div class="kp-t">Perlas</div><p>La radiografía puede ser normal hasta que exista 30–50% de destrucción cortical. El gammagrama es más sensible para actividad osteoblástica. En un hombre &gt;50 años con dolor óseo persistente inexplicado debe solicitarse PSA.</p></div>
+<div class="al ai"><strong>Patrón de metástasis</strong>Próstata: típicamente osteoblástica. Mama, riñón y tiroides: con mayor frecuencia líticas.</div>
+</div>
+</details>
+
+<details class="study-accordion">
+<summary><span class="acc-index">07</span><span><strong>Biología molecular y genética</strong><small>Del TNM poblacional al perfil oncológico integral</small></span></summary>
+<div class="acc-body">
+<h2>// Evolución del paradigma</h2>
+<div class="tw tnm-table"><table>
+<tr><th>Nivel</th><th>Componentes</th><th>Aplicación</th></tr>
+<tr><td>AJCC/UICC básico</td><td>TNM</td><td>Supervivencia poblacional.</td></tr>
+<tr><td>Grupos pronósticos AJCC</td><td>TNM + factores pronósticos</td><td>Relevancia clínica avanzada.</td></tr>
+<tr><td>AJCC personalizado</td><td>TNM + factores pronósticos + modelos de riesgo + estratificación para ensayos</td><td>Supervivencia individualizada.</td></tr>
+</table></div>
+
+<h3>Subtipos moleculares de mama</h3>
+<div class="tw tnm-table"><table>
+<tr><th>Subtipo</th><th>Características</th></tr>
+<tr><td>Luminal A</td><td>ER y/o PR positivo, HER2 negativo.</td></tr>
+<tr><td>Luminal B</td><td>ER y/o PR positivo, HER2 positivo.</td></tr>
+<tr><td>HER2</td><td>ER negativo, PR negativo, HER2 positivo.</td></tr>
+<tr><td>Basal-like</td><td>Triple negativo: ER, PR y HER2 negativos.</td></tr>
+</table></div>
+<p>Estos subtipos tienen diferencias pronósticas significativas independientes del TNM anatómico.</p>
+
+<h3>Biomarcador → terapia dirigida</h3>
+<ul class="dl">
+<li><strong>Mama:</strong> histología → ER/PR → HER2 → tratamiento sistémico específico.</li>
+<li><strong>Pulmón no microcítico:</strong> EGFR y ALK —idealmente panel amplio— para seleccionar terapias dirigidas.</li>
+<li><strong>Próstata:</strong> inhibidores PARP en mutaciones BRCA1/2.</li>
+<li><strong>Vejiga y otros:</strong> inmunoterapia en tumores dMMR/MSI-H.</li>
+</ul>
+
+<h3>Oncotype Dx — ejemplo TAILORx</h3>
+<div class="tw tnm-table"><table>
+<tr><th>Recurrence Score</th><th>Conducta</th></tr>
+<tr><td>≤10</td><td>Hormonoterapia sola.</td></tr>
+<tr><td>11–25</td><td>Zona de incertidumbre: hormonoterapia sola vs. quimioterapia + hormonoterapia.</td></tr>
+<tr><td>&gt;25</td><td>Quimioterapia + hormonoterapia.</td></tr>
+</table></div>
+<p>El riesgo de recurrencia aumenta con el puntaje y con el número de ganglios positivos; TNM y genómica son complementarios.</p>
+
+<h3>Novedades de la 8.ª edición</h3>
+<ul class="dl">
+<li>Orofaringe diferenciada por estado de VPH.</li>
+<li>TNM-H para síndromes hereditarios.</li>
+<li>Incorporación de sitios o variables no anatómicas.</li>
+<li>Mama: grado, HER2, ER, PR y Oncotype Dx en estadio pronóstico.</li>
+<li>Esófago y estómago: criterios ypTNM específicos.</li>
+<li>Sarcomas: estadificación distinta según localización anatómica.</li>
+</ul>
+</div>
+</details>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">08</span><span><strong>Conclusiones y errores de examen</strong><small>Algoritmo final de integración</small></span></summary>
+<div class="acc-body">
+<h2>// Objetivos de la estadificación</h2>
+<ol class="study-ol">
+<li>Definir grupos pronósticos comparables.</li>
+<li>Estimar pronóstico.</li>
+<li>Evaluar respuesta al tratamiento mediante c, p, yc y yp.</li>
+<li>Facilitar investigación.</li>
+<li>Comparar centros y series.</li>
+<li>Apoyar detección oportuna.</li>
+</ol>
+
+<h3>Herramientas necesarias</h3>
+<div class="g2">
+<div class="card"><div class="ct">Clínicas</div><p>Historia clínica y exploración física.</p></div>
+<div class="card"><div class="ct">Laboratorio</div><p>Incluye marcadores cuando aplican, como PSA/APE.</p></div>
+<div class="card"><div class="ct">Imagen</div><p>Radiografía, TC, RM, gammagrama óseo y estudios dirigidos.</p></div>
+<div class="card"><div class="ct">Patología</div><p>Biopsia y espécimen quirúrgico.</p></div>
+</div>
+
+<h3>Errores frecuentes</h3>
+<div class="error-grid">
+<div class="err">Confundir cTNM con pTNM.</div>
+<div class="err">Reportar Nx cuando hubo ganglios negativos estudiados.</div>
+<div class="err">Asumir que una radiografía normal descarta metástasis ósea.</div>
+<div class="err">Creer que el TNM anatómico basta en próstata, mama o pulmón.</div>
+<div class="err">Olvidar que “y” significa evaluación posterior a neoadyuvancia.</div>
+</div>
+
+<div class="kp"><div class="kp-t">Principio final</div><p>Agrupar información clínica, radiológica, patológica y molecular para clasificar al paciente y elegir un tratamiento oportuno.</p></div>
+</div>
+</details>
+
 </div><!-- u3-t0 -->
 <div class="tpane" id="u3-t1">
-<h2>// Infecciones Urinarias</h2>
-<div class="card"><div class="ct">Pendiente</div>
-<p>Módulo Urología — Infecciones urinarias. Aún sin contenido — pendiente de desarrollar en el mismo formato que Gineco-Obstetricia (definición, fisiopatología, clínica, diagnóstico, tratamiento).</p>
+
+<div class="study-hero uti-hero">
+  <div class="wlabel">Uro-Onco · S3</div>
+  <div class="wtitle">Infecciones del tracto urinario</div>
+  <p>Definiciones, clasificación clínica, patogénesis, diagnóstico, imagen, tratamiento antimicrobiano, recurrencia, bacteriuria asintomática y urosepsis.</p>
 </div>
+
+<div class="topic-strip">
+  <span class="b bb">IVU localizada vs. sistémica</span>
+  <span class="b bo">EGO + urocultivo</span>
+  <span class="b bp">Cistitis</span>
+  <span class="b br">Pielonefritis</span>
+  <span class="b bg">Recurrencia y prevención</span>
+</div>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">01</span><span><strong>Marco conceptual y definiciones</strong><small>Principios diagnósticos, epidemiología y terminología</small></span></summary>
+<div class="acc-body">
+<h2>// Principios generales</h2>
+<div class="card"><div class="ct">Objetivo clínico</div>
+<p>El diagnóstico debe partir de la <strong>historia clínica</strong>, la localización de los síntomas y la identificación de factores que predicen evolución complicada. El <strong>EGO</strong> orienta, pero el <strong>urocultivo</strong> documenta el patógeno y susceptibilidad cuando está indicado. En cuadros sistémicos o de riesgo, debe obtenerse antes del antibiótico siempre que ello no retrase la estabilización.</p>
+</div>
+<div class="al aw"><strong>Regla práctica</strong>No toda bacteriuria es infección y no toda piuria exige antibiótico. El diagnóstico de IVU sintomática requiere correlación entre clínica y evidencia microbiológica.</div>
+
+<h3>Definiciones técnicas</h3>
+<div class="tw uti-table"><table>
+<tr><th>Término</th><th>Definición</th></tr>
+<tr><td><strong>IVU</strong></td><td>Respuesta inflamatoria del urotelio a microorganismos, habitualmente bacterias, con síntomas atribuibles al tracto urinario.</td></tr>
+<tr><td><strong>Piuria</strong></td><td>Leucocitos en orina; orienta a inflamación, pero no es específica de infección.</td></tr>
+<tr><td><strong>Bacteriuria</strong></td><td>Presencia de bacterias en orina, con o sin síntomas.</td></tr>
+<tr><td><strong>Bacteriuria asintomática</strong></td><td>≥10<sup>5</sup> UFC/mL de una o más especies, independientemente de piuria, sin síntomas urinarios atribuibles.</td></tr>
+<tr><td><strong>Cistitis</strong></td><td>IVU localizada en vejiga, sin signos sistémicos.</td></tr>
+<tr><td><strong>Pielonefritis</strong></td><td>Infección del parénquima renal y pelvis, habitualmente con fiebre, dolor lumbar y datos sistémicos.</td></tr>
+<tr><td><strong>Urosepsis</strong></td><td>Disfunción orgánica causada por respuesta desregulada a una infección originada en el aparato urinario.</td></tr>
+<tr><td><strong>IVU crónica / pielonefritis crónica</strong></td><td>Cicatriz cortical focal sobre un cáliz con deformidad caliceal, usualmente asociada con reflujo vesicoureteral o enfermedad litiásica calicial.</td></tr>
+</table></div>
+
+<h3>Epidemiología</h3>
+<div class="g2">
+<div class="card"><div class="ct">Carga asistencial</div><p>Aproximadamente 10.5 millones de consultas anuales y 2–3 millones de visitas a urgencias en Estados Unidos.</p></div>
+<div class="card"><div class="ct">Mujeres</div><p>Cerca de 30% ha presentado una IVU sintomática antes de los 24 años y alrededor de 11% de las mayores de 18 años presenta una cada año.</p></div>
+<div class="card"><div class="ct">Impacto económico</div><p>Alrededor de 2.3 mil millones de dólares anuales; el costo aumenta con resistencia antimicrobiana, hospitalización y pielonefritis.</p></div>
+<div class="card"><div class="ct">Evolución</div><p>La mayoría no es mortal si se diagnostica y trata de forma oportuna, pero la obstrucción infectada y la urosepsis son emergencias.</p></div>
+</div>
+</div>
+</details>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">02</span><span><strong>Clasificación</strong><small>Localizada, sistémica, factores de riesgo y relación con episodios previos</small></span></summary>
+<div class="acc-body">
+<h2>// Clasificación clínica actual</h2>
+<div class="g2">
+<div class="card uti-local"><div class="ct">IVU localizada</div><p>Cistitis sin fiebre, escalofríos, hipotensión, taquicardia significativa, dolor lumbar o deterioro sistémico.</p></div>
+<div class="card uti-systemic"><div class="ct">IVU sistémica</div><p>Fiebre, escalofríos, dolor en flanco o pelvis, hipotensión, taquicardia, delirium o aspecto tóxico, con o sin síntomas urinarios bajos. Incluye pielonefritis, prostatitis aguda y urosepsis.</p></div>
+</div>
+<div class="kp"><div class="kp-t">Actualización conceptual</div><p>La clasificación moderna prioriza <strong>localizada vs. sistémica</strong> y después agrega factores de riesgo. Los términos “no complicada” y “complicada” siguen siendo útiles en enseñanza, pero son menos precisos.</p></div>
+
+<h3>Clasificación tradicional según huésped y anatomía</h3>
+<div class="tw uti-table"><table>
+<tr><th>Categoría</th><th>Características</th></tr>
+<tr><td>IVU no complicada</td><td>Infección en mujer no embarazada, inmunocompetente, sin anomalía anatómica o funcional relevante.</td></tr>
+<tr><td>IVU complicada</td><td>Existe alteración anatómica o funcional, obstrucción, cuerpo extraño, inmunosupresión, insuficiencia renal, patógeno resistente o contexto que reduce la eficacia del tratamiento.</td></tr>
+</table></div>
+
+<h3>Factores que complican el curso</h3>
+<div class="risk-grid">
+<div class="risk"><strong>Obstrucción</strong><span>HPB, litiasis, tumor, estenosis uretral, obstrucción de salida vesical.</span></div>
+<div class="risk"><strong>Vaciamiento deficiente</strong><span>Orina residual, vejiga neurógena, hipocontractilidad del detrusor.</span></div>
+<div class="risk"><strong>Instrumentación</strong><span>Sonda, catéter ureteral, nefrostomía, cirugía reciente.</span></div>
+<div class="risk"><strong>Huésped</strong><span>Embarazo, varón, inmunosupresión, diabetes descompensada, trasplante, enfermedad renal.</span></div>
+<div class="risk"><strong>Microorganismo</strong><span>BLEE, carbapenemasa, Pseudomonas, Candida o resistencia múltiple.</span></div>
+<div class="risk"><strong>Foco persistente</strong><span>Próstata infectada, cálculo de estruvita, absceso o cuerpo extraño.</span></div>
+</div>
+
+<h3>Relación con infecciones previas</h3>
+<div class="tw uti-table"><table>
+<tr><th>Patrón</th><th>Definición</th><th>Interpretación clínica</th></tr>
+<tr><td>Primaria o aislada</td><td>Primer episodio o evento remoto.</td><td>No implica alteración estructural por sí mismo.</td></tr>
+<tr><td>No resuelta</td><td>Persisten síntomas y cultivo positivo durante el tratamiento.</td><td>Mismo organismo y perfil de sensibilidad; pensar en antibiótico inadecuado, resistencia, mala absorción u obstrucción.</td></tr>
+<tr><td>Reinfección</td><td>Nuevo episodio después de resolución, por bacteria diferente o misma bacteria tras intervalo y cultivo negativo.</td><td>Reintroducción desde reservorio intestinal o periuretral.</td></tr>
+<tr><td>Persistencia bacteriana</td><td>Reaparición temprana de la misma cepa desde un foco urinario.</td><td>Buscar cálculo infectado, próstata, absceso, divertículo o cuerpo extraño.</td></tr>
+<tr><td>IVU recurrente</td><td>≥2 episodios en 6 meses o ≥3 en 12 meses.</td><td>Requiere confirmación microbiológica de episodios y plan preventivo individualizado.</td></tr>
+</table></div>
+</div>
+</details>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">03</span><span><strong>Patogénesis y microbiología</strong><small>Vías de infección, adhesión y patógenos frecuentes</small></span></summary>
+<div class="acc-body">
+<h2>// Patogénesis</h2>
+<p>La infección depende de la interacción entre <strong>virulencia bacteriana</strong>, tamaño del inóculo, integridad anatómica y respuesta inmune del huésped.</p>
+<div class="flow">
+<div class="fs">Reservorio intestinal</div><div class="fa">→</div>
+<div class="fs">Colonización perineal</div><div class="fa">→</div>
+<div class="fs">Introito y uretra</div><div class="fa">→</div>
+<div class="fs">Vejiga</div><div class="fa">→</div>
+<div class="fs">Uréter y riñón</div>
+</div>
+<ul class="dl">
+<li><strong>Vía ascendente:</strong> principal mecanismo; no requiere obligatoriamente reflujo vesicoureteral para causar pielonefritis.</li>
+<li><strong>Adherencia:</strong> fimbrias y adhesinas permiten fijación a uroepitelio y evitan arrastre urinario.</li>
+<li><strong>Vía hematógena:</strong> infrecuente; considerar con <em>S. aureus</em>, Candida o tuberculosis.</li>
+<li><strong>Factores conductuales:</strong> actividad sexual, espermicidas, contaminación fecal y manipulación urinaria.</li>
+<li><strong>Catéter:</strong> facilita ascenso y formación de biopelícula; el riesgo de bacteriuria aumenta con cada día de permanencia.</li>
+</ul>
+
+<h3>Microorganismos</h3>
+<div class="tw uti-table"><table>
+<tr><th>Contexto</th><th>Patógenos frecuentes</th></tr>
+<tr><td>Cistitis comunitaria</td><td><em>Escherichia coli</em> predominante; <em>Klebsiella</em>, <em>Proteus mirabilis</em>, <em>Staphylococcus saprophyticus</em> y <em>Enterococcus</em>.</td></tr>
+<tr><td>IVU complicada o nosocomial</td><td>Enterobacterales resistentes, <em>Pseudomonas aeruginosa</em>, <em>Enterococcus</em>, Candida y flora polimicrobiana.</td></tr>
+<tr><td>Litiasis de estruvita</td><td>Organismos productores de ureasa: <em>Proteus</em>, <em>Morganella</em>, <em>Providencia</em>, algunas <em>Klebsiella</em> y estafilococos.</td></tr>
+<tr><td>Instrumentación o bacteriemia</td><td><em>Enterococcus</em>, <em>Pseudomonas</em>, <em>S. aureus</em> y bacilos gramnegativos resistentes.</td></tr>
+</table></div>
+<div class="al ai"><strong>Perla</strong><em>S. aureus</em> en orina sin instrumentación debe hacer pensar en bacteriemia o foco hematógeno más que en cistitis ascendente habitual.</div>
+</div>
+</details>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">04</span><span><strong>Cuadro clínico</strong><small>Cistitis, pielonefritis, prostatitis y datos de alarma</small></span></summary>
+<div class="acc-body">
+<h2>// Síndromes clínicos</h2>
+<div class="tw uti-table"><table>
+<tr><th>Síndrome</th><th>Manifestaciones</th><th>Hallazgos orientadores</th></tr>
+<tr><td>Cistitis</td><td>Disuria, frecuencia, urgencia, dolor suprapúbico, hematuria.</td><td>Ausencia de flujo vaginal aumenta probabilidad de IVU; no hay fiebre ni dolor en flanco.</td></tr>
+<tr><td>Pielonefritis</td><td>Fiebre, escalofríos, lumbalgia, náusea, vómito, astenia, síntomas urinarios variables.</td><td>Dolor a la puñopercusión lumbar y datos sistémicos.</td></tr>
+<tr><td>Prostatitis bacteriana aguda</td><td>Fiebre, disuria, dolor perineal o pélvico, retención, mal estado general.</td><td>Próstata dolorosa; evitar masaje prostático por riesgo de bacteriemia.</td></tr>
+<tr><td>IVU asociada a catéter</td><td>Fiebre, dolor suprapúbico o lumbar, hematuria, delirium sin otra causa.</td><td>La orina turbia o maloliente aislada no diagnostica infección.</td></tr>
+<tr><td>Urosepsis</td><td>Hipotensión, alteración mental, oliguria, hipoxemia, lactato elevado.</td><td>Disfunción orgánica; buscar obstrucción y necesidad de drenaje urgente.</td></tr>
+</table></div>
+
+<h3>Diagnósticos diferenciales</h3>
+<div class="g2">
+<div class="card"><div class="ct">Disuria</div><p>Vaginitis, uretritis por ITS, herpes genital, litiasis distal, síndrome uretral e irritantes químicos.</p></div>
+<div class="card"><div class="ct">Dolor lumbar + fiebre</div><p>Litiasis obstructiva, absceso renal, apendicitis, colecistitis, enfermedad pélvica inflamatoria y causas musculoesqueléticas.</p></div>
+</div>
+<div class="al ad"><strong>Emergencia urológica</strong>Fiebre o sepsis con hidronefrosis, cálculo obstructivo, anuria o deterioro renal requiere antibiótico IV y descompresión urgente mediante catéter ureteral o nefrostomía.</div>
+</div>
+</details>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">05</span><span><strong>Diagnóstico</strong><small>EGO, urocultivo, interpretación e indicaciones de imagen</small></span></summary>
+<div class="acc-body">
+<h2>// Examen general de orina</h2>
+<div class="tw uti-table"><table>
+<tr><th>Hallazgo</th><th>Interpretación</th><th>Limitación</th></tr>
+<tr><td>Esterasa leucocitaria</td><td>Piuria.</td><td>Puede ser positiva en inflamación no infecciosa.</td></tr>
+<tr><td>Nitritos</td><td>Reducción de nitratos por Enterobacterales.</td><td>Negativos con micción frecuente, baja ingesta de nitrato, Enterococcus o <em>S. saprophyticus</em>.</td></tr>
+<tr><td>Leucocitos</td><td>Inflamación urinaria.</td><td>Piuria estéril: ITS, TB, litiasis, nefritis intersticial o antibiótico previo.</td></tr>
+<tr><td>Hematuria</td><td>Frecuente en cistitis o litiasis.</td><td>Debe reevaluarse si persiste tras resolver la infección.</td></tr>
+<tr><td>Cilindros leucocitarios</td><td>Sugieren inflamación renal.</td><td>No son sensibles ni exclusivos de pielonefritis.</td></tr>
+</table></div>
+
+<h3>Urocultivo</h3>
+<div class="card"><div class="ct">Cuándo solicitarlo</div><ul class="dl">
+<li>Pielonefritis o IVU sistémica.</li>
+<li>Varón, embarazo, infancia o inmunosupresión.</li>
+<li>IVU recurrente, fracaso terapéutico o síntomas atípicos.</li>
+<li>Instrumentación, catéter, obstrucción o anomalía urológica.</li>
+<li>Riesgo de microorganismo resistente o infección nosocomial.</li>
+</ul></div>
+<p>En una mujer sana con cistitis típica puede iniciarse tratamiento empírico sin cultivo, pero el cultivo es preferible si hay recurrencia o resistencia local relevante.</p>
+
+<h3>Toma de muestra</h3>
+<ul class="dl">
+<li>Orina de chorro medio después de higiene habitual, sin antisépticos agresivos.</li>
+<li>En sonda permanente, obtener del puerto después de cambiar la sonda si lleva tiempo colocada; no tomar de la bolsa.</li>
+<li>En paciente inestable, obtener urocultivo y hemocultivos antes del antibiótico sin retrasar su administración.</li>
+</ul>
+
+<h3>Gabinete e imagen</h3>
+<div class="tw uti-table"><table>
+<tr><th>Estudio</th><th>Indicación principal</th></tr>
+<tr><td>Ultrasonido renal y vesical</td><td>Hidronefrosis, retención, litiasis, embarazo, función renal alterada o sospecha de absceso; mide residuo posmiccional.</td></tr>
+<tr><td>TC abdomen/pelvis con contraste</td><td>Pielonefritis complicada, sepsis, deterioro, dolor persistente o ausencia de mejoría en 48–72 h; detecta absceso, gas y extensión.</td></tr>
+<tr><td>TC sin contraste</td><td>Sospecha de urolitiasis obstructiva.</td></tr>
+<tr><td>RM</td><td>Alternativa cuando se evita radiación o contraste; útil en embarazo seleccionado y complicaciones.</td></tr>
+<tr><td>Gammagrafía renal DMSA</td><td>Principalmente pediatría para cicatriz cortical o daño renal.</td></tr>
+<tr><td>Urodinamia</td><td>No diagnostica IVU aguda; investiga disfunción del vaciamiento en recurrencia seleccionada.</td></tr>
+<tr><td>Cistoscopia</td><td>No rutinaria en IVU recurrente simple; reservar para hematuria persistente, cuerpo extraño, tumor, fístula o anomalía sospechada.</td></tr>
+</table></div>
+</div>
+</details>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">06</span><span><strong>Tratamiento antimicrobiano</strong><small>Cistitis, pielonefritis y principios de selección</small></span></summary>
+<div class="acc-body">
+<h2>// Principios</h2>
+<ul class="dl">
+<li>Elegir según sitio de infección, gravedad, función renal, alergias, embarazo, cultivos previos y resistencia local.</li>
+<li>Usar el espectro más estrecho y la duración más corta eficaz.</li>
+<li>Ajustar al antibiograma y revisar respuesta en 48–72 h.</li>
+<li>Nitrofurantoína y fosfomicina alcanzan buena concentración vesical, pero <strong>no sirven para pielonefritis ni prostatitis</strong>.</li>
+<li>El control de la fuente —drenaje de obstrucción, retiro o recambio de catéter, drenaje de absceso— puede ser más importante que ampliar antibióticos.</li>
+</ul>
+
+<h3>Cistitis aguda en mujer no embarazada</h3>
+<div class="tw uti-table"><table>
+<tr><th>Esquema</th><th>Dosis</th><th>Comentarios</th></tr>
+<tr><td><strong>Nitrofurantoína</strong></td><td>100 mg VO cada 12 h por 5 días.</td><td>Primera línea si función renal adecuada; evitar si se sospecha pielonefritis.</td></tr>
+<tr><td><strong>Fosfomicina trometamol</strong></td><td>3 g VO dosis única.</td><td>Útil frente a algunos productores de BLEE; eficacia algo menor que esquemas prolongados en algunos estudios.</td></tr>
+<tr><td><strong>Trimetoprim-sulfametoxazol</strong></td><td>160/800 mg VO cada 12 h por 3 días.</td><td>Usar si resistencia local de <em>E. coli</em> es baja y no hay contraindicación.</td></tr>
+<tr><td><strong>Pivmecillinam</strong></td><td>400 mg VO cada 8 h por 3–5 días.</td><td>Opción recomendada donde esté disponible.</td></tr>
+<tr><td>Alternativas β-lactámicas</td><td>Amoxicilina-clavulanato 875/125 mg cada 12 h o cefalexina 500 mg cada 6–8 h por 5–7 días.</td><td>Menor eficacia ecológica; guiar por susceptibilidad.</td></tr>
+</table></div>
+<div class="al aw"><strong>Evitar como primera línea</strong>Fluoroquinolonas en cistitis simple cuando existen alternativas, por efectos adversos y presión de resistencia.</div>
+
+<h3>Pielonefritis ambulatoria estable</h3>
+<div class="tw uti-table"><table>
+<tr><th>Esquema</th><th>Dosis orientativa</th><th>Consideraciones</th></tr>
+<tr><td>Ciprofloxacino</td><td>500 mg VO cada 12 h por 7 días.</td><td>Solo si susceptibilidad probable y resistencia local aceptable.</td></tr>
+<tr><td>Levofloxacino</td><td>750 mg VO cada 24 h por 5 días.</td><td>Alternativa de curso corto.</td></tr>
+<tr><td>TMP-SMX</td><td>160/800 mg VO cada 12 h por 14 días.</td><td>Preferible con susceptibilidad confirmada.</td></tr>
+<tr><td>β-lactámico oral</td><td>7–10 días.</td><td>Menor eficacia; administrar dosis inicial IV de ceftriaxona 1 g si susceptibilidad no conocida.</td></tr>
+</table></div>
+<p>Cuando la resistencia a fluoroquinolonas es relevante o se desconoce, puede administrarse una dosis inicial de <strong>ceftriaxona 1 g IV/IM</strong> o un aminoglucósido antes del esquema oral.</p>
+
+<h3>IVU sistémica u hospitalaria</h3>
+<div class="tw uti-table"><table>
+<tr><th>Escenario</th><th>Tratamiento empírico posible</th></tr>
+<tr><td>Sin choque ni riesgo alto de BLEE</td><td>Ceftriaxona 1–2 g IV cada 24 h, cefotaxima o piperacilina-tazobactam según gravedad y epidemiología.</td></tr>
+<tr><td>Riesgo de Pseudomonas</td><td>Cefepima, ceftazidima o piperacilina-tazobactam.</td></tr>
+<tr><td>Riesgo alto de BLEE o choque séptico</td><td>Carbapenémico, por ejemplo meropenem 1 g IV cada 8 h, con desescalamiento posterior.</td></tr>
+<tr><td>Enterococcus sospechado</td><td>Ampicilina si susceptible; vancomicina si alergia o resistencia, según contexto.</td></tr>
+</table></div>
+<p>Duración habitual: 5–10 días según agente, respuesta y control de fuente; puede requerirse más en prostatitis, absceso, obstrucción persistente o bacteriemia complicada.</p>
+
+<h3>Prostatitis bacteriana aguda</h3>
+<p>Hospitalizar si sepsis, retención o intolerancia oral. Tras estabilización y susceptibilidad, usar un fármaco con penetración prostática —ciprofloxacino, levofloxacino o TMP-SMX— durante aproximadamente <strong>2–4 semanas</strong>. Evitar masaje prostático.</p>
+</div>
+</details>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">07</span><span><strong>Bacteriuria asintomática</strong><small>A quién tratar y a quién no</small></span></summary>
+<div class="acc-body">
+<h2>// Principio de stewardship</h2>
+<p>La bacteriuria asintomática es frecuente y tratarla sin indicación aumenta eventos adversos y resistencia sin mejorar desenlaces.</p>
+<div class="tw uti-table"><table>
+<tr><th>Grupo</th><th>¿Tamizar y tratar?</th></tr>
+<tr><td>Embarazo</td><td><strong>Sí.</strong> Realizar cultivo en una visita prenatal temprana y tratar según susceptibilidad.</td></tr>
+<tr><td>Procedimiento endourológico con trauma mucoso</td><td><strong>Sí.</strong> Cultivo previo y tratamiento dirigido perioperatorio.</td></tr>
+<tr><td>Mujer sana no embarazada</td><td>No.</td></tr>
+<tr><td>Adulto mayor o residente de institución</td><td>No, salvo síntomas atribuibles o sepsis sin otro foco.</td></tr>
+<tr><td>Diabetes</td><td>No.</td></tr>
+<tr><td>Catéter permanente</td><td>No, salvo síntomas.</td></tr>
+<tr><td>Lesión medular o vejiga neurógena</td><td>No de rutina.</td></tr>
+<tr><td>Cirugía no urológica</td><td>No.</td></tr>
+</table></div>
+<div class="al ad"><strong>Error frecuente</strong>Delirium o caída en un adulto mayor con bacteriuria no demuestra IVU. Deben buscarse otras causas y requerirse datos locales o sistémicos compatibles antes de tratar.</div>
+</div>
+</details>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">08</span><span><strong>IVU recurrente</strong><small>Confirmación, evaluación y prevención</small></span></summary>
+<div class="acc-body">
+<h2>// Evaluación</h2>
+<ul class="dl">
+<li>Confirmar al menos un episodio sintomático con urocultivo; idealmente documentar cada recurrencia antes del antibiótico.</li>
+<li>Revisar relaciones con coito, espermicidas, menopausia, vaciamiento incompleto y antecedentes de resistencia.</li>
+<li>Exploración pélvica en mujeres para atrofia, prolapso, vaginitis o fístula.</li>
+<li>No realizar de rutina TC, urografía o cistoscopia en mujeres con recurrencia típica sin factores de alarma.</li>
+</ul>
+
+<h3>Prevención escalonada</h3>
+<div class="step-card"><span class="step-n">1</span><p><strong>Medidas conductuales:</strong> hidratación adecuada, evitar espermicidas, no retrasar micción y corregir vaciamiento deficiente. La evidencia para limpieza especial o micción poscoital es limitada, pero son medidas de bajo riesgo.</p></div>
+<div class="step-card"><span class="step-n">2</span><p><strong>Estrógeno vaginal:</strong> en mujeres peri o posmenopáusicas con atrofia, por ejemplo crema, tableta o anillo local; reduce recurrencias.</p></div>
+<div class="step-card"><span class="step-n">3</span><p><strong>Profilaxis no antibiótica:</strong> metanamina hipurato puede considerarse en mujeres sin alteraciones renales importantes; arándano puede ofrecer beneficio modesto y variable.</p></div>
+<div class="step-card"><span class="step-n">4</span><p><strong>Autoinicio:</strong> curso corto previamente acordado en pacientes confiables, idealmente después de tomar muestra de orina.</p></div>
+<div class="step-card"><span class="step-n">5</span><p><strong>Profilaxis antibiótica:</strong> poscoital o continua de baja dosis después de discutir resistencia y efectos adversos.</p></div>
+
+<h3>Esquemas preventivos frecuentes</h3>
+<div class="tw uti-table"><table>
+<tr><th>Estrategia</th><th>Ejemplos</th></tr>
+<tr><td>Poscoital</td><td>Nitrofurantoína 50–100 mg, TMP-SMX 40/200–80/400 mg o cefalexina 250 mg, dosis única después del coito.</td></tr>
+<tr><td>Continua nocturna</td><td>Nitrofurantoína 50–100 mg, TMP 100 mg, TMP-SMX 40/200 mg o cefalexina 125–250 mg.</td></tr>
+<tr><td>Fosfomicina</td><td>3 g cada 10 días en casos seleccionados.</td></tr>
+</table></div>
+<p>Reevaluar necesidad después de 3–6 meses. La recurrencia puede reaparecer al suspender la profilaxis.</p>
+</div>
+</details>
+
+<details class="study-accordion">
+<summary><span class="acc-index">09</span><span><strong>Catéter, obstrucción y urosepsis</strong><small>Control de fuente y emergencias</small></span></summary>
+<div class="acc-body">
+<h2>// IVU asociada a catéter</h2>
+<ul class="dl">
+<li>No tratar bacteriuria asintomática del catéter.</li>
+<li>Retirar el catéter si ya no es indispensable.</li>
+<li>Si lleva colocado más de aproximadamente 2 semanas y aún es necesario, recambiarlo antes de obtener cultivo y tratar.</li>
+<li>No utilizar antibiótico profiláctico rutinario solo por mantener o retirar una sonda.</li>
+</ul>
+
+<h2>// Urosepsis</h2>
+<div class="flow">
+<div class="fs">Reconocer sepsis</div><div class="fa">→</div>
+<div class="fs">Cultivos + lactato</div><div class="fa">→</div>
+<div class="fs">Antibiótico IV temprano</div><div class="fa">→</div>
+<div class="fs">Líquidos / vasopresor</div><div class="fa">→</div>
+<div class="fs"><strong>Control de fuente</strong></div>
+</div>
+<div class="card"><div class="ct">Control de fuente</div><p>Descomprimir obstrucción, retirar o cambiar catéter, drenar absceso y tratar cálculo infectado. La obstrucción séptica no debe esperar a la respuesta antibiótica.</p></div>
+
+<h3>Datos para hospitalización</h3>
+<div class="risk-grid">
+<div class="risk"><strong>Inestabilidad</strong><span>Hipotensión, taquicardia, hipoxemia o alteración mental.</span></div>
+<div class="risk"><strong>Incapacidad oral</strong><span>Vómito, deshidratación o dolor no controlado.</span></div>
+<div class="risk"><strong>Obstrucción</strong><span>Hidronefrosis, litiasis, anuria o retención.</span></div>
+<div class="risk"><strong>Huésped vulnerable</strong><span>Embarazo, inmunosupresión, trasplante o insuficiencia renal.</span></div>
+<div class="risk"><strong>Fracaso</strong><span>Sin mejoría en 48–72 h o resistencia probable.</span></div>
+<div class="risk"><strong>Complicación</strong><span>Absceso, pielonefritis enfisematosa o bacteriemia.</span></div>
+</div>
+</div>
+</details>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">10</span><span><strong>Algoritmo de estudio</strong><small>Enfoque rápido para examen y práctica clínica</small></span></summary>
+<div class="acc-body">
+<div class="tw uti-table"><table>
+<tr><th>Pregunta</th><th>Conducta</th></tr>
+<tr><td>¿Hay síntomas urinarios sin datos sistémicos?</td><td>Probable IVU localizada; valorar EGO y tratamiento corto.</td></tr>
+<tr><td>¿Hay fiebre, escalofríos, dolor lumbar o toxicidad?</td><td>IVU sistémica; urocultivo, función renal y considerar hemocultivos.</td></tr>
+<tr><td>¿Existe obstrucción o deterioro?</td><td>Imagen urgente y drenaje si hay sistema infectado obstruido.</td></tr>
+<tr><td>¿Es recurrente?</td><td>Confirmar cultivos, distinguir reinfección de persistencia y buscar factores corregibles.</td></tr>
+<tr><td>¿Hay bacteriuria sin síntomas?</td><td>No tratar salvo embarazo o procedimiento urológico con trauma mucoso.</td></tr>
+<tr><td>¿No mejora en 48–72 h?</td><td>Revisar cultivo, adherencia, resistencia, absceso, cálculo y obstrucción.</td></tr>
+</table></div>
+<div class="kp"><div class="kp-t">Perlas de examen</div><p>Nitrofurantoína y fosfomicina son para vejiga, no para riñón ni próstata. Piuria no equivale a infección. La obstrucción infectada exige drenaje. La bacteriuria asintomática casi nunca se trata.</p></div>
+
+<h2>// Fuentes clínicas utilizadas</h2>
+<div class="gl"><div class="gl-t">► Guías de alta confiabilidad</div><div class="gl-g">
+<div class="gl-i"><span class="gl-k">EAU 2026</span><span class="gl-v">Urological Infections Guidelines: clasificación localizada/sistémica, diagnóstico y tratamiento.</span></div>
+<div class="gl-i"><span class="gl-k">IDSA 2019</span><span class="gl-v">Bacteriuria asintomática: indicaciones y poblaciones que no deben tratarse.</span></div>
+<div class="gl-i"><span class="gl-k">AUA/CUA/SUFU 2025</span><span class="gl-v">Evaluación y prevención de IVU recurrente en mujeres.</span></div>
+</div></div>
+</div>
+</details>
+
 </div><!-- u3-t1 -->
 </div><!-- u3 -->
 <div class="wsec" id="u4">
