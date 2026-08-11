@@ -406,6 +406,38 @@ hr{border:none;border-top:1px solid var(--border);margin:14px 0;}
 @media(max-width:760px){.modality-grid,.stone-grid{grid-template-columns:1fr}.stone{text-align:left}}
 
 
+
+
+/* S19 — Anticoncepción */
+#s19 .s19-hero{border-left-color:var(--a2);background:linear-gradient(135deg,rgba(74,122,74,.12),rgba(90,122,154,.08))}
+#s19 .s19-hero .wtitle{color:var(--a2)}
+#s19 .study-accordion summary{border-left-color:var(--a2)}
+#s19 .study-accordion summary::after{color:var(--a2)}
+#s19 .acc-index{background:var(--a2)}
+#s19 .eff-tier td:first-child{font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--a2)}
+#s19 .method-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:9px 0 12px}
+#s19 .method-card{background:var(--surface);border:1px solid var(--border);border-top:3px solid var(--a2);border-radius:6px;padding:10px}
+#s19 .method-card strong{display:block;font-family:var(--font-mono);font-size:11px;color:var(--a2);margin-bottom:4px;text-transform:uppercase}
+#s19 .method-card p{font-size:13px;line-height:1.55;margin:0}
+#s19 .choice-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;margin:10px 0}
+#s19 .choice{background:rgba(74,122,74,.05);border:1px solid rgba(74,122,74,.22);border-left:3px solid var(--a2);padding:9px 10px;border-radius:5px;font-size:13px;line-height:1.5}
+#s19 .choice strong{display:block;font-family:var(--font-mono);font-size:10px;color:var(--a2);margin-bottom:3px;text-transform:uppercase}
+#s19 .mini-note{font-size:12px;color:var(--muted);margin-top:4px}
+@media(max-width:760px){#s19 .method-grid,#s19 .choice-grid{grid-template-columns:1fr}}
+
+
+/* Clínicas — agrupación prenatal/ecografía + Taller LPS */
+.clinic-hero{border-left-color:var(--a);background:linear-gradient(135deg,rgba(90,122,154,.11),rgba(74,122,74,.06))}
+.clinic-hero .wtitle{color:var(--a)}
+.clinic-accordion summary{border-left-color:var(--a)}
+.clinic-accordion .acc-index{background:var(--a)}
+.clinic-accordion summary::after{color:var(--a)}
+.lps-hero{border-left-color:var(--a2);background:linear-gradient(135deg,rgba(74,122,74,.12),rgba(90,122,154,.06))}
+.lps-hero .wtitle{color:var(--a2)}
+.lps-accordion summary{border-left-color:var(--a2)}
+.lps-accordion .acc-index{background:var(--a2)}
+.lps-accordion summary::after{color:var(--a2)}
+
 /* Navigation/performance repair */
 .wsec{content-visibility:auto;contain-intrinsic-size:1px 1200px;}
 .wsec:not(.active){display:none!important;}
@@ -505,6 +537,18 @@ hr{border:none;border-top:1px solid var(--border);margin:14px 0;}
 <!-- ══════ CLÍNICAS ══════ -->
 <div class="wsec" id="cli">
 <div class="tpane" id="cli-t0">
+<div class="study-hero clinic-hero">
+  <div class="wlabel">Clínicas · Obstetricia</div>
+  <div class="wtitle">Control Prenatal + Ecografía Obstétrica</div>
+  <p class="mu">Todo el material clínico prenatal y ecográfico reunido en una sola pestaña. Abre únicamente el bloque que quieras repasar.</p>
+  <div class="topic-strip">
+    <span class="b bb">Control prenatal</span><span class="b bg">Fundamentos US</span>
+    <span class="b bp">1.er trimestre</span><span class="b bo">2.º trimestre</span><span class="b br">3.er trimestre</span>
+  </div>
+</div>
+<details class="study-accordion clinic-accordion">
+<summary><span class="acc-index">01</span><span><strong>Control prenatal</strong><small>Cronograma, vigilancia materna y puntos clínicos integrados</small></span></summary>
+<div class="acc-body">
 <h2>// Control Prenatal</h2>
 <div class="card"><div class="ct">Definición</div>
 <p>Conjunto de acciones sistemáticas y periódicas para prevención, diagnóstico y tratamiento de factores que condicionan morbimortalidad materna y perinatal.</p>
@@ -668,8 +712,11 @@ hr{border:none;border-top:1px solid var(--border);margin:14px 0;}
 <div class="fm">FPP (Naegele) = FUR + 10 días − 3 meses + 1 año  |  AU (cm) ≈ SDG [±2 cm normal; ≥3 cm de diferencia = patológico]</div>
 <div class="al ai"><strong>Inmunizaciones en el embarazo (GPC-IMSS / NOM-007)</strong>
 <span class="b bg">Influenza</span> cualquier trimestre  |  <span class="b bg">Tdap</span> 27–36 sem (protección neonatal pasiva)  |  <span class="b bg">COVID-19 ARNm</span> cualquier trim  |  <span class="b br">MMR / Varicela</span> NO (virus vivos → posparto)</div>
-</div><!-- cli-t0 -->
-<div class="tpane" id="cli-t1">
+</div>
+</details>
+<details class="study-accordion clinic-accordion">
+<summary><span class="acc-index">02</span><span><strong>Fundamentos de ecografía</strong><small>Principios, seguridad, biometría y orientación del estudio</small></span></summary>
+<div class="acc-body">
 <h2>// Fundamentos de Ecografía Obstétrica</h2>
 <div class="card"><div class="ct">Principio físico</div>
 <p>Ondas mecánicas &gt;20,000 Hz (diagnóstico: <strong>2–15 MHz</strong>). Imagen se forma por tiempo de retorno del eco y amplitud de la señal.</p>
@@ -714,8 +761,11 @@ hr{border:none;border-top:1px solid var(--border);margin:14px 0;}
 <div class="gl-i"><span class="gl-k">ACM</span><span class="gl-v">Arteria Cerebral Media</span></div>
 </div></div>
 <div class="al aw"><strong>Principio ALARA + ISUOG Safety</strong>Modo B y M: seguros todos los trimestres. Doppler pulsado en 1T: mayor depósito de energía → usar solo con indicación clínica.</div>
-</div><!-- cli-t1 -->
-<div class="tpane" id="cli-t2">
+</div>
+</details>
+<details class="study-accordion clinic-accordion">
+<summary><span class="acc-index">03</span><span><strong>Ecografía del 1.er trimestre</strong><small>11+0–13+6 semanas: datación, anatomía temprana y tamiz</small></span></summary>
+<div class="acc-body">
 <h2>// Ecografía 1° Trimestre (11+0 – 13+6 sem)</h2>
 <div class="al as"><strong>Ventana óptima</strong>Datación por CRL, tamizaje aneuploídías (TN + bioquímica), anatomía básica, corionicidad en gemelar.</div>
 <div class="fm">Semanas ≈ CRL(cm) + 6.5 (Robinson y Fleming)  |  Error ±5–7 días si &lt;14 sem — más preciso que FUR</div>
@@ -771,8 +821,11 @@ hr{border:none;border-top:1px solid var(--border);margin:14px 0;}
 <div class="gl-i"><span class="gl-k">STFF</span><span class="gl-v">Síndrome de Transfusión Feto-Fetal</span></div>
 </div></div>
 <div class="al aw"><strong>Timing crítico</strong>Corionicidad se determina con mayor precisión &lt;14 sem. Después, el signo lambda puede desaparecer.</div>
-</div><!-- cli-t2 -->
-<div class="tpane" id="cli-t3">
+</div>
+</details>
+<details class="study-accordion clinic-accordion">
+<summary><span class="acc-index">04</span><span><strong>Ecografía del 2.º trimestre</strong><small>18–22 semanas: estudio morfológico sistemático</small></span></summary>
+<div class="acc-body">
 <h2>// Ecografía 2° Trimestre — US Morfológico (18–22 sem)</h2>
 <div class="al as"><strong>Ventana óptima: 18–22 sem</strong>Estudio más importante del embarazo para detección de malformaciones. La LA permite movilidad fetal adecuada y la osificación es suficiente.</div>
 <h2>// Biometría Estándar</h2>
@@ -837,8 +890,11 @@ hr{border:none;border-top:1px solid var(--border);margin:14px 0;}
 <li>Funnel (embudo): dilatación OCI con LA herniado → insuf. cervical</li>
 </ul></div>
 </div>
-</div><!-- cli-t3 -->
-<div class="tpane" id="cli-t4">
+</div>
+</details>
+<details class="study-accordion clinic-accordion">
+<summary><span class="acc-index">05</span><span><strong>Ecografía del 3.er trimestre</strong><small>Crecimiento, líquido, Doppler y bienestar fetal</small></span></summary>
+<div class="acc-body">
 <h2>// Ecografía 3° Trimestre</h2>
 <div class="al as"><strong>Objetivos: 28–32 y 36–38 sem</strong>Vigilancia crecimiento, bienestar fetal (PBF), Doppler hemodinámico, posición fetal, placenta.</div>
 <h2>// Doppler Obstétrico — Vasos Clave</h2>
@@ -892,7 +948,182 @@ hr{border:none;border-top:1px solid var(--border);margin:14px 0;}
 <tr><td>Percreta</td><td>Serosa → vejiga/órganos</td><td>Interrupción interfase vesical, Doppler exagerado</td></tr>
 </table></div>
 <div class="al ad"><strong>Factor riesgo #1 acretismo</strong>Cesárea previa + placenta anterior/previa: 1 cesárea ~25%, 2 cesáreas ~40%. Planificar en centro de alta complejidad.</div>
-</div><!-- cli-t4 -->
+</div>
+</details>
+</div><!-- cli-t0 -->
+
+<div class="tpane" id="cli-t1">
+
+<div class="study-hero lps-hero">
+  <div class="wlabel">Clínicas · Taller práctico</div>
+  <div class="wtitle">Taller LPS — Laparoscopia Ginecológica</div>
+  <p class="mu">Fundamentos, técnica e integración clínica · Nivel Internado / USMLE-ENARM</p>
+  <div class="topic-strip">
+    <span class="b bb">Acceso</span><span class="b bg">Neumoperitoneo</span><span class="b bp">Energía</span>
+    <span class="b bo">Ergonomía</span><span class="b br">Complicaciones</span>
+  </div>
+</div>
+
+<div class="kp">
+  <div class="kp-t">Mapa mental del procedimiento</div>
+  <div class="flow">
+    <div class="fs">Preparar + posicionar</div><div class="fa">→</div>
+    <div class="fs">Acceso seguro</div><div class="fa">→</div>
+    <div class="fs">CO₂ 12–15 mmHg</div><div class="fa">→</div>
+    <div class="fs">Triangulación + energía</div><div class="fa">→</div>
+    <div class="fs">Hemostasia + cierre</div>
+  </div>
+</div>
+
+<details class="study-accordion lps-accordion" open>
+<summary><span class="acc-index">01</span><span><strong>Fundamentos y ventajas</strong><small>Por qué se prefiere la vía laparoscópica y qué limitaciones introduce</small></span></summary>
+<div class="acc-body">
+<h2>// Fundamentos</h2>
+<div class="g2">
+  <div class="card"><div class="ct">Ventajas frente a laparotomía</div>
+    <p>Menor dolor posoperatorio, menor estancia hospitalaria, retorno más rápido a la actividad, menor infección de sitio quirúrgico y menor formación de adherencias.</p>
+  </div>
+  <div class="card"><div class="ct">Desventajas / retos</div>
+    <p>Pérdida de visión tridimensional y retroalimentación táctil, curva de aprendizaje técnica, mayor tiempo quirúrgico inicial y costo de equipo.</p>
+  </div>
+</div>
+<div class="kp"><div class="kp-t">Concepto clave</div>La laparoscopia sustituye a la laparotomía como acceso estándar para la mayoría de la cirugía ginecológica benigna.</div>
+</div>
+</details>
+
+<details class="study-accordion lps-accordion">
+<summary><span class="acc-index">02</span><span><strong>Preparación del paciente y posición</strong><small>Litotomía, descompresión visceral, Trendelenburg y repercusiones anestésicas</small></span></summary>
+<div class="acc-body">
+<h2>// Preparación</h2>
+<div class="card">
+  <p><strong>Posición:</strong> litotomía dorsal con brazos aducidos para permitir acceso vaginal simultáneo y uso de manipulador uterino.</p>
+  <p><strong>Sonda vesical:</strong> descomprime vejiga y disminuye riesgo de lesión durante entrada suprapúbica.</p>
+  <p><strong>Sonda oro/nasogástrica según el caso:</strong> descomprime estómago y disminuye riesgo de lesión visceral con aguja de Veress en cuadrante superior izquierdo.</p>
+  <p><strong>Trendelenburg pronunciado:</strong> solo tras confirmar acceso seguro; desplaza intestino delgado hacia epigastrio y mejora exposición pélvica.</p>
+</div>
+<h3>Trendelenburg + neumoperitoneo: fisiología relevante</h3>
+<div class="tw"><table>
+<tr><th>Cambio</th><th>Implicación</th></tr>
+<tr><td>↑ retorno venoso y precarga inicial</td><td>Después disminuye la distensibilidad pulmonar por desplazamiento cefálico del diafragma.</td></tr>
+<tr><td>↑ presión intracraneal e intraocular</td><td>Importante en glaucoma o patología intracraneal.</td></tr>
+<tr><td>Absorción peritoneal de CO₂</td><td>Hipercapnia y acidosis respiratoria leve; se compensan aumentando la ventilación minuto.</td></tr>
+</table></div>
+</div>
+</details>
+
+<details class="study-accordion lps-accordion">
+<summary><span class="acc-index">03</span><span><strong>Acceso a la cavidad abdominal</strong><small>Veress, trocar óptico, Hasson y colocación segura de puertos</small></span></summary>
+<div class="acc-body">
+<h2>// Técnicas de entrada</h2>
+<div class="tw"><table>
+<tr><th>Técnica</th><th>Descripción</th><th>Consideración clave</th></tr>
+<tr><td><strong>Aguja de Veress</strong><br><span class="mu">cerrada</span></td><td>Punción a ciegas umbilical o en punto de Palmer/8.º espacio intercostal izquierdo en cirugía previa; confirmar con prueba de la gota y presión de apertura baja.</td><td>Riesgo de inserción preperitoneal o lesión vascular/visceral si no se confirma la posición.</td></tr>
+<tr><td><strong>Trocar óptico</strong></td><td>Inserción bajo visión directa con lente en la punta.</td><td>Permite identificar capas de pared abdominal en tiempo real.</td></tr>
+<tr><td><strong>Hasson</strong><br><span class="mu">abierta</span></td><td>Disección hasta peritoneo bajo visión directa y colocación de trocar romo.</td><td>Preferida en cirugía abdominal previa extensa o sospecha de adherencias densas.</td></tr>
+</table></div>
+<div class="al aw"><strong>Trocares accesorios</strong>Colocarlos bajo visión directa y laterales a los vasos epigástricos inferiores, usando transiluminación o referencias anatómicas. Su lesión es la causa más frecuente de hemorragia de pared abdominal en laparoscopia.</div>
+</div>
+</details>
+
+<details class="study-accordion lps-accordion">
+<summary><span class="acc-index">04</span><span><strong>Neumoperitoneo</strong><small>Por qué se usa CO₂, presión objetivo y señales de mala posición</small></span></summary>
+<div class="acc-body">
+<h2>// CO₂ y presión de trabajo</h2>
+<div class="g2">
+  <div class="card"><div class="ct">Por qué CO₂</div><p>Alta solubilidad sanguínea, lo que reduce el riesgo de embolia gaseosa clínicamente significativa frente al aire; además, no es combustible y es compatible con electrocirugía.</p></div>
+  <div class="card"><div class="ct">Presión objetivo</div><p><strong>12–15 mmHg</strong>: proporciona exposición adecuada minimizando el compromiso cardiopulmonar.</p></div>
+</div>
+<div class="al ad"><strong>Señal de mala posición de Veress</strong>Presión inicial de insuflación &gt;10 mmHg con bajo flujo sugiere posición preperitoneal, epiploica o intravisceral.</div>
+<div class="kp"><div class="kp-t">Perla de examen</div>Dolor referido al hombro posoperatorio = irritación diafragmática por CO₂ residual, transmitida por el nervio frénico C3–C5. Suele ser autolimitado; manejo con analgesia y deambulación temprana.</div>
+</div>
+</details>
+
+<details class="study-accordion lps-accordion">
+<summary><span class="acc-index">05</span><span><strong>Instrumental, óptica y energía</strong><small>Monopolar, bipolar, ultrasónica, sellado vascular y ergonomía</small></span></summary>
+<div class="acc-body">
+<h2>// Energía quirúrgica</h2>
+<div class="tw"><table>
+<tr><th>Modalidad</th><th>Mecanismo</th><th>Uso / precaución</th></tr>
+<tr><td><strong>Monopolar</strong></td><td>Corriente del electrodo activo atraviesa al paciente hacia una placa dispersiva.</td><td>Mayor penetración y lesión térmica lateral; riesgo de acoplamiento capacitivo y quemaduras a distancia.</td></tr>
+<tr><td><strong>Bipolar</strong></td><td>Corriente circula entre las dos ramas del instrumento.</td><td>Menor diseminación térmica; estándar para hemostasia de anexos y esterilización tubaria.</td></tr>
+<tr><td><strong>Ultrasónica</strong><br><span class="mu">bisturí armónico</span></td><td>Vibración mecánica de alta frecuencia que desnaturaliza proteínas por fricción.</td><td>Menor lesión térmica colateral; corte y coagulación simultáneos.</td></tr>
+<tr><td><strong>Sellado vascular avanzado</strong></td><td>Bipolar con retroalimentación de impedancia tisular.</td><td>Sella vasos hasta 7 mm; usado en histerectomía laparoscópica.</td></tr>
+</table></div>
+<h3>Principios ergonómicos para el taller</h3>
+<div class="card">
+<ul class="dl">
+<li><strong>Efecto de fulcro:</strong> el movimiento de la punta del instrumento es opuesto al movimiento de la mano.</li>
+<li><strong>Triangulación:</strong> cámara e instrumentos forman un triángulo hacia el objetivo; evitar paralelismo y colisiones.</li>
+<li><strong>Pérdida de visión 3D:</strong> estimar profundidad con movimiento de cámara, sombras y tamaño relativo.</li>
+<li><strong>Posición de manos:</strong> por debajo de la línea de los codos y coordinadas con el eje de cámara para reducir fatiga.</li>
+<li><strong>Sutura intracorpórea:</strong> practicar nudo cuadrado con portaagujas + disector manteniendo tensión con la mano no dominante.</li>
+</ul>
+</div>
+</div>
+</details>
+
+<details class="study-accordion lps-accordion">
+<summary><span class="acc-index">06</span><span><strong>Procedimientos ginecológicos frecuentes</strong><small>Indicaciones típicas y el punto técnico que debes recordar</small></span></summary>
+<div class="acc-body">
+<div class="tw"><table>
+<tr><th>Procedimiento</th><th>Indicación típica</th><th>Punto técnico clave</th></tr>
+<tr><td><strong>Salpingectomía / esterilización tubaria</strong></td><td>Anticoncepción permanente; salpingectomía oportunista para reducción de riesgo oncológico.</td><td>Bipolar + sección o extirpación completa de la trompa.</td></tr>
+<tr><td><strong>Quistectomía ovárica</strong></td><td>Masa anexial persistente/sintomática con baja sospecha de malignidad.</td><td>Preservar tejido ovárico sano y evitar derrame del contenido quístico.</td></tr>
+<tr><td><strong>Miomectomía laparoscópica</strong></td><td>Miomas sintomáticos con deseo de fertilidad.</td><td>Cierre por planos del lecho miometrial; considerar morcelación contenida.</td></tr>
+<tr><td><strong>Histerectomía laparoscópica</strong></td><td>Patología uterina benigna sin prolapso importante.</td><td>Sellado secuencial de pedículos: redondos, anexos/ovario y arterias uterinas.</td></tr>
+<tr><td><strong>Embarazo ectópico</strong></td><td>Ectópico tubario hemodinámicamente estable.</td><td>Salpingostomía vs. salpingectomía; con trompa contralateral sana, fertilidad futura similar y menor recurrencia con salpingectomía.</td></tr>
+</table></div>
+</div>
+</details>
+
+<details class="study-accordion lps-accordion">
+<summary><span class="acc-index">07</span><span><strong>Complicaciones y reconocimiento transoperatorio</strong><small>Lesiones de entrada, embolia gaseosa y hemorragia de pared</small></span></summary>
+<div class="acc-body">
+<div class="tw"><table>
+<tr><th>Complicación</th><th>Dato clave</th><th>Manejo inicial</th></tr>
+<tr><td><strong>Lesión vascular mayor</strong><br><span class="mu">aorta / ilíacos</span></td><td>Veress o trocar primario en línea media; más frecuente en pacientes delgadas.</td><td>Laparotomía inmediata si hay inestabilidad hemodinámica.</td></tr>
+<tr><td><strong>Lesión intestinal</strong></td><td>Adherencias previas; puede pasar inadvertida y presentarse con peritonitis 2–4 días después.</td><td>Reparación laparoscópica o conversión según extensión; alto índice de sospecha posoperatoria.</td></tr>
+<tr><td><strong>Embolia gaseosa por CO₂</strong></td><td>Insuflación intravascular: caída súbita del CO₂ espirado, hipotensión y “murmullo de rueda de molino”.</td><td>Detener insuflación, Trendelenburg izquierdo y aspiración por catéter central si está disponible.</td></tr>
+<tr><td><strong>Enfisema subcutáneo / neumotórax</strong></td><td>Migración extraperitoneal de CO₂ o defecto diafragmático no reconocido.</td><td>Generalmente autolimitado; vigilar en insuflación preperitoneal prolongada.</td></tr>
+<tr><td><strong>Lesión de epigástricos inferiores</strong></td><td>Trocar accesorio sin transiluminación o referencia anatómica.</td><td>Compresión, sutura en 8 transfascial o electrocoagulación bajo visión.</td></tr>
+</table></div>
+<div class="al ad"><strong>Bandera roja</strong>Hipotensión + disminución súbita del CO₂ espiratorio final justo después de iniciar la insuflación obliga a descartar primero embolia gaseosa.</div>
+</div>
+</details>
+
+<details class="study-accordion lps-accordion">
+<summary><span class="acc-index">08</span><span><strong>Contraindicaciones relativas</strong><small>Cuándo el neumoperitoneo o el acceso mínimamente invasivo pueden ser inadecuados</small></span></summary>
+<div class="acc-body">
+<div class="card">
+<ul class="dl">
+<li>Inestabilidad hemodinámica que requiere control quirúrgico inmediato.</li>
+<li>Enfermedad cardiopulmonar grave que no tolera el neumoperitoneo.</li>
+<li>Sospecha de malignidad con riesgo de diseminación por morcelación no contenida o derrame tumoral.</li>
+<li>Múltiples cirugías abdominales previas con adherencias extensas: preferir técnica abierta/Hasson o punto de Palmer.</li>
+</ul>
+</div>
+</div>
+</details>
+
+<details class="study-accordion lps-accordion">
+<summary><span class="acc-index">09</span><span><strong>Checklist de seguridad para el taller</strong><small>Secuencia final antes, durante y antes del cierre</small></span></summary>
+<div class="acc-body">
+<div class="step-card"><div class="step-n">1</div><p>Verificar consentimiento informado, sitio quirúrgico y funcionamiento de torre, fuente de luz e insuflador.</p></div>
+<div class="step-card"><div class="step-n">2</div><p>Confirmar posición correcta de la aguja de Veress con prueba de la gota y presión de insuflación baja antes de llevar a presión completa.</p></div>
+<div class="step-card"><div class="step-n">3</div><p>Inspeccionar la cavidad en 360° inmediatamente después de la entrada del trocar óptico y antes de colocar puertos accesorios.</p></div>
+<div class="step-card"><div class="step-n">4</div><p>Verificar hemostasia de todos los pedículos antes de desinsuflar; el neumoperitoneo puede enmascarar sangrado venoso de baja presión.</p></div>
+<div class="step-card"><div class="step-n">5</div><p>Contar instrumental y gasas antes del cierre, igual que en cirugía abierta.</p></div>
+</div>
+</details>
+
+<div class="gl"><div class="gl-t">► Glosario rápido</div><div class="gl-g">
+<div class="gl-i"><span class="gl-k">LPS</span><span class="gl-v">Laparoscopia</span></div>
+<div class="gl-i"><span class="gl-k">CO₂</span><span class="gl-v">Gas de insuflación para neumoperitoneo</span></div>
+<div class="gl-i"><span class="gl-k">Hasson</span><span class="gl-v">Técnica abierta de entrada</span></div>
+<div class="gl-i"><span class="gl-k">Palmer</span><span class="gl-v">Sitio alternativo de acceso en cuadrante superior izquierdo</span></div>
+</div></div>
+
+</div><!-- cli-t1 -->
 </div><!-- cli -->
 <!-- ══════ S1: OBSTETRICIA OPERATORIA ══════ -->
 <div class="wsec active" id="s1">
@@ -7746,20 +7977,200 @@ Causa no obvia de los síntomas · lesión focal, hiper/hipopigmentada o exofít
 <!-- ══════ S19: ANTICONCEPCIÓN ══════ -->
 <div class="wsec" id="s19">
 <div class="tpane" id="s19-t0">
-<h2>// Anticoncepción</h2>
-<div class="tw"><table>
-<tr><th>Método</th><th>Eficacia (índice Pearl)</th><th>Mecanismo</th><th>Ventajas / Desventajas clave</th></tr>
-<tr><td>ACO combinados (estrógeno + progestágeno)</td><td>0.3% (uso perfecto) / 9% (típico)</td><td>↓ gonadotropinas, moco cervical hostil, atrofia endometrial</td><td>↓ dismenorrea, ↓ SUA, ↓ ca. endometrio/ovario; contraindicado: migraña con aura, TEV, tabaquismo &gt;35a, cáncer mama</td></tr>
-<tr><td>Progestágenos solos (minipíldora)</td><td>0.3–1.1%</td><td>Moco cervical hostil; anovulación parcial</td><td>Lactancia; contraindicaciones cardio-vasculares de ACO</td></tr>
-<tr><td>DIU-LNG (Mirena)</td><td>0.2%</td><td>Moco cervical; atrofia endometrial; efecto local</td><td>5–7 años; reduce SUA 90%; TTO endometriosis / SOP</td></tr>
-<tr><td>DIU de cobre (TCu 380A)</td><td>0.6–0.8%</td><td>Iones Cu2+ (espermaticida); reacción inflamatoria endometrial</td><td>10–12 años; no hormonal; puede ↑ sangrado y dismenorrea; anticoncepción de emergencia hasta 5 días</td></tr>
-<tr><td>Implante subdérmico (etonogestrel)</td><td>0.05%</td><td>Anovulación; moco cervical</td><td>3 años; sangrado irregular frecuente</td></tr>
-<tr><td>Medroxiprogesterona IM (Depo)</td><td>0.2–6%</td><td>Anovulación</td><td>3 meses; amenorrea frecuente; ↓ DMO (reversible)</td></tr>
-<tr><td>Anticoncepción de emergencia (AE)</td><td>—</td><td>Levonorgestrel 1.5 mg (hasta 72h) o DIU-Cu (hasta 5 días)</td><td>NO es abortiva; retrasa ovulación; eficacia ↓ con tiempo</td></tr>
+
+<div class="study-hero s19-hero">
+<div class="wlabel">S19 · Williams Ginecología 4e · Capítulo 5</div>
+<div class="wtitle">Métodos Anticonceptivos y Esterilización</div>
+<p class="mu">Resumen de alto rendimiento · Nivel internado / USMLE-ENARM</p>
+<div class="topic-strip">
+<span class="b bg">Eficacia</span><span class="b bb">LARC</span><span class="b bp">Hormonales</span><span class="b bo">Barrera</span><span class="b br">Urgencia</span>
+</div>
+</div>
+
+<div class="kp"><div class="kp-t">Idea central</div>La eficacia clínica depende tanto del método como de la participación de la usuaria. Los métodos de <strong>primer nivel (LARC + esterilización)</strong> tienen la menor brecha entre uso perfecto y uso típico porque prácticamente eliminan el error de la usuaria como fuente de falla.</div>
+
+<h2>// 1. Clasificación por eficacia</h2>
+<div class="tw"><table class="eff-tier">
+<tr><th>Nivel</th><th>Método</th><th>Uso perfecto</th><th>Uso típico</th></tr>
+<tr><td rowspan="5">1° · más eficaces</td><td><strong>LNG-IUS 52 mg</strong></td><td>0.1</td><td>0.1</td></tr>
+<tr><td>T 380A de cobre</td><td>0.6</td><td>0.8</td></tr>
+<tr><td>Implante de etonogestrel</td><td>0.1</td><td>0.1</td></tr>
+<tr><td>Esterilización femenina</td><td>0.5</td><td>0.5</td></tr>
+<tr><td>Esterilización masculina</td><td>0.1</td><td>0.15</td></tr>
+<tr><td rowspan="3">2° · muy eficaces</td><td>Comprimido combinado / anillo / parche</td><td>0.3</td><td>7</td></tr>
+<tr><td>DMPA (inyectable)</td><td>0.2</td><td>4</td></tr>
+<tr><td>Progestágeno solo (POP)</td><td>0.3</td><td>7</td></tr>
+<tr><td rowspan="3">3° · eficaces</td><td>Preservativo masculino</td><td>2</td><td>13</td></tr>
+<tr><td>Preservativo femenino</td><td>5</td><td>21</td></tr>
+<tr><td>Diafragma + espermicida</td><td>16</td><td>24</td></tr>
+<tr><td rowspan="2">4° · menos eficaces</td><td>Espermicidas</td><td>18</td><td>28</td></tr>
+<tr><td>Esponja (multíparas / nulíparas)</td><td>20 / 9</td><td>27 / 14</td></tr>
 </table></div>
-<div class="al ai"><strong>Criterios Médicos de Elegibilidad (CME/OMS)</strong>Categoría 1 = sin restricción; 2 = ventajas supera riesgos; 3 = riesgos supera ventajas (usar solo si no hay alternativa); 4 = riesgo inaceptable (contraindicación absoluta).</div>
+<p class="mini-note">Embarazos por 100 mujeres durante el primer año de uso.</p>
+<div class="al aw"><strong>Punto USMLE</strong>La brecha entre uso perfecto y uso típico es mínima en LARC y mayor en métodos que requieren redosificación diaria, semanal o mensual.</div>
+
+<h2>// 2. Criterios de Elegibilidad Médica (US MEC)</h2>
+<div class="g2">
+<div class="card"><div class="ct">Categorías 1–2</div><p><span class="b bg">1</span> Sin restricción. <span class="b bb">2</span> Las ventajas superan los riesgos.</p></div>
+<div class="card"><div class="ct">Categorías 3–4</div><p><span class="b bo">3</span> Los riesgos superan las ventajas; usar con juicio clínico. <span class="b br">4</span> Riesgo inaceptable, contraindicación absoluta.</p></div>
+</div>
+<div class="al ai"><strong>Lactancia y posparto</strong>Aproximadamente 20% de las mujeres que lactan ovulan a los 3 meses posparto, y la ovulación precede a la menstruación. El <strong>Cu-DIU</strong> es categoría 1; los <strong>CHC</strong> son categoría 2–4 en las primeras 6 semanas posparto por riesgo de TVP y posible interferencia con la lactogénesis; los métodos de <strong>progestágeno solo</strong> son categoría 1–2.</div>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">3</span><div><strong>Métodos de primera elección</strong><small>LARC y esterilización · máxima eficacia y mínima dependencia de adherencia</small></div></summary>
+<div class="acc-body">
+
+<h3>3.1 Dispositivos intrauterinos</h3>
+<div class="method-grid">
+<div class="method-card"><strong>LNG-IUS</strong><p>Libera levonorgestrel local → <strong>atrofia endometrial</strong>, espesamiento del moco cervical y reducción de la motilidad tubaria. La inhibición de la ovulación es inconstante y no constituye el mecanismo principal. Es frecuente el manchado irregular durante los primeros 6 meses, seguido de amenorrea progresiva.</p></div>
+<div class="method-card"><strong>Cu-DIU · T380A</strong><p>El cobre genera una <strong>reacción inflamatoria local estéril</strong> con efecto espermicida y ambiente endometrial hostil para implantación. Es un mecanismo preimplantación, no abortivo. Aprobado por 10 años y descrito como eficaz hasta 20.</p></div>
+</div>
+<div class="tw"><table>
+<tr><th>Sustancia</th><th>Dosis</th><th>Duración FDA</th><th>Color cuerda</th><th>Marca</th></tr>
+<tr><td>Levonorgestrel</td><td>52 mg</td><td>5 años</td><td>Bronce</td><td>Mirena</td></tr>
+<tr><td>Levonorgestrel</td><td>52 mg</td><td>5 años</td><td>Azul</td><td>Liletta</td></tr>
+<tr><td>Levonorgestrel</td><td>19.5 mg</td><td>5 años</td><td>Azul</td><td>Kyleena</td></tr>
+<tr><td>Levonorgestrel</td><td>13.5 mg</td><td>3 años</td><td>Bronce</td><td>Skyla/Jaydess</td></tr>
+<tr><td>Cobre</td><td>380 mm²</td><td>10 años</td><td>Blanco</td><td>ParaGard</td></tr>
+</table></div>
+<div class="al ad"><strong>Complicaciones del DIU</strong><strong>Expulsión ~5%</strong>, sobre todo en el primer mes; <strong>perforación uterina 1–2/1000</strong> colocaciones. Si ocurre embarazo con DIU in situ y los filamentos son visibles, se recomienda extracción para disminuir aborto tardío, sepsis y parto pretérmino. Si el método falla, aumenta la proporción relativa de embarazo ectópico, pero <strong>no aumenta el riesgo absoluto</strong> de ectópico frente a no usar anticoncepción.</div>
+<div class="kp"><div class="kp-t">Anticoncepción de urgencia</div>El Cu-DIU es el método de urgencia más eficaz del resumen, con una tasa de falla aproximada de <strong>0.1%</strong>, y además deja anticoncepción LARC continua.</div>
+
+<h3>3.2 Implante subdérmico · Nexplanon</h3>
+<div class="card"><div class="ct">68 mg etonogestrel · 3 años</div><p><strong>Mecanismo principal:</strong> supresión de la ovulación; además espesa el moco cervical y produce atrofia endometrial. El efecto adverso limitante es el <strong>sangrado irregular impredecible</strong>, que no necesariamente se normaliza con el tiempo y constituye la causa más frecuente de descontinuación.</p><p class="mini-note">Colocación: cara interna del tríceps, 8–10 cm del epicóndilo medial y 3–5 cm medial al surco bicipital-tricipital para evitar el paquete neurovascular.</p></div>
+
+<h3>3.3 Esterilización femenina</h3>
+<div class="tw"><table>
+<tr><th>Aspecto</th><th>Punto clave</th></tr>
+<tr><td>Técnicas</td><td>Electrocoagulación —bipolar preferida sobre unipolar—; anillo de Falope, clips Hulka-Clemens/Filshie y ligadura con sutura tipo Pomeroy/Parkland.</td></tr>
+<tr><td>Falla</td><td>CREST: <strong>1.3% a 10 años</strong>; mayor con coagulación unipolar y en mujeres jóvenes.</td></tr>
+<tr><td>Salpingectomía bilateral oportunista</td><td>Puede combinar esterilización con reducción de riesgo de cáncer ovárico/peritoneal seroso; reducción descrita de <strong>42–78%</strong> frente a ~30% con ligadura tubaria simple, sin diferencia demostrada en AMH ni aumento significativo de morbilidad quirúrgica.</td></tr>
+<tr><td>Arrepentimiento</td><td><strong>20%</strong> acumulado a 14 años si se realizó a ≤30 años vs. <strong>6%</strong> si &gt;30 años → asesoría exhaustiva en pacientes jóvenes.</td></tr>
+</table></div>
+
+<h3>3.4 Vasectomía</h3>
+<div class="flow"><div class="fs">Interrupción del deferente</div><div class="fa">→</div><div class="fs">Ambulatoria + anestesia local</div><div class="fa">→</div><div class="fs">≈3 meses / 20 eyaculaciones</div><div class="fa">→</div><div class="fs">Confirmar azoospermia</div></div>
+<div class="al aw"><strong>No es inmediatamente eficaz</strong>Usar un método adicional hasta depurar espermatozoides residuales y confirmar azoospermia. El resumen señala una tasa de falla &lt;1% y que un espermiograma negativo es suficiente según la evidencia citada.</div>
+</div>
+</details>
+
+<details class="study-accordion">
+<summary><span class="acc-index">4</span><div><strong>Métodos de segunda elección</strong><small>Anticonceptivos hormonales sistémicos · CHC y progestágeno solo</small></div></summary>
+<div class="acc-body">
+
+<h3>4.1 Farmacología de los CHC</h3>
+<div class="g2">
+<div class="card"><div class="ct">Estrógeno</div><p>Etinilestradiol 10–50 µg o valerato de estradiol. <strong>Suprime FSH</strong>, estabiliza el endometrio y previene sangrado intermenstrual. Aumenta SHBG hepática → ↓ testosterona libre → beneficio en acné/hirsutismo.</p></div>
+<div class="card"><div class="ct">Progestágeno</div><p><strong>Suprime LH e inhibe la ovulación</strong> —efecto principal—; además espesa el moco cervical y atrofia el endometrio.</p></div>
+</div>
+<div class="tw"><table>
+<tr><th>Presentación</th><th>Composición señalada en el resumen</th></tr>
+<tr><td>Oral combinado</td><td>Estrógeno + progestágeno</td></tr>
+<tr><td>Parche transdérmico</td><td>Norelgestromina 150 µg + EE 20 µg</td></tr>
+<tr><td>Anillo vaginal NuvaRing</td><td>Etonogestrel 120 µg + EE 15 µg/día</td></tr>
+</table></div>
+
+<h3>4.2 Contraindicaciones absolutas de CHC · US MEC 4</h3>
+<div class="tw"><table>
+<tr><th>Contraindicaciones</th></tr>
+<tr><td>Embarazo</td></tr>
+<tr><td>Hipertensión no controlada; fumadora &gt;35 años</td></tr>
+<tr><td>Diabetes con afectación vascular</td></tr>
+<tr><td>Apoplejía o cardiopatía isquémica</td></tr>
+<tr><td>Migraña con aura / déficit neurológico focal</td></tr>
+<tr><td>Tromboflebitis o antecedente de ETV</td></tr>
+<tr><td>Hemorragia genital anormal no diagnosticada</td></tr>
+<tr><td>Cáncer de mama actual o sospechado</td></tr>
+<tr><td>Hepatopatía activa, adenoma o carcinoma hepático</td></tr>
+<tr><td>Cáncer endometrial u otra neoplasia estrógeno-dependiente</td></tr>
+</table></div>
+<div class="al ad"><strong>Riesgo de ETV</strong>Basal sin anticoncepción ≈1/10 000 mujeres-año; con CHC 3–4/10 000; durante el embarazo 5–6/10 000. El resumen señala que la drospirenona se ha asociado con mayor riesgo de ETV que levonorgestrel en algunos estudios.</div>
+
+<h3>4.3 Beneficios no anticonceptivos</h3>
+<ul class="dl">
+<li>↓ riesgo de cáncer endometrial y ovárico; la protección persiste años tras suspender, aunque disminuye con el tiempo.</li>
+<li>↓ dismenorrea, sangrado menstrual y anemia; mejora acné e hirsutismo.</li>
+<li>↓ riesgo de embarazo ectópico y de EPI sintomática.</li>
+<li>Tratamiento del trastorno disfórico premenstrual con formulaciones que contienen drospirenona.</li>
+</ul>
+
+<h3>4.4 Interacciones farmacológicas</h3>
+<div class="al aw"><strong>Inductores de CYP450 que reducen eficacia</strong>Rifampicina, griseofulvina, fenitoína, carbamazepina, oxcarbazepina, topiramato, hierba de San Juan y, entre antirretrovirales, efavirenz.</div>
+<div class="kp"><div class="kp-t">Dos trampas frecuentes</div>Los antibióticos no rifampicínicos <strong>no reducen</strong> la eficacia del CHC. El CHC <strong>reduce los niveles de lamotrigina</strong> y puede aumentar el riesgo de crisis, por lo que el resumen recomienda evitar esta combinación.</div>
+
+<h3>4.5 Métodos solo con progestágeno</h3>
+<div class="method-grid">
+<div class="method-card"><strong>Minipíldora · POP</strong><p>No suprime la ovulación de forma constante. Depende del espesamiento del moco cervical, cuyo efecto dura &lt;24 h, por lo que requiere toma a la misma hora cada día; retraso &gt;3–4 h requiere respaldo. Es segura en lactancia y cuando el estrógeno está contraindicado por riesgo cardiovascular.</p></div>
+<div class="method-card"><strong>DMPA</strong><p>Acetato de medroxiprogesterona de depósito: <strong>IM 150 mg o SC 104 mg cada 90 días</strong>. Puede causar sangrado irregular, retraso de hasta 1 año en el retorno de la fertilidad y disminución reversible de densidad mineral ósea. El resumen refiere recomendación FDA de no usar como método único &gt;2 años si existen alternativas.</p></div>
+</div>
+</div>
+</details>
+
+<details class="study-accordion">
+<summary><span class="acc-index">5</span><div><strong>Métodos de barrera y conocimiento de la fertilidad</strong><small>Protección frente a ITS, técnica correcta y adherencia</small></div></summary>
+<div class="acc-body">
+<div class="tw"><table>
+<tr><th>Método</th><th>Punto de aprendizaje</th></tr>
+<tr><td><strong>Preservativo masculino de látex</strong></td><td>Única protección eficaz dual señalada en el resumen: embarazo + ITS/VPH. Usar lubricante hidrófilo; los lubricantes oleosos degradan el látex.</td></tr>
+<tr><td><strong>Preservativo femenino</strong></td><td>Alternativa en alergia al látex; mayor tasa de falla que el preservativo masculino.</td></tr>
+<tr><td><strong>Diafragma + espermicida</strong></td><td>Requiere ajuste por prescripción. Dejar colocado ≥6 h después de la relación y no más de 24 h por riesgo de síndrome de choque tóxico.</td></tr>
+<tr><td><strong>Conocimiento de la fertilidad</strong></td><td>Eficacia muy dependiente de la enseñanza y de la adherencia de la pareja.</td></tr>
+</table></div>
+</div>
+</details>
+
+<details class="study-accordion">
+<summary><span class="acc-index">6</span><div><strong>Espermicidas y esponja</strong><small>Cuarto nivel · mayor dependencia de uso correcto</small></div></summary>
+<div class="acc-body">
+<div class="g2">
+<div class="card"><div class="ct">Nonoxinol-9</div><p>Barrera física + acción espermicida. Máxima eficacia &lt;1 h tras la aplicación y requiere reaplicación en cada coito. <strong>No protege contra ITS.</strong></p></div>
+<div class="card"><div class="ct">Esponja</div><p>Impregnada con nonoxinol-9. Puede colocarse hasta 24 h antes del coito independientemente del número de relaciones; es menos eficaz que el diafragma o el preservativo.</p></div>
+</div>
+</div>
+</details>
+
+<details class="study-accordion">
+<summary><span class="acc-index">7</span><div><strong>Anticoncepción de urgencia</strong><small>Retraso/inhibición de ovulación · no interrumpe embarazo implantado</small></div></summary>
+<div class="acc-body">
+<div class="kp"><div class="kp-t">Mecanismo</div>El mecanismo principal es <strong>inhibir o retrasar la ovulación</strong>. No interrumpe un embarazo ya implantado y, por tanto, el resumen la describe como <strong>no abortiva</strong>. Cuanto antes se administre, mayor eficacia.</div>
+<div class="tw"><table>
+<tr><th>Método</th><th>Presentación / dosis</th><th>Ventana</th><th>Eficacia relativa</th></tr>
+<tr><td><strong>Cu-DIU · ParaGard</strong></td><td>Inserción única</td><td>Hasta 5 días</td><td>Más eficaz; falla ~0.1% y deja LARC continuo</td></tr>
+<tr><td><strong>Acetato de ulipristal · Ella</strong></td><td>30 mg, dosis única</td><td>Hasta 120 h</td><td>Ligeramente superior a LNG; retrasa ovulación incluso cerca del pico de LH</td></tr>
+<tr><td><strong>Levonorgestrel · Plan B</strong></td><td>1.5 mg dosis única o 0.75 mg ×2 c/12 h</td><td>Óptimo 72 h; hasta 120 h</td><td>Menor eficacia en obesidad por menor biodisponibilidad</td></tr>
+<tr><td><strong>Método Yuzpe · CHC</strong></td><td>EE + levonorgestrel, 2 dosis c/12 h</td><td>72–120 h</td><td>Fracción evitada ~75%; mayor náusea/vómito, considerar antiemético</td></tr>
+</table></div>
+<div class="al aw"><strong>Después de la anticoncepción de urgencia</strong>Excepto el Cu-DIU, ningún método de AU protege contra embarazos por coitos posteriores en el mismo ciclo. El resumen indica método de barrera hasta la siguiente menstruación y prueba de embarazo si ésta se retrasa &gt;3 semanas.</div>
+</div>
+</details>
+
+<details class="study-accordion" open>
+<summary><span class="acc-index">8</span><div><strong>Integración clínica · selección rápida</strong><small>Cómo elegir el método a partir del problema clínico dominante</small></div></summary>
+<div class="acc-body">
+<div class="choice-grid">
+<div class="choice"><strong>Máxima eficacia / baja adherencia</strong>LARC: DIU o implante. El resumen los señala como primera línea en adolescentes y nulíparas.</div>
+<div class="choice"><strong>Lactancia</strong>Cu-DIU o progestágeno solo. Evitar CHC &lt;21 días posparto.</div>
+<div class="choice"><strong>Evitar estrógeno</strong>Migraña con aura, &gt;35 años + tabaquismo, ETV previa o LES con anticuerpos antifosfolípido → DIU o progestágeno solo.</div>
+<div class="choice"><strong>Paridad satisfecha</strong>Valorar salpingectomía bilateral oportunista vs. vasectomía; el resumen destaca menor morbilidad y mayor costo-efectividad de la vasectomía.</div>
+<div class="choice"><strong>Urgencia · máxima eficacia</strong>Cu-DIU: anticoncepción de urgencia más eficaz y además anticoncepción LARC continua.</div>
+</div>
+</div>
+</details>
+
+<div class="gl"><div class="gl-t">► Glosario de estudio</div><div class="gl-g">
+<div class="gl-i"><span class="gl-k">LARC</span><span class="gl-v">Long-Acting Reversible Contraception</span></div>
+<div class="gl-i"><span class="gl-k">CHC</span><span class="gl-v">Anticonceptivo hormonal combinado</span></div>
+<div class="gl-i"><span class="gl-k">POP</span><span class="gl-v">Píldora de progestágeno solo</span></div>
+<div class="gl-i"><span class="gl-k">DMPA</span><span class="gl-v">Acetato de medroxiprogesterona de depósito</span></div>
+<div class="gl-i"><span class="gl-k">ETV</span><span class="gl-v">Enfermedad tromboembólica venosa</span></div>
+<div class="gl-i"><span class="gl-k">AU</span><span class="gl-v">Anticoncepción de urgencia</span></div>
+</div></div>
+
+<div class="al as"><strong>Fuente de esta sección</strong>Williams Ginecología, 4e · Capítulo 5: Métodos anticonceptivos y esterilización. Contenido organizado a partir del resumen proporcionado para estudio.</div>
+
 </div><!-- s19-t0 -->
 </div><!-- s19 -->
+
 <!-- ══════ S20: SUA / PALM-COEIN ══════ -->
 <div class="wsec" id="s20">
 <div class="tpane" id="s20-t0">
@@ -10308,7 +10719,7 @@ const wt = {
   s29:["Cirugía Endoscópica Reproductiva y por Patología"],
   s30:["Neoplasias Ováricas","Cáncer Cervicouterino"]
 ,
-  cli:["Control Prenatal","Fundamentos Ecografía","Ecografía 1T","Ecografía 2T / Morfológico","Ecografía 3T + Doppler + PBF"],
+  cli:["Control Prenatal + Ecografía","Taller LPS"],
   ucli:["Clínicas Uro-Onco (pendiente)"],
   u1:["Epidemiología del Cáncer","Anatomía Urológica"],
   u2:["Detección Oportuna y Prevención","Hiperplasia Prostática"],
