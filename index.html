@@ -450,6 +450,27 @@ hr{border:none;border-top:1px solid var(--border);margin:14px 0;}
 #s22 .art-card p{font-size:13px;line-height:1.55;margin:0}
 @media(max-width:760px){#s22 .s22-grid,#s22 .axis,#s22 .art-grid{grid-template-columns:1fr}}
 
+/* S23 — Menopausia y climaterio */
+#s23 .s23-hero{border-left-color:var(--a2);background:linear-gradient(135deg,rgba(74,122,74,.12),rgba(122,90,154,.07))}
+#s23 .s23-hero .wtitle{color:var(--a2)}
+#s23 .study-accordion summary{border-left-color:var(--a2)}
+#s23 .study-accordion summary::after{color:var(--a2)}
+#s23 .acc-index{background:var(--a2)}
+#s23 .s23-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:10px 0}
+#s23 .s23-mini{background:var(--surface);border:1px solid var(--border);border-top:3px solid var(--a2);border-radius:6px;padding:9px 10px}
+#s23 .s23-mini strong{display:block;font-family:var(--font-mono);font-size:10px;color:var(--a2);text-transform:uppercase;margin-bottom:3px}
+#s23 .s23-mini p{font-size:12px;line-height:1.5;margin:0}
+#s23 .s23-note{background:rgba(74,122,74,.06);border:1px solid rgba(74,122,74,.22);border-left:4px solid var(--a2);border-radius:6px;padding:10px 12px;margin:9px 0;font-size:13px}
+#s23 .straw-table td:first-child{font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--a2);white-space:nowrap}
+#s23 .risk-table td:first-child,#s23 .hy-table td:first-child{font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--a2);width:34%}
+#s23 .flow-row{display:flex;flex-wrap:wrap;gap:5px;align-items:center;margin:10px 0}
+#s23 .flow-row .fs{flex:1 1 135px;text-align:center}
+#s23 .therapy-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:9px 0}
+#s23 .therapy-card{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--a2);border-radius:6px;padding:10px}
+#s23 .therapy-card strong{display:block;font-family:var(--font-mono);font-size:10px;color:var(--a2);text-transform:uppercase;margin-bottom:4px}
+#s23 .therapy-card p{font-size:13px;line-height:1.55;margin:0}
+@media(max-width:760px){#s23 .s23-grid,#s23 .therapy-grid{grid-template-columns:1fr}}
+
 /* Clínicas — agrupación prenatal/ecografía + Taller LPS */
 .clinic-hero{border-left-color:var(--a);background:linear-gradient(135deg,rgba(90,122,154,.11),rgba(74,122,74,.06))}
 .clinic-hero .wtitle{color:var(--a)}
@@ -8708,39 +8729,235 @@ El contenido será añadido próximamente.
 <!-- ══════ S23: MENOPAUSIA / CLIMATERIO ══════ -->
 <div class="wsec" id="s23">
 <div class="tpane" id="s23-t0">
-<h2>// Climaterio y Menopausia</h2>
-<div class="card"><div class="ct">Definiciones</div>
-<p><strong>Menopausia:</strong> última menstruación espontanea; diagnóstico retrospectivo tras 12 meses de amenorrea. Promedio: 51.4 años. <strong>Climaterio:</strong> período de transición desde el final de la etapa reproductiva hasta la postmenopausia (perimenopausas). <strong>Menopausia prematura:</strong> &lt;40 años (= Insuficiencia Ovárica Prematura, IOP).</p>
+<div class="study-hero s23-hero">
+  <div class="wlabel">S23 · Williams Ginecología 4.ª ed. · Cap. 22</div>
+  <div class="wtitle">Menopausia y Climaterio</div>
+  <p class="mu">Transición menopáusica, síntomas vasomotores, terapia hormonal, salud ósea y síndrome genitourinario de la menopausia.</p>
+  <div class="topic-strip"><span class="b bg">STRAW +10</span><span class="b bp">SVM</span><span class="b bb">TH</span><span class="b bo">Osteoporosis</span><span class="b br">GSM</span></div>
 </div>
-<h3>Sintomatología</h3>
-<div class="g2">
-<div class="card"><div class="ct">Síntomas Vasomotores (más comunes)</div><ul class="dl">
-<li>Sofocos (hot flushes): 75% de mujeres, pico en perimenopausas</li>
-<li>Sudoración nocturna</li>
-<li>Palpitaciones</li>
-<li>Mecanismo: ↓ E2 → inestabilidad del centro termorregulador hipotalámico</li>
-</ul></div>
-<div class="card"><div class="ct">Síntomas Genitourinarios (Síndrome GSM)</div><ul class="dl">
-<li>Atrofia vulvovaginal: sequedad, dispareunia, prurito</li>
-<li>Urgencia miccional, incontinencia de urgencia</li>
-<li>ITU de repetición</li>
-<li>Mecanismo: ↓ E2 → ↓ glucógeno vaginal → ↓ lactobacillus → ↑ pH</li>
-</ul></div>
-</div>
-<h3>Terapia de Reemplazo Hormonal (TRH)</h3>
-<div class="tw"><table>
-<tr><th>Régimen</th><th>Indicación</th><th>Riesgo principal</th></tr>
-<tr><td>Estrógenoos solos</td><td>Mujer histerectomizada</td><td>No aplica protección endometrial</td></tr>
-<tr><td>Estrógenos + progestágeno combinado</td><td>Útero intacto</td><td>↑ cáncer mama (&gt;5 años uso); ↑ TEV; ↑ ACV</td></tr>
-<tr><td>TRH local (crema/óvulos)</td><td>Síntomas genitourinarios exclusivos</td><td>Absorción sistémica mínima; más segura</td></tr>
-</table></div>
-<div class="al ai"><strong>WHI Study — Implicaciones (2002/2004)</strong>TRH combinada (estrógenos equinos + MPA): ↑ cáncer mama, ↑ TEV, ↑ ACV, ↑ EIC; ↓ frácturas, ↓ cáncer colorrectal. Reevaluado: riesgo depende de edad de inicio (ventana de oportunidad &lt;10 años post-menopausia o &lt;60 años).</div>
-<div class="gl"><div class="gl-t">► Glosario</div><div class="gl-g">
-<div class="gl-i"><span class="gl-k">IOP</span><span class="gl-v">Insuficiencia Ovárica Prematura (menopausia &lt;40 años)</span></div>
-<div class="gl-i"><span class="gl-k">GSM</span><span class="gl-v">Genitourinary Syndrome of Menopause</span></div>
-<div class="gl-i"><span class="gl-k">TRH</span><span class="gl-v">Terapia de Reemplazo Hormonal</span></div>
-<div class="gl-i"><span class="gl-k">MPA</span><span class="gl-v">Medroxiprogesterona (Acetato de)</span></div>
+<div class="s23-note"><strong>Idea rectora.</strong> El diagnóstico suele ser clínico; las decisiones terapéuticas dependen de síntomas, edad, tiempo desde el periodo menstrual final, contraindicaciones y perfil de riesgo cardiovascular, trombótico, mamario y endometrial.</div>
+
+<details class="study-accordion" open><summary><span class="acc-index">01</span><span><strong>Definiciones y STRAW +10</strong><small>Menopausia, transición menopáusica y estadificación alrededor del FMP</small></span></summary><div class="acc-body">
+<h2>// Marco conceptual</h2>
+<div class="s23-grid"><div class="s23-mini"><strong>Menopausia</strong><p>Diagnóstico retrospectivo tras 12 meses de amenorrea por agotamiento folicular ovárico. Edad promedio: 51.5 años.</p></div><div class="s23-mini"><strong>Transición / climaterio</strong><p>Desde la primera irregularidad menstrual hasta 1 año después del cese permanente. Inicio promedio: 47 años; duración 4-8 años.</p></div><div class="s23-mini"><strong>IOP</strong><p>Cese menstrual antes de los 40 años con FSH elevada; requiere buscar causas cromosómicas, autoinmunitarias, infecciosas, iatrogénicas o metabólicas.</p></div></div>
+<div class="tw straw-table"><table><tr><th>Etapa</th><th>Clave clínica</th></tr><tr><td>-2</td><td>Transición temprana: ciclos aún regulares, pero variación de al menos 7 días respecto al ciclo previo; FSH puede elevarse por caída de inhibina B.</td></tr><tr><td>-1</td><td>Transición tardía: al menos 2 ciclos omitidos y 1 intervalo intermenstrual de al menos 60 días; anovulación y síntomas más intensos.</td></tr><tr><td>+1a</td><td>Primer año tras el FMP; cesa la progesterona ovárica y el E2 fluctúa mientras desciende.</td></tr><tr><td>+1b</td><td>Años 2-5 posmenopausia; cede la esteroidogénesis ovárica, se abre el feedback negativo y GnRH, FSH y LH alcanzan máximos.</td></tr><tr><td>+2</td><td>Posmenopausia tardía: el estrógeno principal proviene de aromatización periférica en tejido adiposo.</td></tr></table></div>
+<div class="al ai"><strong>Perla</strong>La edad cronológica orienta, pero STRAW +10 usa como eje el periodo menstrual final y los cambios del patrón menstrual.</div>
+<div class="gl"><div class="gl-t">► Glosario de esta sección</div><div class="gl-g">
+<div class="gl-i"><span class="gl-k">E2</span><span class="gl-v">Estradiol</span></div>
+<div class="gl-i"><span class="gl-k">FMP</span><span class="gl-v">Final menstrual period; periodo menstrual final</span></div>
+<div class="gl-i"><span class="gl-k">FSH</span><span class="gl-v">Hormona foliculoestimulante</span></div>
+<div class="gl-i"><span class="gl-k">GnRH</span><span class="gl-v">Hormona liberadora de gonadotropinas</span></div>
+<div class="gl-i"><span class="gl-k">IOP</span><span class="gl-v">Insuficiencia ovárica prematura</span></div>
+<div class="gl-i"><span class="gl-k">LH</span><span class="gl-v">Hormona luteinizante</span></div>
+<div class="gl-i"><span class="gl-k">STRAW +10</span><span class="gl-v">Stages of Reproductive Aging Workshop; sistema de estadificación del envejecimiento reproductivo</span></div>
+<div class="gl-i"><span class="gl-k">TM</span><span class="gl-v">Transición menopáusica</span></div>
+</div></div>
+</div></details>
+
+<details class="study-accordion"><summary><span class="acc-index">02</span><span><strong>Fisiología de la transición</strong><small>Reserva folicular, eje H-H-O y sangrado uterino anormal</small></span></summary><div class="acc-body">
+<h2>// Ovario y eje hormonal</h2>
+<div class="flow-row"><div class="fs">Atresia folicular acelerada<br><strong>35-45 años</strong></div><div class="fa">→</div><div class="fs">↓ AMH + ↓ RFA<br><strong>~5 años antes</strong></div><div class="fa">→</div><div class="fs">↓ inhibina B<br><strong>↑ FSH temprana</strong></div><div class="fa">→</div><div class="fs">↓ E2 tardía<br><strong>↑ GnRH/LH/FSH</strong></div></div>
+<p>El punto de alto rendimiento es que la FSH sube primero por caída de inhibina B, no por caída inicial de estradiol. En la TM temprana, el E2 puede fluctuar e incluso ser alto por sobreestimulación folicular; la caída sostenida aparece al final de la transición.</p>
+<div class="g2"><div class="card"><div class="ct">Reserva ovárica</div><p>La AMH y el recuento folicular antral caen de forma marcada antes de la menopausia. No diagnostican menopausia, pero sí ayudan a valorar reserva ovárica en infertilidad.</p></div><div class="card"><div class="ct">Andrógenos</div><p>La testosterona se mantiene relativamente estable, pero al disminuir la SHBG posmenopausia aumenta la fracción libre biodisponible de andrógenos y estrógenos.</p></div></div>
+<h3>Endometrio y SUA</h3><p>En etapas tempranas aún hay ciclos ovulatorios; en etapas tardías predomina la anovulación, con estrógeno sin oposición de progesterona. Esto produce proliferación endometrial desordenada y aumenta el riesgo de hiperplasia/carcinoma. Todo SUA en transición menopáusica obliga a descartar cáncer endometrial con biopsia.</p>
+<div class="gl"><div class="gl-t">► Glosario de esta sección</div><div class="gl-g">
+<div class="gl-i"><span class="gl-k">AMH</span><span class="gl-v">Hormona antimülleriana</span></div>
+<div class="gl-i"><span class="gl-k">E2</span><span class="gl-v">Estradiol</span></div>
+<div class="gl-i"><span class="gl-k">FSH</span><span class="gl-v">Hormona foliculoestimulante</span></div>
+<div class="gl-i"><span class="gl-k">GnRH</span><span class="gl-v">Hormona liberadora de gonadotropinas</span></div>
+<div class="gl-i"><span class="gl-k">H-H-O</span><span class="gl-v">Eje hipotálamo-hipófisis-ovario</span></div>
+<div class="gl-i"><span class="gl-k">LH</span><span class="gl-v">Hormona luteinizante</span></div>
+<div class="gl-i"><span class="gl-k">RFA</span><span class="gl-v">Recuento de folículos antrales</span></div>
+<div class="gl-i"><span class="gl-k">SHBG</span><span class="gl-v">Globulina transportadora de hormonas sexuales</span></div>
+<div class="gl-i"><span class="gl-k">SUA</span><span class="gl-v">Sangrado uterino anormal</span></div>
+<div class="gl-i"><span class="gl-k">TM</span><span class="gl-v">Transición menopáusica</span></div>
+</div></div>
+</div></details>
+
+<details class="study-accordion"><summary><span class="acc-index">03</span><span><strong>Síntomas vasomotores</strong><small>Fisiopatología hipotalámica, clínica y factores de riesgo</small></span></summary><div class="acc-body">
+<h2>// Sofocos y sudoración nocturna</h2><p>Los SVM aparecen en 11-60% durante la TM y hasta 50% en posmenopausia. Duran en promedio 7 años e inician alrededor de 2 años antes del FMP. La menopausia quirúrgica por ooforectomía es el factor de riesgo con mayor impacto: inicio más abrupto e intenso, con sofocos en hasta 90% durante el primer año.</p>
+<div class="s23-note"><strong>Mecanismo de examen.</strong> No importa solo el nivel absoluto de estrógeno, sino la fluctuación o retiro de E2. La retirada estrecha la zona termorreguladora hipotalámica y pequeños cambios de temperatura disparan vasodilatación periférica y sudoración.</div>
+<div class="tw"><table><tr><th>Dato clínico</th><th>Patrón típico</th></tr><tr><td>Duración del episodio</td><td>1-5 minutos.</td></tr><tr><td>Piel</td><td>Aumento de temperatura cutánea en manos/pies; vasodilatación periférica.</td></tr><tr><td>Sudoración</td><td>Presente en alrededor de 90% de los episodios.</td></tr><tr><td>Frecuencia cardiaca</td><td>Taquicardia leve, aproximadamente +7 a +15 lpm.</td></tr><tr><td>Termorregulación</td><td>Noradrenalina y serotonina participan; neuronas KNDy del núcleo arqueado sustentan los antagonistas NK3R.</td></tr></table></div>
+<div class="gl"><div class="gl-t">► Glosario de esta sección</div><div class="gl-g">
+<div class="gl-i"><span class="gl-k">E2</span><span class="gl-v">Estradiol</span></div>
+<div class="gl-i"><span class="gl-k">FMP</span><span class="gl-v">Periodo menstrual final</span></div>
+<div class="gl-i"><span class="gl-k">KNDy</span><span class="gl-v">Neuronas de kisspeptina, neurocinina B y dinorfina</span></div>
+<div class="gl-i"><span class="gl-k">lpm</span><span class="gl-v">Latidos por minuto</span></div>
+<div class="gl-i"><span class="gl-k">NK3R</span><span class="gl-v">Receptor de neurocinina 3</span></div>
+<div class="gl-i"><span class="gl-k">SVM</span><span class="gl-v">Síntomas vasomotores</span></div>
+<div class="gl-i"><span class="gl-k">TM</span><span class="gl-v">Transición menopáusica</span></div>
+</div></div>
+</div></details>
+
+<details class="study-accordion"><summary><span class="acc-index">04</span><span><strong>Terapia hormonal menopáusica</strong><small>WHI, ventana de oportunidad, indicaciones, riesgos y elección de régimen</small></span></summary><div class="acc-body">
+<h2>// Ventana de oportunidad</h2><p>El WHI estudió principalmente mujeres mayores, con edad promedio cercana a 63 años y más de 10 años posmenopausia. De ahí surge la hipótesis del tiempo: el estrógeno puede tener perfil más favorable si se inicia cerca de la menopausia, pero más riesgo vascular si se inicia tarde, con ateroesclerosis establecida.</p>
+<div class="al ai"><strong>Regla central</strong>Iniciar TH sistémica es razonable en mujeres menores de 60 años o dentro de los primeros 10 años posmenopausia, si existe indicación y no hay contraindicaciones.</div>
+<div class="tw risk-table"><table><tr><th>Desenlace</th><th>Riesgo asociado</th></tr><tr><td>Cáncer de mama</td><td>Aumento leve con EPT por más de 4-5 años; ET sola no aumentó el riesgo en WHI.</td></tr><tr><td>Coronariopatía</td><td>Riesgo mayor si inicia después de los 60 años o más de 10 años posmenopausia; neutra/protectora cerca de la menopausia.</td></tr><tr><td>ACV</td><td>Aumenta con vía oral; el riesgo absoluto en menores de 60 años es bajo. Vía transdérmica en dosis bajas parece más segura.</td></tr><tr><td>TEV</td><td>Casi se duplica con estrógeno oral; transdérmico sin aumento claro en estudios observacionales.</td></tr><tr><td>Endometrio</td><td>ET sin oposición aumenta riesgo en mujeres con útero; EPT continuo diario protege.</td></tr><tr><td>Demencia</td><td>No se indica para prevención cognitiva; WHIMS mostró mayor riesgo al iniciar en edad avanzada.</td></tr></table></div>
+<h3>Indicaciones y contraindicaciones</h3><div class="therapy-grid"><div class="therapy-card"><strong>Indicaciones</strong><p>SVM molestos, GSM, prevención de osteoporosis y hipoestrogenismo por hipogonadismo, menopausia quirúrgica o IOP.</p></div><div class="therapy-card"><strong>Contraindicaciones absolutas</strong><p>SUA sin diagnóstico, cáncer de mama conocido/sospechado, neoplasia dependiente de estrógeno, TEV/ACV/IAM/AIT activo o previo, trombofilia, hepatopatía activa, HTA no tratada o embarazo.</p></div></div>
+<div class="tw"><table><tr><th>Situación</th><th>Régimen preferido</th></tr><tr><td>Sin útero</td><td>Estrógeno solo (ET), oral o transdérmico.</td></tr><tr><td>Con útero</td><td>Estrógeno + progestágeno (EPT) obligatorio para protección endometrial; continuo diario o TSEC.</td></tr><tr><td>Riesgo CV/obesidad/TEV</td><td>Preferir vía transdérmica.</td></tr><tr><td>Solo GSM</td><td>Estrógeno vaginal en dosis baja; no requiere progestágeno concomitante de rutina.</td></tr></table></div>
+<p>No hay límite de duración arbitrario solo por edad: usar dosis mínima eficaz y reevaluar periódicamente.</p>
+<div class="gl"><div class="gl-t">► Glosario de esta sección</div><div class="gl-g">
+<div class="gl-i"><span class="gl-k">ACV</span><span class="gl-v">Accidente cerebrovascular</span></div>
+<div class="gl-i"><span class="gl-k">AIT</span><span class="gl-v">Ataque isquémico transitorio</span></div>
+<div class="gl-i"><span class="gl-k">CEE</span><span class="gl-v">Estrógeno equino conjugado</span></div>
+<div class="gl-i"><span class="gl-k">CV</span><span class="gl-v">Cardiovascular</span></div>
+<div class="gl-i"><span class="gl-k">EPT</span><span class="gl-v">Terapia con estrógeno más progestágeno</span></div>
+<div class="gl-i"><span class="gl-k">ET</span><span class="gl-v">Terapia con estrógeno solo</span></div>
+<div class="gl-i"><span class="gl-k">GSM</span><span class="gl-v">Síndrome genitourinario de la menopausia</span></div>
+<div class="gl-i"><span class="gl-k">HTA</span><span class="gl-v">Hipertensión arterial</span></div>
+<div class="gl-i"><span class="gl-k">IAM</span><span class="gl-v">Infarto agudo de miocardio</span></div>
+<div class="gl-i"><span class="gl-k">IOP</span><span class="gl-v">Insuficiencia ovárica prematura</span></div>
+<div class="gl-i"><span class="gl-k">MPA</span><span class="gl-v">Acetato de medroxiprogesterona</span></div>
+<div class="gl-i"><span class="gl-k">SUA</span><span class="gl-v">Sangrado uterino anormal</span></div>
+<div class="gl-i"><span class="gl-k">SVM</span><span class="gl-v">Síntomas vasomotores</span></div>
+<div class="gl-i"><span class="gl-k">TEV</span><span class="gl-v">Tromboembolismo venoso</span></div>
+<div class="gl-i"><span class="gl-k">TH</span><span class="gl-v">Terapia hormonal menopáusica</span></div>
+<div class="gl-i"><span class="gl-k">TSEC</span><span class="gl-v">Complejo estrogénico selectivo tisular, por ejemplo bazedoxifeno + CEE</span></div>
 <div class="gl-i"><span class="gl-k">WHI</span><span class="gl-v">Women's Health Initiative</span></div>
+<div class="gl-i"><span class="gl-k">WHIMS</span><span class="gl-v">Women's Health Initiative Memory Study</span></div>
+</div></div>
+</div></details>
+
+<details class="study-accordion"><summary><span class="acc-index">05</span><span><strong>Salud ósea y osteoporosis</strong><small>RANK/RANKL/OPG, DEXA, FRAX y tratamiento farmacológico</small></span></summary><div class="acc-body">
+<h2>// Fisiopatología ósea</h2>
+<div class="flow-row"><div class="fs">↓ estrógeno</div><div class="fa">→</div><div class="fs">↑ RANKL / ↓ OPG relativo</div><div class="fa">→</div><div class="fs">↑ osteoclasto</div><div class="fa">→</div><div class="fs">Pérdida ósea acelerada<br><strong>2-5%/año inicial</strong></div></div>
+<p>RANKL de osteoblastos activa RANK en precursores osteoclásticos; OPG actúa como señuelo. El hipoestrogenismo aumenta resorción y sensibilidad ósea a PTH, con mayor liberación de calcio por unidad de PTH.</p>
+<div class="tw"><table><tr><th>Categoría OMS</th><th>Puntaje T</th></tr><tr><td>Normal</td><td>+2.5 a -1.0</td></tr><tr><td>Osteopenia</td><td>-1.0 a -2.5</td></tr><tr><td>Osteoporosis</td><td>≤ -2.5</td></tr><tr><td>Osteoporosis avanzada</td><td>≤ -2.5 + fractura por fragilidad</td></tr></table></div>
+<p>DEXA se recomienda en mujeres de al menos 65 años, posmenopáusicas con factores de riesgo o cualquier fractura nueva después de los 50 años. FRAX estima riesgo de fractura a 10 años. Puntaje T compara contra masa ósea pico; puntaje Z compara con pares de edad/peso y orienta a causas secundarias si Z &lt;-2.0.</p>
+<div class="tw"><table><tr><th>Tratamiento</th><th>Mecanismo / clave</th></tr><tr><td>Bisfosfonatos</td><td>Primera línea; inhiben osteoclastos. Riesgos raros: osteonecrosis mandibular y fractura femoral atípica con uso prolongado.</td></tr><tr><td>Denosumab</td><td>Anticuerpo anti-RANKL SC cada 6 meses; al suspender debe seguir antirresortivo por pérdida ósea rápida.</td></tr><tr><td>Raloxifeno / bazedoxifeno</td><td>SERM: agonista en hueso, antagonista en mama/útero; útil en fractura vertebral, con aumento de TEV.</td></tr><tr><td>Teriparatida / abaloparatida</td><td>Análogos de PTH intermitente; efecto anabólico osteoblástico.</td></tr><tr><td>Romosozumab</td><td>Anti-esclerostina por 12 meses y luego antirresortivo; alerta por riesgo cardiovascular.</td></tr></table></div>
+<div class="al aw"><strong>Base no farmacológica</strong>Calcio 1200 mg/día, vitamina D 800-1000 UI/día, ejercicio de resistencia/carga y prevención de caídas.</div>
+<div class="gl"><div class="gl-t">► Glosario de esta sección</div><div class="gl-g">
+<div class="gl-i"><span class="gl-k">DEXA</span><span class="gl-v">Absorciometría dual de rayos X</span></div>
+<div class="gl-i"><span class="gl-k">FRAX</span><span class="gl-v">Fracture Risk Assessment Tool; estimador de riesgo de fractura a 10 años</span></div>
+<div class="gl-i"><span class="gl-k">OMS</span><span class="gl-v">Organización Mundial de la Salud</span></div>
+<div class="gl-i"><span class="gl-k">OPG</span><span class="gl-v">Osteoprotegerina</span></div>
+<div class="gl-i"><span class="gl-k">PTH</span><span class="gl-v">Hormona paratiroidea</span></div>
+<div class="gl-i"><span class="gl-k">RANK</span><span class="gl-v">Receptor activador del factor nuclear kappa B</span></div>
+<div class="gl-i"><span class="gl-k">RANKL</span><span class="gl-v">Ligando de RANK</span></div>
+<div class="gl-i"><span class="gl-k">SC</span><span class="gl-v">Subcutáneo</span></div>
+<div class="gl-i"><span class="gl-k">SERM</span><span class="gl-v">Modulador selectivo del receptor de estrógeno</span></div>
+<div class="gl-i"><span class="gl-k">SVM</span><span class="gl-v">Síntomas vasomotores</span></div>
+<div class="gl-i"><span class="gl-k">TEV</span><span class="gl-v">Tromboembolismo venoso</span></div>
+<div class="gl-i"><span class="gl-k">TH</span><span class="gl-v">Terapia hormonal menopáusica</span></div>
+<div class="gl-i"><span class="gl-k">UI</span><span class="gl-v">Unidades internacionales</span></div>
+</div></div>
+</div></details>
+
+<details class="study-accordion"><summary><span class="acc-index">06</span><span><strong>Síndrome genitourinario</strong><small>Atrofia vulvovaginal, síntomas urinarios y tratamiento local</small></span></summary><div class="acc-body">
+<h2>// GSM</h2><p>GSM reemplaza el término atrofia vulvovaginal porque integra síntomas vaginales, urinarios y sexuales. A diferencia de los SVM, suele ser progresivo sin tratamiento y afecta aproximadamente a la mitad de las mujeres posmenopáusicas.</p>
+<div class="g2"><div class="card"><div class="ct">Fisiopatología</div><p>El hipoestrogenismo adelgaza el epitelio escamoso vaginal, reduce flujo sanguíneo y colágena, acorta/estrecha la vagina, pierde rugosidad y eleva el pH vaginal (&gt;4.6).</p></div><div class="card"><div class="ct">Clínica</div><p>Resequedad, dispareunia, prurito, sangrado poscoital, urgencia/frecuencia urinaria e infecciones urinarias recurrentes.</p></div></div>
+<div class="tw"><table><tr><th>Nivel</th><th>Opción</th></tr><tr><td>1ª línea leve</td><td>Lubricantes e hidratantes vaginales; actividad sexual/penetración regular si es deseada y tolerada.</td></tr><tr><td>2ª línea</td><td>Estrógeno vaginal en dosis baja: crema, tableta, anillo de 90 días o inserto. No requiere progestágeno rutinario.</td></tr><tr><td>Alternativas</td><td>Ospemifeno oral para dispareunia y DHEA/prasterona vaginal.</td></tr><tr><td>No rutinario</td><td>Láser vaginal CO2/YAG: no aprobado por FDA para este fin y con evidencia limitada.</td></tr></table></div>
+<div class="al ai"><strong>Dato de examen</strong>El estrógeno vaginal local puede mejorar incontinencia y reducir ITU recurrente; la TH sistémica puede aumentar incontinencia urinaria de esfuerzo.</div>
+<div class="gl"><div class="gl-t">► Glosario de esta sección</div><div class="gl-g">
+<div class="gl-i"><span class="gl-k">CO2/YAG</span><span class="gl-v">Tipos de láser usados en terapias vaginales no rutinarias</span></div>
+<div class="gl-i"><span class="gl-k">DHEA</span><span class="gl-v">Dehidroepiandrosterona</span></div>
+<div class="gl-i"><span class="gl-k">FDA</span><span class="gl-v">Food and Drug Administration</span></div>
+<div class="gl-i"><span class="gl-k">GSM</span><span class="gl-v">Síndrome genitourinario de la menopausia</span></div>
+<div class="gl-i"><span class="gl-k">ITU</span><span class="gl-v">Infección del tracto urinario</span></div>
+<div class="gl-i"><span class="gl-k">pH</span><span class="gl-v">Potencial de hidrógeno; medida de acidez/alcalinidad</span></div>
+<div class="gl-i"><span class="gl-k">SVM</span><span class="gl-v">Síntomas vasomotores</span></div>
+<div class="gl-i"><span class="gl-k">TH</span><span class="gl-v">Terapia hormonal menopáusica</span></div>
+</div></div>
+</div></details>
+
+<details class="study-accordion"><summary><span class="acc-index">07</span><span><strong>Ánimo, sueño y cognición</strong><small>Cambios psicosociales y límites de la terapia hormonal</small></span></summary><div class="acc-body">
+<h2>// Síntomas no genitales ni óseos</h2>
+<div class="therapy-grid"><div class="therapy-card"><strong>Depresión</strong><p>Riesgo aproximadamente 3 veces mayor durante la TM que en premenopausia; el antecedente de episodio depresivo previo es el predictor más fuerte. TH no es tratamiento antidepresivo, aunque puede mejorar ánimo bajo secundario a SVM/insomnio.</p></div><div class="therapy-card"><strong>Sueño</strong><p>Mal dormir autoinformado hasta en 38% en SWAN. Los sofocos nocturnos contribuyen, pero el patrón de sueño previo también predice mala calidad futura.</p></div><div class="therapy-card"><strong>Cognición</strong><p>Puede haber quejas de memoria verbal/función ejecutiva asociadas a edad. WHIMS observó mayor riesgo de demencia cuando TH inició en mujeres de edad avanzada; no se usa para prevención cognitiva.</p></div><div class="therapy-card"><strong>Tratamiento base</strong><p>ISRS/IRSN y psicoterapia siguen siendo primera línea para depresión clínica; tratar SVM e insomnio cuando son detonantes relevantes.</p></div></div>
+<div class="gl"><div class="gl-t">► Glosario de esta sección</div><div class="gl-g">
+<div class="gl-i"><span class="gl-k">IRSN</span><span class="gl-v">Inhibidores de recaptura de serotonina y noradrenalina</span></div>
+<div class="gl-i"><span class="gl-k">ISRS</span><span class="gl-v">Inhibidores selectivos de recaptura de serotonina</span></div>
+<div class="gl-i"><span class="gl-k">SVM</span><span class="gl-v">Síntomas vasomotores</span></div>
+<div class="gl-i"><span class="gl-k">SWAN</span><span class="gl-v">Study of Women's Health Across the Nation</span></div>
+<div class="gl-i"><span class="gl-k">TH</span><span class="gl-v">Terapia hormonal menopáusica</span></div>
+<div class="gl-i"><span class="gl-k">TM</span><span class="gl-v">Transición menopáusica</span></div>
+<div class="gl-i"><span class="gl-k">WHIMS</span><span class="gl-v">Women's Health Initiative Memory Study</span></div>
+</div></div>
+</div></details>
+
+<details class="study-accordion"><summary><span class="acc-index">08</span><span><strong>Otros cambios sistémicos</strong><small>Cardiovascular, peso, piel, mama y salud oral</small></span></summary><div class="acc-body">
+<h2>// Cambios por edad y transición hormonal</h2>
+<div class="tw"><table><tr><th>Sistema</th><th>Cambio clave</th></tr><tr><td>Cardiovascular</td><td>Se pierde la protección premenopáusica; hacia los 70 años el riesgo se aproxima al del hombre. La decisión de TH se conecta con la hipótesis del tiempo.</td></tr><tr><td>Peso/composición</td><td>Ganancia media aproximada de 750 g/año y redistribución central/androide; más ligada a edad/actividad que al estrógeno per se. TH no causa aumento de peso significativo.</td></tr><tr><td>Piel</td><td>Pérdida cercana a 30% de colágena en los primeros 5 años, con adelgazamiento y resequedad; no justifica TH sistémica.</td></tr><tr><td>Mama</td><td>Disminuye proliferación ductal/glandular y densidad mamográfica.</td></tr><tr><td>Boca/dental</td><td>Atrofia de epitelio oral, menor saliva, disgeusia, más caries y pérdida dental; se relaciona con densidad ósea alveolar.</td></tr></table></div>
+<div class="gl"><div class="gl-t">► Glosario de esta sección</div><div class="gl-g">
+<div class="gl-i"><span class="gl-k">HDL</span><span class="gl-v">Lipoproteína de alta densidad</span></div>
+<div class="gl-i"><span class="gl-k">TH</span><span class="gl-v">Terapia hormonal menopáusica</span></div>
+</div></div>
+</div></details>
+
+<details class="study-accordion" open><summary><span class="acc-index">09</span><span><strong>Integración clínica y high-yield</strong><small>Diagnóstico, laboratorios y alternativas no hormonales</small></span></summary><div class="acc-body">
+<h2>// Cómo resolver casos</h2>
+<div class="s23-note"><strong>Diagnóstico habitual.</strong> Mujer alrededor de 50 años + irregularidad menstrual + SVM + resequedad vaginal = TM/menopausia clínica. FSH/E2 solo se miden si hay duda, sospecha de IOP en mujer joven o ajuste de TH transdérmica.</div>
+<div class="tw hy-table"><table><tr><th>Pregunta</th><th>Respuesta de examen</th></tr><tr><td>¿Cuándo usar TH sistémica?</td><td>Si &lt;60 años o &lt;10 años desde FMP, con indicación y sin contraindicaciones.</td></tr><tr><td>¿Cuándo priorizar no hormonal?</td><td>Si está fuera de ventana, no desea TH o tiene contraindicación.</td></tr><tr><td>¿FSH diagnóstica?</td><td>FSH &gt;40 mUI/mL confirma insuficiencia ovárica/menopausia cuando se requiere laboratorio.</td></tr><tr><td>¿Objetivo E2 en ajuste transdérmico?</td><td>40-100 pg/mL según el resumen.</td></tr><tr><td>¿SUA en transición?</td><td>Biopsia endometrial para descartar cáncer.</td></tr><tr><td>¿GSM aislado?</td><td>Estrógeno vaginal local; mínima absorción sistémica.</td></tr></table></div>
+<h3>No hormonales para SVM</h3>
+<div class="tw"><table><tr><th>Opción</th><th>Punto clave</th></tr><tr><td>Paroxetina 7.5 mg</td><td>Único ISRS aprobado por FDA específicamente para SVM.</td></tr><tr><td>Venlafaxina, desvenlafaxina, escitalopram</td><td>Buena evidencia; evitar venlafaxina/paroxetina con tamoxifeno por CYP2D6.</td></tr><tr><td>Gabapentina / pregabalina</td><td>Útiles si predominan síntomas nocturnos por efecto sedante.</td></tr><tr><td>Clonidina</td><td>Menor eficacia; limitada por hipotensión ortostática.</td></tr><tr><td>Antagonistas NK3R</td><td>Fezolinetant y similares; dirigidos a neuronas KNDy.</td></tr></table></div>
+<div class="gl"><div class="gl-t">► Glosario de esta sección</div><div class="gl-g">
+<div class="gl-i"><span class="gl-k">CYP2D6</span><span class="gl-v">Enzima hepática relevante para metabolismo/activación de tamoxifeno</span></div>
+<div class="gl-i"><span class="gl-k">E2</span><span class="gl-v">Estradiol</span></div>
+<div class="gl-i"><span class="gl-k">FDA</span><span class="gl-v">Food and Drug Administration</span></div>
+<div class="gl-i"><span class="gl-k">FMP</span><span class="gl-v">Periodo menstrual final</span></div>
+<div class="gl-i"><span class="gl-k">FSH</span><span class="gl-v">Hormona foliculoestimulante</span></div>
+<div class="gl-i"><span class="gl-k">GSM</span><span class="gl-v">Síndrome genitourinario de la menopausia</span></div>
+<div class="gl-i"><span class="gl-k">IOP</span><span class="gl-v">Insuficiencia ovárica prematura</span></div>
+<div class="gl-i"><span class="gl-k">IRSN</span><span class="gl-v">Inhibidores de recaptura de serotonina y noradrenalina</span></div>
+<div class="gl-i"><span class="gl-k">ISRS</span><span class="gl-v">Inhibidores selectivos de recaptura de serotonina</span></div>
+<div class="gl-i"><span class="gl-k">KNDy</span><span class="gl-v">Neuronas de kisspeptina, neurocinina B y dinorfina</span></div>
+<div class="gl-i"><span class="gl-k">NK3R</span><span class="gl-v">Receptor de neurocinina 3</span></div>
+<div class="gl-i"><span class="gl-k">SUA</span><span class="gl-v">Sangrado uterino anormal</span></div>
+<div class="gl-i"><span class="gl-k">SVM</span><span class="gl-v">Síntomas vasomotores</span></div>
+<div class="gl-i"><span class="gl-k">TH</span><span class="gl-v">Terapia hormonal menopáusica</span></div>
+<div class="gl-i"><span class="gl-k">TM</span><span class="gl-v">Transición menopáusica</span></div>
+</div></div>
+</div></details>
+
+<div class="gl"><div class="gl-t">► Glosario S23 · Abreviaciones</div><div class="gl-g">
+<div class="gl-i"><span class="gl-k">ACV</span><span class="gl-v">Accidente cerebrovascular</span></div>
+<div class="gl-i"><span class="gl-k">AIT</span><span class="gl-v">Ataque isquémico transitorio</span></div>
+<div class="gl-i"><span class="gl-k">AMH</span><span class="gl-v">Hormona antimülleriana</span></div>
+<div class="gl-i"><span class="gl-k">CEE</span><span class="gl-v">Estrógeno equino conjugado</span></div>
+<div class="gl-i"><span class="gl-k">CV</span><span class="gl-v">Cardiovascular</span></div>
+<div class="gl-i"><span class="gl-k">CYP2D6</span><span class="gl-v">Enzima del citocromo P450 relevante para tamoxifeno</span></div>
+<div class="gl-i"><span class="gl-k">DEXA</span><span class="gl-v">Absorciometría dual de rayos X</span></div>
+<div class="gl-i"><span class="gl-k">DHEA</span><span class="gl-v">Dehidroepiandrosterona</span></div>
+<div class="gl-i"><span class="gl-k">E2</span><span class="gl-v">Estradiol</span></div>
+<div class="gl-i"><span class="gl-k">EPT</span><span class="gl-v">Terapia con estrógeno más progestágeno</span></div>
+<div class="gl-i"><span class="gl-k">ET</span><span class="gl-v">Terapia con estrógeno solo</span></div>
+<div class="gl-i"><span class="gl-k">FDA</span><span class="gl-v">Food and Drug Administration</span></div>
+<div class="gl-i"><span class="gl-k">FMP</span><span class="gl-v">Final menstrual period; periodo menstrual final</span></div>
+<div class="gl-i"><span class="gl-k">FRAX</span><span class="gl-v">Fracture Risk Assessment Tool</span></div>
+<div class="gl-i"><span class="gl-k">FSH</span><span class="gl-v">Hormona foliculoestimulante</span></div>
+<div class="gl-i"><span class="gl-k">GnRH</span><span class="gl-v">Hormona liberadora de gonadotropinas</span></div>
+<div class="gl-i"><span class="gl-k">GSM</span><span class="gl-v">Síndrome genitourinario de la menopausia</span></div>
+<div class="gl-i"><span class="gl-k">H-H-O</span><span class="gl-v">Eje hipotálamo-hipófisis-ovario</span></div>
+<div class="gl-i"><span class="gl-k">HDL</span><span class="gl-v">Lipoproteína de alta densidad</span></div>
+<div class="gl-i"><span class="gl-k">HTA</span><span class="gl-v">Hipertensión arterial</span></div>
+<div class="gl-i"><span class="gl-k">IAM</span><span class="gl-v">Infarto agudo de miocardio</span></div>
+<div class="gl-i"><span class="gl-k">IOP</span><span class="gl-v">Insuficiencia ovárica prematura</span></div>
+<div class="gl-i"><span class="gl-k">IRSN</span><span class="gl-v">Inhibidores de recaptura de serotonina y noradrenalina</span></div>
+<div class="gl-i"><span class="gl-k">ISRS</span><span class="gl-v">Inhibidores selectivos de recaptura de serotonina</span></div>
+<div class="gl-i"><span class="gl-k">ITU</span><span class="gl-v">Infección del tracto urinario</span></div>
+<div class="gl-i"><span class="gl-k">KNDy</span><span class="gl-v">Neuronas de kisspeptina, neurocinina B y dinorfina</span></div>
+<div class="gl-i"><span class="gl-k">LH</span><span class="gl-v">Hormona luteinizante</span></div>
+<div class="gl-i"><span class="gl-k">MPA</span><span class="gl-v">Acetato de medroxiprogesterona</span></div>
+<div class="gl-i"><span class="gl-k">NK3R</span><span class="gl-v">Receptor de neurocinina 3</span></div>
+<div class="gl-i"><span class="gl-k">OMS</span><span class="gl-v">Organización Mundial de la Salud</span></div>
+<div class="gl-i"><span class="gl-k">OPG</span><span class="gl-v">Osteoprotegerina</span></div>
+<div class="gl-i"><span class="gl-k">PTH</span><span class="gl-v">Hormona paratiroidea</span></div>
+<div class="gl-i"><span class="gl-k">RANK</span><span class="gl-v">Receptor activador del factor nuclear kappa B</span></div>
+<div class="gl-i"><span class="gl-k">RANKL</span><span class="gl-v">Ligando de RANK</span></div>
+<div class="gl-i"><span class="gl-k">RFA</span><span class="gl-v">Recuento de folículos antrales</span></div>
+<div class="gl-i"><span class="gl-k">SC</span><span class="gl-v">Subcutáneo</span></div>
+<div class="gl-i"><span class="gl-k">SERM</span><span class="gl-v">Modulador selectivo del receptor de estrógeno</span></div>
+<div class="gl-i"><span class="gl-k">SHBG</span><span class="gl-v">Globulina transportadora de hormonas sexuales</span></div>
+<div class="gl-i"><span class="gl-k">STRAW +10</span><span class="gl-v">Sistema de estadificación del envejecimiento reproductivo</span></div>
+<div class="gl-i"><span class="gl-k">SUA</span><span class="gl-v">Sangrado uterino anormal</span></div>
+<div class="gl-i"><span class="gl-k">SVM</span><span class="gl-v">Síntomas vasomotores</span></div>
+<div class="gl-i"><span class="gl-k">SWAN</span><span class="gl-v">Study of Women's Health Across the Nation</span></div>
+<div class="gl-i"><span class="gl-k">TEV</span><span class="gl-v">Tromboembolismo venoso</span></div>
+<div class="gl-i"><span class="gl-k">TH</span><span class="gl-v">Terapia hormonal menopáusica</span></div>
+<div class="gl-i"><span class="gl-k">TM</span><span class="gl-v">Transición menopáusica</span></div>
+<div class="gl-i"><span class="gl-k">TSEC</span><span class="gl-v">Complejo estrogénico selectivo tisular</span></div>
+<div class="gl-i"><span class="gl-k">UI</span><span class="gl-v">Unidades internacionales</span></div>
+<div class="gl-i"><span class="gl-k">WHI</span><span class="gl-v">Women's Health Initiative</span></div>
+<div class="gl-i"><span class="gl-k">WHIMS</span><span class="gl-v">Women's Health Initiative Memory Study</span></div>
 </div></div>
 </div><!-- s23-t0 -->
 </div><!-- s23 -->
