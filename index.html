@@ -508,6 +508,26 @@ hr{border:none;border-top:1px solid var(--border);margin:14px 0;}
 #s23 .therapy-card p{font-size:13px;line-height:1.55;margin:0}
 @media(max-width:760px){#s23 .s23-grid,#s23 .therapy-grid{grid-template-columns:1fr}}
 
+/* S24 — Leiomiomas uterinos */
+#s24 .s24-hero{border-left-color:var(--a);background:linear-gradient(135deg,rgba(90,122,154,.12),rgba(74,122,74,.07))}
+#s24 .s24-hero .wtitle{color:var(--a)}
+#s24 .study-accordion summary{border-left-color:var(--a)}
+#s24 .study-accordion summary::after{color:var(--a)}
+#s24 .acc-index{background:var(--a)}
+#s24 .s24-note{background:rgba(90,122,154,.06);border:1px solid rgba(90,122,154,.22);border-left:4px solid var(--a);border-radius:6px;padding:10px 12px;margin:9px 0;font-size:13px;line-height:1.55}
+#s24 .s24-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:10px 0}
+#s24 .s24-mini{background:var(--surface);border:1px solid var(--border);border-top:3px solid var(--a);border-radius:6px;padding:9px 10px}
+#s24 .s24-mini strong{display:block;font-family:var(--font-mono);font-size:10px;color:var(--a);text-transform:uppercase;margin-bottom:3px}
+#s24 .s24-mini p{font-size:12px;line-height:1.5;margin:0}
+#s24 .s24-card{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--a);border-radius:6px;padding:10px}
+#s24 .s24-card strong{display:block;font-family:var(--font-mono);font-size:10px;color:var(--a);text-transform:uppercase;margin-bottom:4px}
+#s24 .s24-card p{font-size:13px;line-height:1.55;margin:0}
+#s24 .hy-table td:first-child,#s24 .risk-table td:first-child{font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--a);width:34%}
+#s24 .figo-table td:first-child{font-family:var(--font-mono);font-size:13px;font-weight:800;color:var(--a);text-align:center;width:15%}
+#s24 .flow-row{display:flex;flex-wrap:wrap;gap:5px;align-items:center;margin:10px 0}
+#s24 .flow-row .fs{flex:1 1 135px;text-align:center}
+@media(max-width:760px){#s24 .s24-grid{grid-template-columns:1fr}}
+
 /* Clínicas — agrupación prenatal/ecografía + Taller LPS */
 .clinic-hero{border-left-color:var(--a);background:linear-gradient(135deg,rgba(90,122,154,.11),rgba(74,122,74,.06))}
 .clinic-hero .wtitle{color:var(--a)}
@@ -9166,47 +9186,134 @@ Causa no obvia de los síntomas · lesión focal, hiper/hipopigmentada o exofít
 <!-- ══════ S24: MIOMATOSIS UTERINA ══════ -->
 <div class="wsec" id="s24">
 <div class="tpane" id="s24-t0">
-<h2>// Miomatosis Uterina (Leiomiomas)</h2>
-<div class="card"><div class="ct">Epidemiología</div><p>Tumor sólido benigno más frecuente en la mujer. 20–40% de mujeres en edad reproductiva. Mayor prevalencia en mujeres afrodescendientes (3×). Estrógeno-dependiente.</p></div>
-<h3>Clasificación FIGO (PALM-COEIN)</h3>
-<div class="tw"><table>
-<tr><th>Tipo</th><th>Localización</th><th>Clínica predominante</th></tr>
-<tr><td>0 — Submucoso pediculado</td><td>Cavidad uterina; pedículo &lt;50%</td><td>Sangrado, infertilidad, aborto</td></tr>
-<tr><td>1 — Submucoso</td><td>&lt;50% intramural</td><td>Sangrado intenso</td></tr>
-<tr><td>2 — Submucoso</td><td>≥50% intramural</td><td>Sangrado + dolor</td></tr>
-<tr><td>3 — Intramural</td><td>Contacta endometrio pero no submucoso</td><td>Sangrado, sííntomas compresivos</td></tr>
-<tr><td>4 — Intramural</td><td>Completamente intramural</td><td>Sangrado, dismenorrea</td></tr>
-<tr><td>5–7 — Subseroso</td><td>≥50% intramural / subseros. pedic.</td><td>Compresivo (vejiga, recto); menos sangrado</td></tr>
-</table></div>
-<h3>Clínica</h3>
-<div class="g2">
-<div class="card"><div class="ct">Síntomas</div><ul class="dl">
-<li>Sangrado uterino anormal (menorragia) — más común</li>
-<li>Anemia ferropénica</li>
-<li>Dolor pélvico, dismenorrea</li>
-<li>Síntomas compresivos: polaquiuria, estreñimiento</li>
-<li>Infertilidad (submucosos)</li>
-</ul></div>
-<div class="card"><div class="ct">Degeneraciones (en embarazo)</div><ul class="dl">
-<li>Degeneración roja (carnosa): dolor agudo en 2°T/3°T; tratar con AINES</li>
-<li>Degeneración hialina: más común; asintomática</li>
-<li>Transformación maligna (leiomiosarcoma): muy rara (&lt;0.5%); ↑ volumen rápido</li>
-</ul></div>
+<div class="study-hero s24-hero">
+  <div class="wlabel">S24 · Williams Ginecología 4.ª ed. · Cap. 9</div>
+  <div class="wtitle">Leiomiomas Uterinos</div>
+  <p class="mu">Patogenia, clasificación FIGO, clínica, diagnóstico y espectro terapéutico completo.</p>
+  <div class="topic-strip"><span class="b bp">Biología hormonal</span><span class="b bb">FIGO 0-8</span><span class="b bg">Imagen</span><span class="b bo">GnRH / SPRM</span><span class="b br">Miomectomía</span></div>
 </div>
-<h3>Tratamiento</h3>
-<div class="tw"><table>
-<tr><th>Opción</th><th>Indicación</th><th>Nota</th></tr>
-<tr><td>Expectante</td><td>Asintomática; perimenopáusica (regresan con menopausia)</td><td>–</td></tr>
-<tr><td>DIU-LNG / ACO / progestágenos</td><td>Control sangrado; no reduce tamaño significativamente</td><td>Primera línea médica</td></tr>
-<tr><td>Análogos GnRH</td><td>Reducir tamaño preoperatorio; menorragia severa</td><td>Máx 6 meses; efecto transitorio</td></tr>
-<tr><td>Miomectomía (laparoscópica / abierta)</td><td>Paciente que desea fertilidad; sintomática</td><td>Riesgo recurrencia 50% a 10 años</td></tr>
-<tr><td>Histerectomía</td><td>Síntomas severos sin deseo fértil</td><td>Tratamiento definitivo</td></tr>
-<tr><td>UAE (embolización arteria uterina)</td><td>Alternativa a cirugía; sin deseo gestacional</td><td>Reduce volumen ~50%</td></tr>
-</table></div>
-<div class="gl"><div class="gl-t">► Glosario</div><div class="gl-g">
-<div class="gl-i"><span class="gl-k">UAE</span><span class="gl-v">Uterine Artery Embolization</span></div>
-<div class="gl-i"><span class="gl-k">DIU-LNG</span><span class="gl-v">DIU Liberador de Levonorgestrel (Mirena)</span></div>
+
+<details class="study-accordion" open><summary><span class="acc-index">01</span><span><strong>Patogenia y biología hormonal</strong><small>Origen monoclonal, cápsula quirúrgica, degeneración y regulación hormonal</small></span></summary><div class="acc-body">
+<p>Los leiomiomas son neoplasias benignas de músculo liso, casi siempre originadas del miometrio. La prevalencia citada es 10-20%, pero alcanza 70-80% en estudios ecográficos sistemáticos. Cada tumor nace de un único miocito progenitor y suele estar rodeado por una fina cápsula de tejido conectivo que facilita el plano de disección.</p>
+<div class="s24-grid"><div class="s24-card"><strong>Biología tumoral</strong><p>El aporte vascular interno es escaso, por lo que el mioma es vulnerable a isquemia, necrosis y degeneración hialina, calcificada, quística, mixoide, roja o adiposa.</p></div><div class="s24-card"><strong>Eje hormonal</strong><p>Estrógeno aumenta receptores de progesterona; la progesterona es el principal mitógeno. El mioma crea un microambiente hiperestrogénico local por aromatasa intratumoral.</p></div></div>
+<div class="tw hy-table"><table><tr><th>Factor</th><th>Efecto sobre el mioma</th></tr><tr><td>Menarquia temprana, obesidad, SOP</td><td>Aumentan exposición estrogénica y favorecen crecimiento.</td></tr><tr><td>ACO combinados</td><td>No inducen formación de miomas.</td></tr><tr><td>DMPA en afroamericanas jóvenes</td><td>Se asocia con menor riesgo.</td></tr><tr><td>Raza afroamericana</td><td>Incidencia acumulada a los 50 años &gt;80%, con tumores más numerosos y sintomáticos.</td></tr><tr><td>Menopausia</td><td>Regresión tumoral y menor incidencia tras el climaterio.</td></tr></table></div>
+<div class="s24-note"><strong>Perla.</strong> En adolescentes los miomas son raros. Herencia y mutaciones somáticas como MED12 son fundamentales en la génesis.</div>
+<div class="gl"><div class="gl-t">► Glosario de esta sección</div><div class="gl-g"><div class="gl-i"><span class="gl-k">ACO</span><span class="gl-v">Anticonceptivo combinado oral.</span></div><div class="gl-i"><span class="gl-k">DMPA</span><span class="gl-v">Acetato de medroxiprogesterona de depósito.</span></div><div class="gl-i"><span class="gl-k">MED12</span><span class="gl-v">Gen mediator complex subunit 12, mutado en muchos leiomiomas.</span></div><div class="gl-i"><span class="gl-k">SOP</span><span class="gl-v">Síndrome de ovario poliquístico.</span></div></div></div>
+</div></details>
+
+<details class="study-accordion" open><summary><span class="acc-index">02</span><span><strong>Clasificación FIGO 0-8</strong><small>Relación con endometrio y serosa para elegir el abordaje quirúrgico</small></span></summary><div class="acc-body">
+<p>La clasificación FIGO describe la relación del mioma con la cavidad endometrial, el miometrio y la serosa. Es una de las decisiones anatómicas más importantes para seleccionar vía quirúrgica.</p>
+<div class="tw figo-table"><table><tr><th>Tipo</th><th>Descripción</th></tr><tr><td>0</td><td>Submucoso intracavitario pedunculado; 0% intramural.</td></tr><tr><td>1</td><td>Submucoso con &lt;50% intramural.</td></tr><tr><td>2</td><td>Submucoso con ≥50% intramural.</td></tr><tr><td>3</td><td>100% intramural, pero en contacto con el endometrio.</td></tr><tr><td>4</td><td>Intramural puro, sin contacto con endometrio ni serosa.</td></tr><tr><td>5</td><td>Subseroso con ≥50% intramural.</td></tr><tr><td>6</td><td>Subseroso con &lt;50% intramural.</td></tr><tr><td>7</td><td>Subseroso pedunculado.</td></tr><tr><td>8</td><td>Otro: cervical, ligamento ancho o parasitario.</td></tr><tr><td>Híbrido</td><td>Lesión transmural; se nombra primero la superficie endometrial y luego la serosa, por ejemplo 2-5.</td></tr></table></div>
+<div class="s24-note"><strong>High-yield.</strong> Tipos 0 y 1 son los mejores candidatos para miomectomía histeroscópica y los más relacionados con subfertilidad y HMB. Tipos 0 y 7 son pedunculados.</div>
+<div class="s24-grid"><div class="s24-mini"><strong>Leiomioma parasitario</strong><p>Se une a estructuras pélvicas vecinas, obtiene de ellas su vascularización y puede desprenderse del miometrio original.</p></div><div class="s24-mini"><strong>Localizaciones raras</strong><p>Cuello uterino, ligamento ancho y, excepcionalmente, ovario, trompa, vagina o vulva.</p></div></div>
+<div class="gl"><div class="gl-t">► Glosario de esta sección</div><div class="gl-g"><div class="gl-i"><span class="gl-k">FIGO</span><span class="gl-v">Federación Internacional de Ginecología y Obstetricia.</span></div><div class="gl-i"><span class="gl-k">HMB</span><span class="gl-v">Sangrado menstrual abundante.</span></div></div></div>
+</div></details>
+
+<details class="study-accordion"><summary><span class="acc-index">03</span><span><strong>Cuadro clínico</strong><small>Sangrado, presión/dolor y fertilidad</small></span></summary><div class="acc-body">
+<p>La mayoría de los miomas son asintomáticos. El riesgo de síntomas aumenta con el tamaño y el número de tumores. El síntoma más frecuente es HMB, probablemente por vasodilatación de vasos endometriales y hemostasia alterada.</p>
+<div class="tw risk-table"><table><tr><th>Presentación</th><th>Mecanismo / manejo</th></tr><tr><td>Presión, polaquiuria, incontinencia, estreñimiento</td><td>Efecto de masa por útero grande.</td></tr><tr><td>Dismenorrea, dispareunia, dolor pélvico no cíclico</td><td>Compresión o distorsión anatómica.</td></tr><tr><td>Degeneración</td><td>Necrosis tisular con dolor agudo, fiebre y leucocitosis. Dx: ecografía ± TC. Tx: AINE/analgésicos y antibióticos si no se descarta endomiometritis. Mejora en 24-48 h.</td></tr><tr><td>Torsión de mioma pedunculado</td><td>Isquemia aguda; tratamiento curativo con corte quirúrgico del tallo y escisión.</td></tr><tr><td>Prolapso submucoso por cérvix</td><td>Cólico intenso, sangrado o secreción serosanguinolenta; dx por inspección + ecografía; tx con miomectomía vaginal.</td></tr></table></div>
+<h3>Fertilidad</h3>
+<div class="s24-grid"><div class="s24-card"><strong>Submucosos</strong><p>Son los más asociados a subfertilidad; hay evidencia indirecta de mejoría de embarazo tras resección histeroscópica.</p></div><div class="s24-card"><strong>Subserosos</strong><p>No tienen relación demostrada con infertilidad.</p></div><div class="s24-card"><strong>Intramurales sin deformar cavidad</strong><p>Relación tenue; beneficio de miomectomía contradictorio.</p></div><div class="s24-card"><strong>Riesgo quirúrgico</strong><p>Sopesar adherencias peritubáricas/intrauterinas y riesgo de rotura uterina futura por defectos miometriales.</p></div></div>
+<div class="s24-note">Solo 1-3% de la esterilidad se atribuye únicamente a leiomiomas. No hay asociación convincente con aborto espontáneo ni evidencia clara de que la cirugía reduzca abortos.</div>
+<div class="gl"><div class="gl-t">► Glosario de esta sección</div><div class="gl-g"><div class="gl-i"><span class="gl-k">AINE</span><span class="gl-v">Antiinflamatorio no esteroideo.</span></div><div class="gl-i"><span class="gl-k">Dx</span><span class="gl-v">Diagnóstico.</span></div><div class="gl-i"><span class="gl-k">HMB</span><span class="gl-v">Sangrado menstrual abundante.</span></div><div class="gl-i"><span class="gl-k">TC</span><span class="gl-v">Tomografía computarizada.</span></div><div class="gl-i"><span class="gl-k">Tx</span><span class="gl-v">Tratamiento.</span></div></div></div>
+</div></details>
+
+<details class="study-accordion"><summary><span class="acc-index">04</span><span><strong>Diagnóstico e imagenología</strong><small>Exploración, ecografía, Doppler, MR y TC</small></span></summary><div class="acc-body">
+<div class="s24-note"><strong>Primer paso.</strong> En edad fértil siempre excluir embarazo con hCG antes de continuar. En exploración, el hallazgo clásico es útero aumentado de tamaño y contorno irregular.</div>
+<div class="tw hy-table"><table><tr><th>Modalidad</th><th>Utilidad</th></tr><tr><td>TVS</td><td>Primera línea por resolución superior.</td></tr><tr><td>Transabdominal</td><td>Necesaria si el útero es demasiado grande para TVS.</td></tr><tr><td>Hallazgo típico</td><td>Masa focal heterogénea hipo- a hiperecoica; calcificaciones periféricas o dispersas; degeneración quística/mixoide con áreas hipo/anecoicas.</td></tr><tr><td>SIS / histeroscopia</td><td>Mejor definición de miomas submucosos, pólipos y sinequias.</td></tr><tr><td>TVS/SIS 3-D</td><td>Valiosas para definir la cavidad con precisión.</td></tr></table></div>
+<div class="tw risk-table"><table><tr><th>Doppler diferencial</th><th>Clave de examen</th></tr><tr><td>Leiomioma</td><td>Vascularidad periférica circunferencial con vasos que penetran al centro.</td></tr><tr><td>Adenomiosis</td><td>Vascularidad central.</td></tr><tr><td>Pólipo</td><td>Vaso de alimentación único.</td></tr></table></div>
+<div class="s24-grid"><div class="s24-card"><strong>MR</strong><p>Indicada si hábito corporal/anatomía limitan ecografía o para planeación compleja. T2: miomas oscuros, homogéneos y bien circunscritos, salvo degeneración.</p></div><div class="s24-card"><strong>Utilidad de MR</strong><p>Define tamaño, número y ubicación; identifica candidatas para UAE o miomectomía y distingue mioma de adenomiosis compacta.</p></div><div class="s24-card"><strong>Leiomiosarcoma</strong><p>MR ayuda, sin ser perfecta; sospechar masa grande, única, con degeneración quística.</p></div><div class="s24-card"><strong>TC</strong><p>No caracteriza miomas; solo útil en dolor agudo de causa incierta.</p></div></div>
+<div class="gl"><div class="gl-t">► Glosario de esta sección</div><div class="gl-g"><div class="gl-i"><span class="gl-k">hCG</span><span class="gl-v">Gonadotropina coriónica humana.</span></div><div class="gl-i"><span class="gl-k">MR</span><span class="gl-v">Resonancia magnética.</span></div><div class="gl-i"><span class="gl-k">SIS</span><span class="gl-v">Sonohisterografía con infusión salina.</span></div><div class="gl-i"><span class="gl-k">TC</span><span class="gl-v">Tomografía computarizada.</span></div><div class="gl-i"><span class="gl-k">TVS</span><span class="gl-v">Ultrasonido transvaginal.</span></div><div class="gl-i"><span class="gl-k">UAE</span><span class="gl-v">Embolización de arteria uterina.</span></div></div></div>
+</div></details>
+
+<details class="study-accordion"><summary><span class="acc-index">05</span><span><strong>Manejo no quirúrgico: observación</strong><small>Vigilancia en asintomáticas y puente a menopausia</small></span></summary><div class="acc-body">
+<p>Los miomas son de crecimiento lento. Las pacientes asintomáticas se vigilan con examen pélvico anual, independientemente del tamaño. Puede agregarse ecografía anual si la exploración es limitada por tamaño uterino u obesidad.</p>
+<div class="s24-grid"><div class="s24-card"><strong>Asintomática</strong><p>Observación, educación y seguimiento anual. El tamaño por sí solo no obliga tratamiento si no hay síntomas ni sospecha diagnóstica.</p></div><div class="s24-card"><strong>Perimenopausia</strong><p>Muchas pacientes eligen tratamiento médico sintomático como puente, porque los miomas suelen regresar después del climaterio.</p></div></div>
+<div class="gl"><div class="gl-t">► Glosario de esta sección</div><div class="gl-g"><div class="gl-i"><span class="gl-k">US</span><span class="gl-v">Ultrasonido/ecografía.</span></div></div></div>
+</div></details>
+
+<details class="study-accordion" open><summary><span class="acc-index">06</span><span><strong>Manejo médico farmacológico</strong><small>Esteroides sexuales, GnRH, SPRM y opciones no hormonales</small></span></summary><div class="acc-body">
+<h3>Indicaciones por síntoma</h3>
+<div class="tw hy-table"><table><tr><th>Agente</th><th>Dismenorrea</th><th>Menorragia</th><th>Presión</th><th>Esterilidad</th></tr><tr><td>AINE</td><td>+</td><td>-</td><td>-</td><td>-</td></tr><tr><td>ACO combinados</td><td>+</td><td>+</td><td>-</td><td>-</td></tr><tr><td>DMPA</td><td>+</td><td>+</td><td>-</td><td>-</td></tr><tr><td>LNG-IUS</td><td>+</td><td>+</td><td>-</td><td>-</td></tr><tr><td>Agonista GnRH</td><td>+</td><td>+</td><td>+</td><td>+</td></tr><tr><td>Ulipristal</td><td>+</td><td>+</td><td>+</td><td>-</td></tr></table></div>
+<div class="s24-note"><strong>Esteroides sexuales.</strong> ACO, progestinas continuas y DMPA inducen atrofia endometrial y reducen prostaglandinas. LNG-IUS mejora sangrado, pero tiene expulsión 10-15% en úteros miomatosos y está contraindicado si el mioma deforma la cavidad.</div>
+<h3>Agonistas y antagonistas de GnRH</h3>
+<div class="tw risk-table"><table><tr><th>Fármaco / grupo</th><th>Presentación y puntos clave</th></tr><tr><td>Leuprolida</td><td>Único aprobado por FDA para mioma: 3.75 mg IM mensual o 11.25 mg IM c/3 meses.</td></tr><tr><td>Goserelina</td><td>Implante SC 3.6 mg/mes o 10.8 mg/3 meses.</td></tr><tr><td>Triptorelina</td><td>3.75 mg IM/mes o 11.25 mg/3 meses.</td></tr><tr><td>Nafarelina</td><td>Aerosol nasal 200 mcg 2 veces/día.</td></tr><tr><td>Antagonistas orales</td><td>Elagolix y relugolix evitan el flare inicial; reducen sangrado y volumen, con bochornos mitigados por add-back.</td></tr></table></div>
+<div class="s24-note">Agonistas GnRH: estimulación inicial de LH/FSH por ~1 semana → downregulation → hipoestrogenismo/hipoprogesteronemia en 1-2 semanas. Reducen 35-50% el volumen uterino, controlan sangrado en 90-97% a 3 meses y causan amenorrea media a los 21 días. No usar monoterapia &gt;6 meses sin add-back por síntomas menopáusicos y pérdida ósea.</div>
+<h3>SPRM y no hormonales</h3>
+<div class="tw hy-table"><table><tr><th>Opción</th><th>Dato de alto rendimiento</th></tr><tr><td>Ulipristal</td><td>5 mg VO/día hasta 12 semanas en Europa/Canadá; eficacia comparable a leuprolida para volumen y HMB, sin hipoestrogenismo marcado. Riesgo hepático: vigilar PFH y suspender si enzimas ≥3x límite normal.</td></tr><tr><td>PAEC</td><td>Cambios endometriales asociados a SPRM, reversibles en 3-6 meses y no vinculados a hiperplasia/cáncer a corto plazo.</td></tr><tr><td>TXA</td><td>No evaluado específicamente en HMB por mioma, pero subgrupos dan cierto apoyo.</td></tr><tr><td>AINE</td><td>Útiles para dismenorrea; no respaldados como monoterapia para HMB.</td></tr><tr><td>Inhibidores de aromatasa</td><td>No aprobados por FDA; estudios pequeños muestran ↓~50% de volumen/síntomas a 3 meses, con bochornos, náusea, dolor musculoesquelético y ↑FSH.</td></tr></table></div>
+<div class="gl"><div class="gl-t">► Glosario de esta sección</div><div class="gl-g"><div class="gl-i"><span class="gl-k">ACO</span><span class="gl-v">Anticonceptivo combinado oral.</span></div><div class="gl-i"><span class="gl-k">AINE</span><span class="gl-v">Antiinflamatorio no esteroideo.</span></div><div class="gl-i"><span class="gl-k">DMPA</span><span class="gl-v">Acetato de medroxiprogesterona de depósito.</span></div><div class="gl-i"><span class="gl-k">FDA</span><span class="gl-v">Food and Drug Administration.</span></div><div class="gl-i"><span class="gl-k">FSH</span><span class="gl-v">Hormona foliculoestimulante.</span></div><div class="gl-i"><span class="gl-k">GnRH</span><span class="gl-v">Hormona liberadora de gonadotropinas.</span></div><div class="gl-i"><span class="gl-k">HMB</span><span class="gl-v">Sangrado menstrual abundante.</span></div><div class="gl-i"><span class="gl-k">IM</span><span class="gl-v">Intramuscular.</span></div><div class="gl-i"><span class="gl-k">LH</span><span class="gl-v">Hormona luteinizante.</span></div><div class="gl-i"><span class="gl-k">LNG-IUS</span><span class="gl-v">Sistema intrauterino liberador de levonorgestrel.</span></div><div class="gl-i"><span class="gl-k">PAEC</span><span class="gl-v">Cambios endometriales asociados a moduladores del receptor de progesterona.</span></div><div class="gl-i"><span class="gl-k">PFH</span><span class="gl-v">Pruebas de función hepática.</span></div><div class="gl-i"><span class="gl-k">SC</span><span class="gl-v">Subcutáneo.</span></div><div class="gl-i"><span class="gl-k">SPRM</span><span class="gl-v">Modulador selectivo del receptor de progesterona.</span></div><div class="gl-i"><span class="gl-k">TXA</span><span class="gl-v">Ácido tranexámico.</span></div><div class="gl-i"><span class="gl-k">VO</span><span class="gl-v">Vía oral.</span></div></div></div>
+</div></details>
+
+<details class="study-accordion"><summary><span class="acc-index">07</span><span><strong>Procedimientos radiológicos guiados</strong><small>UAE, MRgFUS/MR-HIFU y USgFUS</small></span></summary><div class="acc-body">
+<h3>Embolización de arteria uterina</h3>
+<p>La UAE usa catéter angiográfico por arteria femoral, emboliza ambas arterias uterinas con partículas sintéticas y produce isquemia/necrosis preferencial del mioma. No embolizar ambas arterias reduce el éxito por circulación colateral.</p>
+<div class="tw risk-table"><table><tr><th>Contraindicaciones absolutas</th><th>Contraindicaciones relativas</th></tr><tr><td>Embarazo.</td><td>Coagulopatía por riesgo de hemorragia.</td></tr><tr><td>Infección activa de útero/anexos.</td><td>Deterioro renal por contraste.</td></tr><tr><td>Sospecha de malignidad reproductiva.</td><td>Alergia grave a contraste, deseo de fertilidad futura, útero &gt;20-24 sem, cirugía anexial previa, radiación pélvica, hidrosálpinx grande o uso de agonista GnRH.</td></tr></table></div>
+<div class="s24-note"><strong>Curso post-UAE.</strong> Hospitalización 24-48 h por dolor. Síndrome postembolización 10-25%: dolor pélvico, náusea, febrícula y leucocitosis leve por 2-7 días; soporte, sin antibióticos rutinarios. Reintervención 28-35% a largo plazo. Si desea embarazo, preferir miomectomía por mayor riesgo de aborto, hemorragia posparto y cesárea tras UAE.</div>
+<h3>MRgFUS / MR-HIFU</h3>
+<div class="tw hy-table"><table><tr><th>Aspecto</th><th>Dato</th></tr><tr><td>Mecanismo</td><td>Ultrasonido enfocado produce necrosis coagulativa; MR guía en tiempo real y monitoriza temperatura.</td></tr><tr><td>Contraindicaciones</td><td>Embarazo, malignidad uterina, menopausia, miomas calcificados, contraindicación de MR u obstrucciones del haz.</td></tr><tr><td>Exclusión frecuente</td><td>Útero &gt;24 sem, mioma &gt;10 cm, mioma &gt;12 cm de la piel, pedunculados, adenomiosis concurrente o &gt;4 miomas.</td></tr><tr><td>Complicaciones</td><td>Secreción vaginal, fiebre, hematuria, edema abdominal; raras graves: TEV, retención de tejido necrótico, sangrado, endometritis, quemaduras.</td></tr><tr><td>Fertilidad</td><td>Dispositivo Exablate con embarazos exitosos reportados.</td></tr><tr><td>Reintervención</td><td>Mayor que UAE: FIRSTT 30% MRgFUS vs. 13% UAE a 3 años.</td></tr></table></div>
+<div class="s24-note">USgFUS es una alternativa guiada por ecografía, más nueva, sin aprobación FDA y sin retroalimentación térmica.</div>
+<div class="gl"><div class="gl-t">► Glosario de esta sección</div><div class="gl-g"><div class="gl-i"><span class="gl-k">FDA</span><span class="gl-v">Food and Drug Administration.</span></div><div class="gl-i"><span class="gl-k">FIRSTT</span><span class="gl-v">Ensayo comparativo de MRgFUS vs. UAE citado en el resumen.</span></div><div class="gl-i"><span class="gl-k">GnRH</span><span class="gl-v">Hormona liberadora de gonadotropinas.</span></div><div class="gl-i"><span class="gl-k">MR</span><span class="gl-v">Resonancia magnética.</span></div><div class="gl-i"><span class="gl-k">MRgFUS / MR-HIFU</span><span class="gl-v">Ultrasonido focalizado guiado por resonancia magnética.</span></div><div class="gl-i"><span class="gl-k">SIR</span><span class="gl-v">Society of Interventional Radiology.</span></div><div class="gl-i"><span class="gl-k">TEV</span><span class="gl-v">Tromboembolia venosa.</span></div><div class="gl-i"><span class="gl-k">UAE</span><span class="gl-v">Embolización de arteria uterina.</span></div><div class="gl-i"><span class="gl-k">USgFUS</span><span class="gl-v">Ultrasonido focalizado guiado por ecografía.</span></div></div></div>
+</div></details>
+
+<details class="study-accordion"><summary><span class="acc-index">08</span><span><strong>Intervención quirúrgica y vía de miomectomía</strong><small>Histerectomía, miomectomía, STEPW, ablación, RFA y LUAO</small></span></summary><div class="acc-body">
+<div class="s24-grid"><div class="s24-card"><strong>Histerectomía</strong><p>Tratamiento definitivo y más común si fallan medidas conservadoras. Vía vaginal, abdominal o laparoscópica según paciente y útero. Mejor opción en leiomiomas cervicales o de ligamento ancho sintomáticos.</p></div><div class="s24-card"><strong>Miomectomía</strong><p>Conserva útero; indicada si desea fertilidad o rechaza histerectomía. Contraindicada en infección activa, embarazo o sospecha de malignidad.</p></div></div>
+<h3>Miomectomía histeroscópica y STEPW</h3>
+<div class="tw figo-table"><table><tr><th>Criterio</th><th>0 puntos</th><th>1 punto</th><th>2 puntos</th></tr><tr><td>Tamaño</td><td>≤2 cm</td><td>&gt;2-5 cm</td><td>&gt;5 cm</td></tr><tr><td>Topografía</td><td>Bajo</td><td>Medio</td><td>Superior</td></tr><tr><td>Base</td><td>≤1/3</td><td>&gt;1/3-2/3</td><td>&gt;2/3</td></tr><tr><td>Penetración</td><td>0 intramural</td><td>≤50%</td><td>&gt;50%</td></tr><tr><td>Pared lateral</td><td colspan="3">+1 si el mioma está en pared lateral.</td></tr></table></div>
+<div class="s24-note">STEPW total 0-4 = grupo I fácil; 5-6 = grupo II; 7-9 = grupo III. La histeroscópica es más eficaz en tipo 0/1 y tumores ≤3 cm; tipo 2 o grandes aumentan resección incompleta y perforación. 15-20% requiere intervención adicional a largo plazo.</div>
+<h3>Laparoscopia / laparotomía y ablativos</h3>
+<div class="tw hy-table"><table><tr><th>Vía / técnica</th><th>Ventajas</th><th>Riesgos o límites</th></tr><tr><td>Laparoscópica</td><td>Menor estancia, fiebre, sangrado, adherencias y dolor.</td><td>Mayor riesgo de rotura uterina si cierre deficiente o lesión térmica; límites por tamaño ≥6-10 cm o ≥3 tumores.</td></tr><tr><td>Laparotomía</td><td>Permite miomas grandes o múltiples con mayor control.</td><td>Recuperación más lenta y más dolor.</td></tr><tr><td>Robot</td><td>Ventajas MIS.</td><td>Mayor costo/tiempo y menor retroalimentación táctil.</td></tr><tr><td>Ablación endometrial</td><td>Sangrado por mioma submucoso ≤3 cm o adjunto a resección.</td><td>Limitada por longitud/deformación de cavidad.</td></tr><tr><td>RFA Acessa</td><td>Ideal &lt;7 cm, útero &lt;16 sem; menor sangrado y recuperación más corta que miomectomía laparoscópica.</td><td>Reintervención 11% a 3 años y 29% a 5 años.</td></tr><tr><td>LUAO</td><td>Oclusión laparoscópica de arterias uterinas/ováricas.</td><td>Reintervención 15% a 16 meses y 28% a 4 años; técnica compleja.</td></tr></table></div>
+<div class="s24-note"><strong>Regla práctica.</strong> Preferir resección histeroscópica siempre que sea factible para miomas submucosos accesibles. En el resto, elegir vía por tamaño, número, ubicación y habilidad del cirujano.</div>
+<div class="gl"><div class="gl-t">► Glosario de esta sección</div><div class="gl-g"><div class="gl-i"><span class="gl-k">LUAO</span><span class="gl-v">Oclusión laparoscópica de arteria uterina.</span></div><div class="gl-i"><span class="gl-k">MIS</span><span class="gl-v">Cirugía mínimamente invasiva.</span></div><div class="gl-i"><span class="gl-k">RFA</span><span class="gl-v">Ablación por radiofrecuencia.</span></div><div class="gl-i"><span class="gl-k">STEPW</span><span class="gl-v">Size, Topography, Extension, Penetration, Wall; puntaje para miomectomía histeroscópica.</span></div></div></div>
+</div></details>
+
+<details class="study-accordion"><summary><span class="acc-index">09</span><span><strong>Resumen comparativo de opciones terapéuticas</strong><small>Preservación de fertilidad, reintervención e indicación ideal</small></span></summary><div class="acc-body">
+<div class="tw hy-table"><table><tr><th>Opción</th><th>Preserva fertilidad</th><th>Reintervención</th><th>Ideal para</th></tr><tr><td>Manejo médico</td><td>Sí</td><td>Alta si se suspende por recrecimiento.</td><td>Síntomas leves-moderados, puente a menopausia o preoperatorio.</td></tr><tr><td>UAE</td><td>Relativo; mejor miomectomía si desea embarazo.</td><td>28-35%.</td><td>Rechazo de cirugía o mala candidata quirúrgica.</td></tr><tr><td>MRgFUS</td><td>Sí con Exablate.</td><td>13-30%, mayor que UAE.</td><td>Miomas accesibles y deseo de evitar cirugía/radiación.</td></tr><tr><td>Miomectomía</td><td>Sí, es indicación primaria.</td><td>10-20%.</td><td>Deseo de fertilidad o de conservar útero.</td></tr><tr><td>Ablación / RFA / LUAO</td><td>Variable; RFA no contraindica fertilidad.</td><td>15-29%.</td><td>Submucosos pequeños o alternativa mínimamente invasiva.</td></tr><tr><td>Histerectomía</td><td>No</td><td>Definitivo, 0%.</td><td>Paridad satisfecha, fracaso de otras opciones o patología cervical/ligamento ancho.</td></tr></table></div>
+<div class="gl"><div class="gl-t">► Glosario de esta sección</div><div class="gl-g"><div class="gl-i"><span class="gl-k">LUAO</span><span class="gl-v">Oclusión laparoscópica de arteria uterina.</span></div><div class="gl-i"><span class="gl-k">MRgFUS</span><span class="gl-v">Ultrasonido focalizado guiado por resonancia magnética.</span></div><div class="gl-i"><span class="gl-k">RFA</span><span class="gl-v">Ablación por radiofrecuencia.</span></div><div class="gl-i"><span class="gl-k">UAE</span><span class="gl-v">Embolización de arteria uterina.</span></div></div></div>
+</div></details>
+
+<details class="study-accordion" open><summary><span class="acc-index">10</span><span><strong>Manifestaciones raras, entidades relacionadas e integración</strong><small>HLRCC/Reed, leiomiomatosis, morcelación y algoritmo mental</small></span></summary><div class="acc-body">
+<div class="tw risk-table"><table><tr><th>Entidad</th><th>Características</th></tr><tr><td>TEV</td><td>Mayor riesgo si el mioma pesa &gt;1000 g.</td></tr><tr><td>Retención urinaria / hidronefrosis</td><td>Compresión vesical o ureteral; resuelve al extirpar o reducir el mioma.</td></tr><tr><td>Eritrocitosis miomatosa</td><td>Producción ectópica de eritropoyetina; no es policitemia verdadera y normaliza tras histerectomía.</td></tr><tr><td>Seudo-Meigs</td><td>Ascitis + derrame pleural por mioma; resuelve con histerectomía/miomectomía.</td></tr><tr><td>HLRCC / Reed</td><td>Mutación autosómica dominante en FH; tríada de leiomiomas cutáneos + uterinos + cáncer renal.</td></tr><tr><td>Leiomiomatosis intravenosa</td><td>Invade venas uterinas/cava/cavidades cardíacas; manejo quirúrgico multidisciplinario.</td></tr><tr><td>Leiomiomas metastatizantes benignos</td><td>Diseminación hematógena, más frecuente a pulmón; manejo expectante, quirúrgico o castración química.</td></tr><tr><td>Leiomiomatosis peritoneal diseminada</td><td>Nódulos peritoneales que imitan carcinomatosis; asociada a embarazo/ACO.</td></tr><tr><td>Miomas post-morcelación</td><td>Implantación de fragmentos tras morcelación electromecánica en cirugía mínimamente invasiva.</td></tr></table></div>
+<div class="s24-note"><strong>Perla de examen.</strong> Leiomiomas + tumores cutáneos + antecedente o sospecha de cáncer renal = pensar en HLRCC/síndrome de Reed, mutación FH, herencia autosómica dominante.</div>
+<div class="s24-note"><strong>Algoritmo mental.</strong> Mioma sospechado por examen/síntomas → excluir embarazo con hCG → TVS ± transabdominal para clasificar FIGO → MR si duda o planeación compleja → si asintomático, observación anual → si sintomático, manejo médico según fertilidad y gravedad → si falla, procedimiento conservador (UAE, MRgFUS, miomectomía) o definitivo (histerectomía) según edad, paridad y deseo reproductivo.</div>
+<div class="gl"><div class="gl-t">► Glosario de esta sección</div><div class="gl-g"><div class="gl-i"><span class="gl-k">ACO</span><span class="gl-v">Anticonceptivo combinado oral.</span></div><div class="gl-i"><span class="gl-k">FH</span><span class="gl-v">Fumarato hidratasa.</span></div><div class="gl-i"><span class="gl-k">FIGO</span><span class="gl-v">Federación Internacional de Ginecología y Obstetricia.</span></div><div class="gl-i"><span class="gl-k">hCG</span><span class="gl-v">Gonadotropina coriónica humana.</span></div><div class="gl-i"><span class="gl-k">HLRCC</span><span class="gl-v">Síndrome de leiomiomatosis hereditaria y cáncer renal.</span></div><div class="gl-i"><span class="gl-k">MR</span><span class="gl-v">Resonancia magnética.</span></div><div class="gl-i"><span class="gl-k">MRgFUS</span><span class="gl-v">Ultrasonido focalizado guiado por resonancia magnética.</span></div><div class="gl-i"><span class="gl-k">TEV</span><span class="gl-v">Tromboembolia venosa.</span></div><div class="gl-i"><span class="gl-k">TVS</span><span class="gl-v">Ultrasonido transvaginal.</span></div><div class="gl-i"><span class="gl-k">UAE</span><span class="gl-v">Embolización de arteria uterina.</span></div></div></div>
+</div></details>
+
+<div class="gl"><div class="gl-t">► Glosario S24 · Abreviaciones</div><div class="gl-g">
+<div class="gl-i"><span class="gl-k">ACO</span><span class="gl-v">Anticonceptivo combinado oral</span></div>
+<div class="gl-i"><span class="gl-k">AINE</span><span class="gl-v">Antiinflamatorio no esteroideo</span></div>
+<div class="gl-i"><span class="gl-k">DMPA</span><span class="gl-v">Acetato de medroxiprogesterona de depósito</span></div>
+<div class="gl-i"><span class="gl-k">Dx / Tx</span><span class="gl-v">Diagnóstico / tratamiento</span></div>
+<div class="gl-i"><span class="gl-k">FDA</span><span class="gl-v">Food and Drug Administration</span></div>
+<div class="gl-i"><span class="gl-k">FH</span><span class="gl-v">Fumarato hidratasa</span></div>
+<div class="gl-i"><span class="gl-k">FIGO</span><span class="gl-v">Federación Internacional de Ginecología y Obstetricia</span></div>
+<div class="gl-i"><span class="gl-k">FSH / LH</span><span class="gl-v">Hormona foliculoestimulante / hormona luteinizante</span></div>
+<div class="gl-i"><span class="gl-k">GnRH</span><span class="gl-v">Hormona liberadora de gonadotropinas</span></div>
+<div class="gl-i"><span class="gl-k">hCG</span><span class="gl-v">Gonadotropina coriónica humana</span></div>
+<div class="gl-i"><span class="gl-k">HLRCC</span><span class="gl-v">Leiomiomatosis hereditaria y cáncer renal</span></div>
+<div class="gl-i"><span class="gl-k">HMB</span><span class="gl-v">Sangrado menstrual abundante</span></div>
+<div class="gl-i"><span class="gl-k">LNG-IUS</span><span class="gl-v">Sistema intrauterino liberador de levonorgestrel</span></div>
+<div class="gl-i"><span class="gl-k">LUAO</span><span class="gl-v">Oclusión laparoscópica de arteria uterina</span></div>
+<div class="gl-i"><span class="gl-k">MED12</span><span class="gl-v">Mediator complex subunit 12</span></div>
+<div class="gl-i"><span class="gl-k">MIS</span><span class="gl-v">Cirugía mínimamente invasiva</span></div>
+<div class="gl-i"><span class="gl-k">MR</span><span class="gl-v">Resonancia magnética</span></div>
+<div class="gl-i"><span class="gl-k">MRgFUS / MR-HIFU</span><span class="gl-v">Ultrasonido focalizado guiado por resonancia magnética</span></div>
+<div class="gl-i"><span class="gl-k">PAEC</span><span class="gl-v">Cambios endometriales asociados a SPRM</span></div>
+<div class="gl-i"><span class="gl-k">PFH</span><span class="gl-v">Pruebas de función hepática</span></div>
+<div class="gl-i"><span class="gl-k">RFA</span><span class="gl-v">Ablación por radiofrecuencia</span></div>
+<div class="gl-i"><span class="gl-k">SIS</span><span class="gl-v">Sonohisterografía con infusión salina</span></div>
+<div class="gl-i"><span class="gl-k">SIR</span><span class="gl-v">Society of Interventional Radiology</span></div>
+<div class="gl-i"><span class="gl-k">SOP</span><span class="gl-v">Síndrome de ovario poliquístico</span></div>
+<div class="gl-i"><span class="gl-k">SPRM</span><span class="gl-v">Modulador selectivo del receptor de progesterona</span></div>
+<div class="gl-i"><span class="gl-k">STEPW</span><span class="gl-v">Size, Topography, Extension, Penetration, Wall</span></div>
+<div class="gl-i"><span class="gl-k">TC</span><span class="gl-v">Tomografía computarizada</span></div>
+<div class="gl-i"><span class="gl-k">TEV</span><span class="gl-v">Tromboembolia venosa</span></div>
+<div class="gl-i"><span class="gl-k">TVS</span><span class="gl-v">Ultrasonido transvaginal</span></div>
+<div class="gl-i"><span class="gl-k">TXA</span><span class="gl-v">Ácido tranexámico</span></div>
+<div class="gl-i"><span class="gl-k">UAE</span><span class="gl-v">Embolización de arteria uterina</span></div>
+<div class="gl-i"><span class="gl-k">USgFUS</span><span class="gl-v">Ultrasonido focalizado guiado por ecografía</span></div>
+<div class="gl-i"><span class="gl-k">VO</span><span class="gl-v">Vía oral</span></div>
 </div></div>
+<div class="al as"><strong>Fuente de esta sección</strong>Williams Ginecología, 4.ª edición · Capítulo 9: Patología uterina benigna - Leiomiomas. Contenido organizado a partir del resumen proporcionado para estudio.</div>
 </div><!-- s24-t0 -->
 </div><!-- s24 -->
 <!-- ══════ S25: AMENORREA / SOP / HIRSUTISMO ══════ -->
